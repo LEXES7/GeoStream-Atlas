@@ -31,10 +31,12 @@ export default function WorldMap({
   cities,
   nino,
   onSelect,
+  dark = true,
 }: {
   cities: City[];
   nino: NinoRegion[];
   onSelect: (c: City) => void;
+  dark?: boolean;
 }) {
   const [metric, setMetric] = useState<Metric>("temp");
   const m = METRICS[metric];
@@ -55,8 +57,9 @@ export default function WorldMap({
 
       <MapContainer center={[18, 10]} zoom={2} minZoom={2} worldCopyJump style={{ height: "100%" }}>
         <TileLayer
+          key={dark ? "dark" : "light"}
           attribution="© OpenStreetMap, © CARTO"
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          url={`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`}
           subdomains="abcd"
           maxZoom={10}
         />

@@ -45,8 +45,16 @@ export default function App() {
   const [briefing, setBriefing] = useState<Briefing | null>(null);
   const [selected, setSelected] = useState<City | null>(null);
   const [region, setRegion] = useState("All");
+  const [theme, setTheme] = useState<"dark" | "light">(
+    () => (localStorage.getItem("geostream-theme") as "dark" | "light") || "dark",
+  );
   const [error, setError] = useState<string | null>(null);
   const [now, setNow] = useState(Date.now());
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("geostream-theme", theme);
+  }, [theme]);
 
   const cities = useMemo(() => latest?.cities ?? [], [latest]);
   const filteredCities = useMemo(
@@ -153,6 +161,13 @@ export default function App() {
               "Loading…"
             )}
           </span>
+          <button
+            className="ghbtn theme-toggle"
+            onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? "☀️" : "🌙"}
+          </button>
           <a className="ghbtn" href={REPO} target="_blank" rel="noopener noreferrer">
             Repo ↗
           </a>
@@ -210,7 +225,12 @@ export default function App() {
                 <span className="hint">◆ = Niño ocean buoy · click a marker for detail</span>
               </div>
               <div className="map-host">
-                <WorldMap cities={filteredCities} nino={latest.nino_regions} onSelect={setSelected} />
+                <WorldMap
+                  cities={filteredCities}
+                  nino={latest.nino_regions}
+                  onSelect={setSelected}
+                  dark={theme === "dark"}
+                />
               </div>
             </section>
           </Section>
