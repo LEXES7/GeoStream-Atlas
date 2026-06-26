@@ -79,20 +79,31 @@ def _linregress(xs: list[float], ys: list[float]) -> tuple[float, float]:
     return slope, my - slope * mx
 
 
-def project(series: list[Point], horizon_days: int = 90) -> tuple[list[Point], float | None]:
+def project(series: list[Point], horizon_days: int = 30) -> tuple[list[Point], float | None]:
+    """Short, damped trend from the recent slope.
+
+    ENSO anomalies mean-revert, and naive linear extrapolation of a noisy series
+    runs away, so the projection: (1) uses only the recent window, (2) damps the
+    trend the further out it goes, and (3) clamps to a physically plausible band.
+    """
     if len(series) < 7:
         return [], None
-    base = datetime.strptime(series[0].date, "%Y-%m-%d")
-    xs = [(datetime.strptime(p.date, "%Y-%m-%d") - base).days for p in series]
-    ys = [p.value for p in series]
-    slope, intercept = _linregress([float(x) for x in xs], ys)
 
-    last_day = xs[-1]
+    recent = series[-28:]
+    last = recent[-1]
+    base = datetime.strptime(recent[0].date, "%Y-%m-%d")
+    xs = [float((datetime.strptime(p.date, "%Y-%m-%d") - base).days) for p in recent]
+    ys = [p.value for p in recent]
+    slope, _ = _linregress(xs, ys)
+
     out: list[Point] = []
     for step in range(7, horizon_days + 1, 7):
-        day = last_day + step
-        d = (base + timedelta(days=day)).strftime("%Y-%m-%d")
-        out.append(Point(d, round(slope * day + intercept, 3)))
+        damp = 0.6 ** (step / 14)  # trend fades the further out we project
+        raw = last.value + slope * step * damp
+        bounded = max(last.value - 1.5, min(last.value + 1.5, raw))
+        clamped = max(-3.0, min(3.0, bounded))
+        d = (datetime.strptime(last.date, "%Y-%m-%d") + timedelta(days=step)).strftime("%Y-%m-%d")
+        out.append(Point(d, round(clamped, 3)))
     return out, round(slope * 30, 3)
 
 
@@ -108,6 +119,6 @@ def build(data_dir: Path) -> Forecast:
         current_oni=current,
         current_phase=classify(current),
         trend_per_month=trend,
-        note="Rolling 30-day Nino 3.4 anomaly with a linear-trend projection. "
-             "Baseline indicator, not a dynamical forecast.",
+        note="Rolling 30-day Nino 3.4 anomaly with a damped short-term trend. "
+             "Indicative signal, not a dynamical forecast.",
     )

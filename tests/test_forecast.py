@@ -18,8 +18,10 @@ def test_project_needs_enough_history():
 
 
 def test_project_extrapolates_upward_trend():
-    series = _series([float(i) for i in range(14)])
+    # Realistic anomaly magnitudes (within the +/-3 C clamp).
+    series = _series([round(i * 0.1, 2) for i in range(14)])
     points, trend = project(series, horizon_days=14)
     assert points, "expected projection points"
     assert trend is not None and trend > 0
     assert points[-1].value > series[-1].value
+    assert all(-3.0 <= p.value <= 3.0 for p in points)

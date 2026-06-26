@@ -10,11 +10,12 @@ def test_classify_thresholds():
 
 
 def test_analyze_computes_nino34_anomaly():
+    # Nino 3.4 baseline is 29.1 C, so 30.1 C is a +1.0 C anomaly.
     nino = [
         NinoObservation(
             date="06262026", iso_date="2026-06-26", name="Nino_3_4",
             region="Pacific", latitude=0.0, longitude=-170.0,
-            sea_surface_temperature_c=27.5,
+            sea_surface_temperature_c=30.1,
         )
     ]
     snap = analyze("06262026", "2026-06-26", nino)
