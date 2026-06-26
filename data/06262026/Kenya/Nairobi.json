@@ -1,0 +1,16 @@
+{
+  "date": "06262026",
+  "iso_date": "2026-06-26",
+  "country": "Kenya",
+  "city": "Nairobi",
+  "latitude": -1.2921,
+  "longitude": 36.8219,
+  "temperature_c": 23.5,
+  "temperature_max_c": 24.3,
+  "temperature_min_c": 13.0,
+  "humidity_pct": 50,
+  "precipitation_mm": 0.8,
+  "wind_speed_kmh": 7.5,
+  "surface_pressure_hpa": 843.8,
+  "observed_at": "2026-06-26T11:30"
+}

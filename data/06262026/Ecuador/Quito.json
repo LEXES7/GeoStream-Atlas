@@ -1,0 +1,16 @@
+{
+  "date": "06262026",
+  "iso_date": "2026-06-26",
+  "country": "Ecuador",
+  "city": "Quito",
+  "latitude": -0.1807,
+  "longitude": -78.4678,
+  "temperature_c": 8.5,
+  "temperature_max_c": 17.0,
+  "temperature_min_c": 8.0,
+  "humidity_pct": 83,
+  "precipitation_mm": 0.0,
+  "wind_speed_kmh": 3.3,
+  "surface_pressure_hpa": 721.8,
+  "observed_at": "2026-06-26T03:30"
+}
