@@ -5,4 +5,16 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/GeoStream-Atlas/",
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"],
+          leaflet: ["leaflet", "react-leaflet"],
+          charts: ["chart.js", "react-chartjs-2", "chartjs-plugin-annotation", "chartjs-adapter-date-fns", "date-fns"],
+          motion: ["framer-motion"],
+        },
+      },
+    },
+  },
 });

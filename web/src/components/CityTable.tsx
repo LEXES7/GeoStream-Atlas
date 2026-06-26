@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { fmt, tempColor } from "../api";
+import { WMO, fmt, tempColor } from "../api";
 import type { City } from "../types";
 
 type Key = keyof City;
@@ -12,6 +12,9 @@ const COLUMNS: { k: Key; label: string; num?: boolean }[] = [
   { k: "wind_speed_kmh", label: "Wind km/h", num: true },
   { k: "cloud_cover_pct", label: "Cloud %", num: true },
 ];
+
+const icon = (code: number | null) =>
+  code !== null && WMO[code] ? WMO[code].split(" ")[0] : "·";
 
 export default function CityTable({ cities }: { cities: City[] }) {
   const [query, setQuery] = useState("");
@@ -38,10 +41,14 @@ export default function CityTable({ cities }: { cities: City[] }) {
     }
   };
 
+  const indicator = (k: Key) => (k === sortKey ? (sortDir === 1 ? " ↑" : " ↓") : "");
+
   return (
     <section className="card table-card">
       <div className="card-head">
-        <h2>Cities</h2>
+        <h2>
+          Cities <span className="count-pill">{rows.length}</span>
+        </h2>
         <input
           className="search"
           type="search"
@@ -54,9 +61,11 @@ export default function CityTable({ cities }: { cities: City[] }) {
         <table>
           <thead>
             <tr>
+              <th aria-label="condition" />
               {COLUMNS.map((col) => (
                 <th key={col.k} className={col.num ? "num" : ""} onClick={() => onSort(col.k)}>
                   {col.label}
+                  {indicator(col.k)}
                 </th>
               ))}
             </tr>
@@ -64,12 +73,14 @@ export default function CityTable({ cities }: { cities: City[] }) {
           <tbody>
             {rows.map((c) => (
               <tr key={`${c.country}-${c.city}`}>
-                <td>
-                  <span className="flagdot" style={{ background: tempColor(c.temperature_c) }} />
-                  {c.city}
+                <td className="wx">{icon(c.weather_code)}</td>
+                <td className="city-cell">{c.city}</td>
+                <td className="muted-cell">{c.country}</td>
+                <td className="num">
+                  <span className="temp-chip" style={{ background: `${tempColor(c.temperature_c)}22`, color: tempColor(c.temperature_c) }}>
+                    {fmt(c.temperature_c)}
+                  </span>
                 </td>
-                <td>{c.country}</td>
-                <td className="num">{fmt(c.temperature_c)}</td>
                 <td className="num">{fmt(c.apparent_temperature_c)}</td>
                 <td className="num">{fmt(c.humidity_pct, 0)}</td>
                 <td className="num">{fmt(c.wind_speed_kmh, 0)}</td>
