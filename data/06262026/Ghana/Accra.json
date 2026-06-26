@@ -11,12 +11,12 @@
   "apparent_temperature_c": 29.4,
   "humidity_pct": 84,
   "precipitation_mm": 0.6,
-  "cloud_cover_pct": 33,
-  "wind_speed_kmh": 12.2,
-  "wind_direction_deg": 204,
-  "surface_pressure_hpa": 1009.0,
-  "pressure_msl_hpa": 1015.5,
+  "cloud_cover_pct": 31,
+  "wind_speed_kmh": 11.9,
+  "wind_direction_deg": 202,
+  "surface_pressure_hpa": 1009.2,
+  "pressure_msl_hpa": 1015.7,
   "uv_index_max": 7.5,
   "weather_code": 1,
-  "observed_at": "2026-06-26T20:45"
+  "observed_at": "2026-06-26T21:30"
 }
