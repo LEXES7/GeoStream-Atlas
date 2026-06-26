@@ -5,12 +5,12 @@
   "city": "Colombo",
   "latitude": 6.9271,
   "longitude": 79.8612,
-  "temperature_c": 27.4,
-  "temperature_max_c": 28.6,
-  "temperature_min_c": 24.1,
-  "humidity_pct": 82,
-  "precipitation_mm": 25.6,
-  "wind_speed_kmh": 14.0,
+  "temperature_c": 25.5,
+  "temperature_max_c": 27.7,
+  "temperature_min_c": 24.7,
+  "humidity_pct": 91,
+  "precipitation_mm": 18.4,
+  "wind_speed_kmh": 5.2,
   "surface_pressure_hpa": 1008.6,
-  "observed_at": "2026-06-26T14:00"
+  "observed_at": "2026-06-27T01:15"
 }

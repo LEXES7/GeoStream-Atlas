@@ -5,12 +5,12 @@
   "city": "Quito",
   "latitude": -0.1807,
   "longitude": -78.4678,
-  "temperature_c": 8.5,
-  "temperature_max_c": 17.0,
+  "temperature_c": 17.4,
+  "temperature_max_c": 17.3,
   "temperature_min_c": 8.0,
-  "humidity_pct": 83,
-  "precipitation_mm": 0.0,
-  "wind_speed_kmh": 3.3,
-  "surface_pressure_hpa": 721.8,
-  "observed_at": "2026-06-26T03:30"
+  "humidity_pct": 47,
+  "precipitation_mm": 0.3,
+  "wind_speed_kmh": 11.7,
+  "surface_pressure_hpa": 726.2,
+  "observed_at": "2026-06-26T14:45"
 }

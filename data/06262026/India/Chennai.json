@@ -5,12 +5,12 @@
   "city": "Chennai",
   "latitude": 13.0827,
   "longitude": 80.2707,
-  "temperature_c": 33.4,
-  "temperature_max_c": 34.9,
-  "temperature_min_c": 26.7,
-  "humidity_pct": 54,
-  "precipitation_mm": 0.8,
-  "wind_speed_kmh": 9.8,
-  "surface_pressure_hpa": 1003.5,
-  "observed_at": "2026-06-26T14:00"
+  "temperature_c": 27.6,
+  "temperature_max_c": 35.1,
+  "temperature_min_c": 25.5,
+  "humidity_pct": 78,
+  "precipitation_mm": 8.0,
+  "wind_speed_kmh": 9.3,
+  "surface_pressure_hpa": 1004.7,
+  "observed_at": "2026-06-27T01:15"
 }

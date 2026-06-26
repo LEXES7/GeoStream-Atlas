@@ -5,12 +5,12 @@
   "city": "Lima",
   "latitude": -12.0464,
   "longitude": -77.0428,
-  "temperature_c": 18.0,
-  "temperature_max_c": 22.4,
-  "temperature_min_c": 17.8,
-  "humidity_pct": 85,
+  "temperature_c": 21.2,
+  "temperature_max_c": 22.2,
+  "temperature_min_c": 18.1,
+  "humidity_pct": 72,
   "precipitation_mm": 0.0,
-  "wind_speed_kmh": 8.5,
-  "surface_pressure_hpa": 995.7,
-  "observed_at": "2026-06-26T03:30"
+  "wind_speed_kmh": 14.1,
+  "surface_pressure_hpa": 995.4,
+  "observed_at": "2026-06-26T14:45"
 }

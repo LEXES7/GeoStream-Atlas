@@ -3,24 +3,17 @@
   "iso_date": "2026-06-26",
   "regions": [
     {
-      "name": "Nino_4",
-      "observed_sst_c": 30.0,
-      "climatology_c": 28.5,
-      "anomaly_c": 1.5,
-      "phase": "el_nino"
-    },
-    {
-      "name": "Nino_3_4",
-      "observed_sst_c": 31.1,
-      "climatology_c": 26.5,
-      "anomaly_c": 4.6,
-      "phase": "el_nino"
-    },
-    {
       "name": "Nino_1_2",
       "observed_sst_c": 26.7,
       "climatology_c": 24.0,
       "anomaly_c": 2.7,
+      "phase": "el_nino"
+    },
+    {
+      "name": "Nino_4",
+      "observed_sst_c": 30.0,
+      "climatology_c": 28.5,
+      "anomaly_c": 1.5,
       "phase": "el_nino"
     },
     {
@@ -29,9 +22,16 @@
       "climatology_c": 25.5,
       "anomaly_c": 3.6,
       "phase": "el_nino"
+    },
+    {
+      "name": "Nino_3_4",
+      "observed_sst_c": 30.8,
+      "climatology_c": 26.5,
+      "anomaly_c": 4.3,
+      "phase": "el_nino"
     }
   ],
-  "nino34_anomaly_c": 4.6,
+  "nino34_anomaly_c": 4.3,
   "phase": "el_nino",
   "note": "Instantaneous daily anomaly vs approximate climatology, not a smoothed ONI."
 }

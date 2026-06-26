@@ -5,12 +5,12 @@
   "city": "Sydney",
   "latitude": -33.8688,
   "longitude": 151.2093,
-  "temperature_c": 12.7,
-  "temperature_max_c": 15.1,
-  "temperature_min_c": 9.8,
-  "humidity_pct": 89,
-  "precipitation_mm": 6.4,
-  "wind_speed_kmh": 1.5,
-  "surface_pressure_hpa": 1019.3,
-  "observed_at": "2026-06-26T18:30"
+  "temperature_c": 10.5,
+  "temperature_max_c": 14.6,
+  "temperature_min_c": 10.4,
+  "humidity_pct": 93,
+  "precipitation_mm": 5.5,
+  "wind_speed_kmh": 6.5,
+  "surface_pressure_hpa": 1019.2,
+  "observed_at": "2026-06-27T05:45"
 }
