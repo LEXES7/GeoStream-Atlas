@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections import defaultdict
 from datetime import UTC, datetime
 
-from . import analysis, export, quality, storage
+from . import analysis, briefing, export, quality, storage
 from .config import Settings, load_locations
 from .logging_setup import get_logger
 from .models import CityObservation, NinoObservation, RunManifest
@@ -56,6 +56,10 @@ def run(settings: Settings | None = None) -> RunManifest:
 
     storage.write_day(settings.data_dir, date, iso_date, slot, cities, nino, enso, manifest)
     export.build(settings.data_dir, date, iso_date, slot, cities, nino, enso)
+    try:
+        briefing.write(export.WEB_DATA)
+    except Exception as err:  # an AI hiccup must never fail a collection
+        log.warning("briefing step failed", extra={"fields": {"error": str(err)}})
     log.info("run finished", extra={"fields": {
         "slot": slot, "cities_ok": len(cities), "nino_ok": len(nino),
         "enso_phase": enso.phase, "nino34_anomaly_c": enso.nino34_anomaly_c,

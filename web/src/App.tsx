@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { loadCityHistory, loadIntraday, loadLatest, loadTimeSeries, PHASE_LABEL, timeAgo } from "./api";
-import type { City, CityHistory, Intraday, Latest, TimeSeries } from "./types";
+import {
+  loadBriefingSafe,
+  loadCityHistory,
+  loadIntraday,
+  loadLatest,
+  loadTimeSeries,
+  PHASE_LABEL,
+  timeAgo,
+} from "./api";
+import type { Briefing, City, CityHistory, Intraday, Latest, TimeSeries } from "./types";
 import EnsoCard from "./components/EnsoCard";
 import StatGrid from "./components/Stats";
+import BriefingCard from "./components/BriefingCard";
 import NinoRegions from "./components/NinoRegions";
 import IntradayCard from "./components/IntradayCard";
 import WorldMap from "./components/WorldMap";
@@ -32,18 +41,20 @@ export default function App() {
   const [ts, setTs] = useState<TimeSeries | null>(null);
   const [intraday, setIntraday] = useState<Intraday | null>(null);
   const [history, setHistory] = useState<CityHistory>({});
+  const [briefing, setBriefing] = useState<Briefing | null>(null);
   const [selected, setSelected] = useState<City | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [now, setNow] = useState(Date.now());
 
   useEffect(() => {
     const fetchAll = () =>
-      Promise.all([loadLatest(), loadTimeSeries(), loadIntraday(), loadCityHistory()])
-        .then(([l, t, i, h]) => {
+      Promise.all([loadLatest(), loadTimeSeries(), loadIntraday(), loadCityHistory(), loadBriefingSafe()])
+        .then(([l, t, i, h, b]) => {
           setLatest(l);
           setTs(t);
           setIntraday(i);
           setHistory(h);
+          setBriefing(b);
           setError(null);
         })
         .catch((e: unknown) => setError(e instanceof Error ? e.message : "Failed to load data"));
@@ -130,6 +141,12 @@ export default function App() {
             <EnsoCard latest={latest} />
             <StatGrid stats={latest.stats} />
           </section>
+        )}
+
+        {briefing && (
+          <Section>
+            <BriefingCard briefing={briefing} />
+          </Section>
         )}
 
         {latest && (

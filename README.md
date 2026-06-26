@@ -93,6 +93,23 @@ The dashboard (Vite + React + TypeScript, Leaflet map, Chart.js) reads the stati
 JSON in `web/public/data`. It is rebuilt and deployed to GitHub Pages on every
 push that touches `web/`.
 
+## AI briefing (optional)
+
+If a `GROQ_API_KEY` is present, each run generates a short natural-language
+briefing of the current weather and ENSO state using Groq's free, OpenAI-
+compatible API, and the dashboard shows it in an "AI Briefing" card. The model
+only receives our own computed figures and is instructed not to fabricate.
+
+To enable it: create a free key at [groq.com](https://console.groq.com), then
+add it as a repository secret named `GROQ_API_KEY`
+(Settings → Secrets and variables → Actions). Optionally set `GROQ_MODEL` to
+override the default (`llama-3.3-70b-versatile`). Without the secret the feature
+is a silent no-op — everything else works unchanged.
+
+```bash
+GROQ_API_KEY=... python -m geostream briefing   # regenerate locally
+```
+
 ## Add a location
 
 Edit [locations.json](locations.json) and add an entry under `cities`:

@@ -61,6 +61,14 @@ def _export() -> int:
     return 0
 
 
+def _briefing() -> int:
+    from . import briefing, export
+
+    ok = briefing.write(export.WEB_DATA)
+    print("briefing written." if ok else "briefing skipped (no GROQ_API_KEY or no data).")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(prog="geostream")
     sub = parser.add_subparsers(dest="command")
@@ -72,12 +80,15 @@ def main() -> int:
         "--csv-only", action="store_true", help="update the CSV only, no JSON partitions"
     )
     sub.add_parser("export", help="rebuild dashboard data only")
+    sub.add_parser("briefing", help="regenerate the AI briefing from latest.json")
 
     args = parser.parse_args()
     if args.command == "backfill":
         return _backfill(args.start, args.end, args.csv_only)
     if args.command == "export":
         return _export()
+    if args.command == "briefing":
+        return _briefing()
     return _collect()
 
 

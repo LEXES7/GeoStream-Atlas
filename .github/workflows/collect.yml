@@ -32,6 +32,8 @@ jobs:
 
       - name: Collect current data
         id: collect
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python -m geostream
 
       - name: Commit and push

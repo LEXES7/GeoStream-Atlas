@@ -94,3 +94,9 @@ export interface Intraday {
 }
 
 export type CityHistory = Record<string, SlotPoint[]>;
+
+export interface Briefing {
+  text: string;
+  model: string;
+  generated_utc: string;
+}

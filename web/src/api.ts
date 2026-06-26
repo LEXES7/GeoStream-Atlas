@@ -1,4 +1,4 @@
-import type { CityHistory, Intraday, Latest, TimeSeries } from "./types";
+import type { Briefing, CityHistory, Intraday, Latest, TimeSeries } from "./types";
 
 const base = import.meta.env.BASE_URL;
 
@@ -22,6 +22,15 @@ export function loadIntraday(): Promise<Intraday> {
 
 export function loadCityHistory(): Promise<CityHistory> {
   return loadJSON<CityHistory>("city_history.json");
+}
+
+// Briefing is optional (only exists if a GROQ_API_KEY is configured).
+export async function loadBriefingSafe(): Promise<Briefing | null> {
+  try {
+    return await loadJSON<Briefing>("briefing.json");
+  } catch {
+    return null;
+  }
 }
 
 export function timeAgo(iso: string | undefined, now: number): string {
