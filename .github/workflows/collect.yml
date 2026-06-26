@@ -45,7 +45,7 @@ jobs:
             git diff --cached --quiet || git commit -m "$message"
           done < commit_plan.tsv
 
-          git add data
+          git add data web/public/data
           git diff --cached --quiet || git commit -m "Daily climate summary $DATE"
 
           git push
