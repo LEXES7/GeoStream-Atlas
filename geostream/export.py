@@ -14,7 +14,7 @@ from . import forecast
 from .analysis import EnsoSnapshot
 from .models import CityObservation, NinoObservation
 
-WEB_DATA = Path(__file__).resolve().parent.parent / "web" / "data"
+WEB_DATA = Path(__file__).resolve().parent.parent / "web" / "public" / "data"
 
 
 def build(

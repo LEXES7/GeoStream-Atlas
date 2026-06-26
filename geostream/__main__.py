@@ -53,7 +53,7 @@ def _export() -> int:
     nino, _ = fetch_ninos(nino_cfg, date, iso_date, settings)
     enso = analysis.analyze(date, iso_date, nino)
     export.build(settings.data_dir, date, iso_date, cities, nino, enso)
-    print("dashboard data exported to web/data/.")
+    print("dashboard data exported to web/public/data/.")
     return 0
 
 
