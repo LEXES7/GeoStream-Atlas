@@ -1,4 +1,4 @@
-import type { Intraday, Latest, TimeSeries } from "./types";
+import type { CityHistory, Intraday, Latest, TimeSeries } from "./types";
 
 const base = import.meta.env.BASE_URL;
 
@@ -18,6 +18,10 @@ export function loadTimeSeries(): Promise<TimeSeries> {
 
 export function loadIntraday(): Promise<Intraday> {
   return loadJSON<Intraday>("intraday.json");
+}
+
+export function loadCityHistory(): Promise<CityHistory> {
+  return loadJSON<CityHistory>("city_history.json");
 }
 
 export function timeAgo(iso: string | undefined, now: number): string {

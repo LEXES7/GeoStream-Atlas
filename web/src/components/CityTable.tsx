@@ -16,7 +16,13 @@ const COLUMNS: { k: Key; label: string; num?: boolean }[] = [
 const icon = (code: number | null) =>
   code !== null && WMO[code] ? WMO[code].split(" ")[0] : "·";
 
-export default function CityTable({ cities }: { cities: City[] }) {
+export default function CityTable({
+  cities,
+  onSelect,
+}: {
+  cities: City[];
+  onSelect: (c: City) => void;
+}) {
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<Key>("temperature_c");
   const [sortDir, setSortDir] = useState(-1);
@@ -72,7 +78,7 @@ export default function CityTable({ cities }: { cities: City[] }) {
           </thead>
           <tbody>
             {rows.map((c) => (
-              <tr key={`${c.country}-${c.city}`}>
+              <tr key={`${c.country}-${c.city}`} className="row-click" onClick={() => onSelect(c)}>
                 <td className="wx">{icon(c.weather_code)}</td>
                 <td className="city-cell">{c.city}</td>
                 <td className="muted-cell">{c.country}</td>

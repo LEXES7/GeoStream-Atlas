@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapContainer, TileLayer, CircleMarker, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Marker, Popup, Tooltip } from "react-leaflet";
 import L from "leaflet";
 import { WMO, fmt, tempColor } from "../api";
 import type { City, NinoRegion } from "../types";
@@ -27,7 +27,15 @@ const METRICS: Record<Metric, { label: string; value: (c: City) => number | null
   wind: { label: "Wind", value: (c) => c.wind_speed_kmh, color: (c) => rampColor(c.wind_speed_kmh, WIND), legend: ["calm", "30", "60+ km/h"] },
 };
 
-export default function WorldMap({ cities, nino }: { cities: City[]; nino: NinoRegion[] }) {
+export default function WorldMap({
+  cities,
+  nino,
+  onSelect,
+}: {
+  cities: City[];
+  nino: NinoRegion[];
+  onSelect: (c: City) => void;
+}) {
   const [metric, setMetric] = useState<Metric>("temp");
   const m = METRICS[metric];
   const hottest = cities.reduce<City | null>(
@@ -64,17 +72,12 @@ export default function WorldMap({ cities, nino }: { cities: City[]; nino: NinoR
               fillOpacity: 0.95,
               className: c === hottest ? "marker-pulse" : "",
             }}
+            eventHandlers={{ click: () => onSelect(c) }}
           >
-            <Popup>
-              <b>{c.city}</b>, {c.country}
-              <br />
-              {fmt(c.temperature_c)} °C {c.weather_code !== null ? WMO[c.weather_code] ?? "" : ""}
-              <br />
-              <small>
-                Feels {fmt(c.apparent_temperature_c)} °C · Humidity {fmt(c.humidity_pct, 0)}% · Wind{" "}
-                {fmt(c.wind_speed_kmh, 0)} km/h
-              </small>
-            </Popup>
+            <Tooltip>
+              <b>{c.city}</b> · {fmt(c.temperature_c)} °C{" "}
+              {c.weather_code !== null ? WMO[c.weather_code] ?? "" : ""}
+            </Tooltip>
           </CircleMarker>
         ))}
         {nino.map((n) => (

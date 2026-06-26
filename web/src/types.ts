@@ -92,3 +92,5 @@ export interface Intraday {
   temp: SlotPoint[];
   sst: SlotPoint[];
 }
+
+export type CityHistory = Record<string, SlotPoint[]>;

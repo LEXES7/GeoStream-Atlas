@@ -79,6 +79,29 @@ def build(
         json.dumps(_intraday(data_dir), indent=2), encoding="utf-8"
     )
 
+    (web_data / "city_history.json").write_text(
+        json.dumps(_city_history(data_dir), separators=(",", ":")), encoding="utf-8"
+    )
+
+
+def _city_history(data_dir: Path, slots: int = 48) -> dict:
+    """Recent temperature series per city, keyed by 'City|Country'."""
+    path = data_dir / "observations.csv"
+    series: dict[str, dict[str, float]] = {}
+    if path.exists():
+        with path.open(newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                if row.get("type") != "city" or not row.get("temp_c") or not row.get("slot"):
+                    continue
+                key = f"{row['location']}|{row['country']}"
+                series.setdefault(key, {})[row["slot"]] = float(row["temp_c"])
+
+    out: dict[str, list[dict]] = {}
+    for key, points in series.items():
+        recent = sorted(points)[-slots:]
+        out[key] = [{"slot": s, "value": points[s]} for s in recent]
+    return out
+
 
 def _intraday(data_dir: Path) -> dict:
     """Per-slot global average temperature and Nino 3.4 SST over recent slots."""

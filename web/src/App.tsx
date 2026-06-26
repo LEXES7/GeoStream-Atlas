@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { loadIntraday, loadLatest, loadTimeSeries, PHASE_LABEL, timeAgo } from "./api";
-import type { Intraday, Latest, TimeSeries } from "./types";
+import { motion, AnimatePresence } from "framer-motion";
+import { loadCityHistory, loadIntraday, loadLatest, loadTimeSeries, PHASE_LABEL, timeAgo } from "./api";
+import type { City, CityHistory, Intraday, Latest, TimeSeries } from "./types";
 import EnsoCard from "./components/EnsoCard";
 import StatGrid from "./components/Stats";
 import NinoRegions from "./components/NinoRegions";
@@ -9,6 +9,7 @@ import IntradayCard from "./components/IntradayCard";
 import WorldMap from "./components/WorldMap";
 import EnsoChart from "./components/EnsoChart";
 import CityTable from "./components/CityTable";
+import CityDetail from "./components/CityDetail";
 
 const REPO = "https://github.com/LEXES7/GeoStream-Atlas";
 const REFRESH_MS = 5 * 60 * 1000;
@@ -30,16 +31,19 @@ export default function App() {
   const [latest, setLatest] = useState<Latest | null>(null);
   const [ts, setTs] = useState<TimeSeries | null>(null);
   const [intraday, setIntraday] = useState<Intraday | null>(null);
+  const [history, setHistory] = useState<CityHistory>({});
+  const [selected, setSelected] = useState<City | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [now, setNow] = useState(Date.now());
 
   useEffect(() => {
     const fetchAll = () =>
-      Promise.all([loadLatest(), loadTimeSeries(), loadIntraday()])
-        .then(([l, t, i]) => {
+      Promise.all([loadLatest(), loadTimeSeries(), loadIntraday(), loadCityHistory()])
+        .then(([l, t, i, h]) => {
           setLatest(l);
           setTs(t);
           setIntraday(i);
+          setHistory(h);
           setError(null);
         })
         .catch((e: unknown) => setError(e instanceof Error ? e.message : "Failed to load data"));
@@ -148,7 +152,7 @@ export default function App() {
                 <span className="hint">◆ = Niño ocean buoy · click a marker for detail</span>
               </div>
               <div className="map-host">
-                <WorldMap cities={latest.cities} nino={latest.nino_regions} />
+                <WorldMap cities={latest.cities} nino={latest.nino_regions} onSelect={setSelected} />
               </div>
             </section>
           </Section>
@@ -170,10 +174,20 @@ export default function App() {
 
         {latest && (
           <Section>
-            <CityTable cities={latest.cities} />
+            <CityTable cities={latest.cities} onSelect={setSelected} />
           </Section>
         )}
       </main>
+
+      <AnimatePresence>
+        {selected && (
+          <CityDetail
+            city={selected}
+            history={history[`${selected.city}|${selected.country}`] ?? []}
+            onClose={() => setSelected(null)}
+          />
+        )}
+      </AnimatePresence>
 
       <footer>
         <p>
