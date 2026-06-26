@@ -1,0 +1,20 @@
+{
+  "cities": [
+    { "city": "Colombo",      "country": "Sri Lanka",   "latitude": 6.9271,   "longitude": 79.8612 },
+    { "city": "Jakarta",      "country": "Indonesia",   "latitude": -6.2088,  "longitude": 106.8456 },
+    { "city": "Lima",         "country": "Peru",        "latitude": -12.0464, "longitude": -77.0428 },
+    { "city": "Sydney",       "country": "Australia",   "latitude": -33.8688, "longitude": 151.2093 },
+    { "city": "Quito",        "country": "Ecuador",     "latitude": -0.1807,  "longitude": -78.4678 },
+    { "city": "Manila",       "country": "Philippines", "latitude": 14.5995,  "longitude": 120.9842 },
+    { "city": "Chennai",      "country": "India",       "latitude": 13.0827,  "longitude": 80.2707 },
+    { "city": "Nairobi",      "country": "Kenya",       "latitude": -1.2921,  "longitude": 36.8219 },
+    { "city": "Honolulu",     "country": "United States","latitude": 21.3069, "longitude": -157.8583 },
+    { "city": "Guayaquil",    "country": "Ecuador",     "latitude": -2.1894,  "longitude": -79.8891 }
+  ],
+  "nino_regions": [
+    { "name": "Nino_1_2",   "region": "Pacific Ocean", "latitude": -5.0,  "longitude": -90.0 },
+    { "name": "Nino_3",     "region": "Pacific Ocean", "latitude": 0.0,   "longitude": -150.0 },
+    { "name": "Nino_3_4",   "region": "Pacific Ocean", "latitude": 0.0,   "longitude": -170.0 },
+    { "name": "Nino_4",     "region": "Pacific Ocean", "latitude": 0.0,   "longitude": 160.0 }
+  ]
+}
