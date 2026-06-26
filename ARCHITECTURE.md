@@ -77,6 +77,35 @@ baselines with a proper 1991–2020 base-period climatology. The thresholds
 (±0.5 °C) already follow the NOAA convention, so only the smoothing and baseline
 need to mature.
 
+## Scale and the dashboard
+
+### Batched fetching
+`sources.py` sends many coordinates per Open-Meteo call (the API returns an
+array aligned to the input order) and chunks at 100 locations. A full run of 74
+cities plus 4 ocean regions is a handful of HTTP requests, not 78 — this keeps
+the job inside the free rate limits and finishes in a couple of seconds.
+
+### Backfill
+`python -m geostream backfill` pulls daily history from Open-Meteo's archive API
+so the rolling index and forecast are meaningful from day one. `--csv-only`
+updates the time-series CSV without writing per-day JSON partitions, which avoids
+committing thousands of historical files for a one-off seed.
+
+### Forecast
+`forecast.py` reads `observations.csv`, builds the Niño 3.4 anomaly series,
+smooths it into a 30-day rolling index and projects a short horizon with
+least-squares linear regression. It is a trend/persistence baseline, honest about
+not being a dynamical climate model.
+
+### Dashboard
+The frontend (`web/`) is a Vite + React + TypeScript app — Leaflet for the map,
+Chart.js for the ENSO chart. It is fully static: rather than parsing the dataset
+in the browser, `export.py` precomputes a compact `latest.json` and
+`enso_timeseries.json` into `web/public/data`. The daily job regenerates and
+commits that feed, and a Pages workflow rebuilds and deploys on every change to
+`web/`. Keeping the site static means it hosts free on GitHub Pages with no
+backend to secure.
+
 ## Extending
 
 - **More locations**: edit `locations.json`. No code change.
