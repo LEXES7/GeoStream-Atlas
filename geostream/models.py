@@ -44,20 +44,31 @@ class CityObservation:
     temperature_c: float | None = None
     temperature_max_c: float | None = None
     temperature_min_c: float | None = None
+    apparent_temperature_c: float | None = None
     humidity_pct: float | None = None
     precipitation_mm: float | None = None
+    cloud_cover_pct: float | None = None
     wind_speed_kmh: float | None = None
+    wind_direction_deg: float | None = None
     surface_pressure_hpa: float | None = None
+    pressure_msl_hpa: float | None = None
+    uv_index_max: float | None = None
+    weather_code: int | None = None
     observed_at: str | None = None
 
     def __post_init__(self) -> None:
         _check_range("temperature_c", self.temperature_c, -90.0, 60.0)
         _check_range("temperature_max_c", self.temperature_max_c, -90.0, 60.0)
         _check_range("temperature_min_c", self.temperature_min_c, -90.0, 60.0)
+        _check_range("apparent_temperature_c", self.apparent_temperature_c, -110.0, 70.0)
         _check_range("humidity_pct", self.humidity_pct, 0.0, 100.0)
         _check_range("precipitation_mm", self.precipitation_mm, 0.0, 2000.0)
+        _check_range("cloud_cover_pct", self.cloud_cover_pct, 0.0, 100.0)
         _check_range("wind_speed_kmh", self.wind_speed_kmh, 0.0, 500.0)
+        _check_range("wind_direction_deg", self.wind_direction_deg, 0.0, 360.0)
         _check_range("surface_pressure_hpa", self.surface_pressure_hpa, 450.0, 1100.0)
+        _check_range("pressure_msl_hpa", self.pressure_msl_hpa, 850.0, 1100.0)
+        _check_range("uv_index_max", self.uv_index_max, 0.0, 20.0)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -74,12 +85,14 @@ class NinoObservation:
     sea_surface_temperature_c: float | None = None
     sst_max_c: float | None = None
     sst_min_c: float | None = None
+    wave_height_m: float | None = None
     observed_at: str | None = None
 
     def __post_init__(self) -> None:
         _check_range("sea_surface_temperature_c", self.sea_surface_temperature_c, -5.0, 40.0)
         _check_range("sst_max_c", self.sst_max_c, -5.0, 40.0)
         _check_range("sst_min_c", self.sst_min_c, -5.0, 40.0)
+        _check_range("wave_height_m", self.wave_height_m, 0.0, 40.0)
 
     def to_dict(self) -> dict:
         return asdict(self)
