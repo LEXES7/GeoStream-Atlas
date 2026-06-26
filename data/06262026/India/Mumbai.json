@@ -1,0 +1,22 @@
+{
+  "date": "06262026",
+  "iso_date": "2026-06-26",
+  "country": "India",
+  "city": "Mumbai",
+  "latitude": 19.076,
+  "longitude": 72.8777,
+  "temperature_c": 27.2,
+  "temperature_max_c": 30.1,
+  "temperature_min_c": 26.2,
+  "apparent_temperature_c": 33.1,
+  "humidity_pct": 87,
+  "precipitation_mm": 3.6,
+  "cloud_cover_pct": 67,
+  "wind_speed_kmh": 5.2,
+  "wind_direction_deg": 186,
+  "surface_pressure_hpa": 1006.4,
+  "pressure_msl_hpa": 1007.1,
+  "uv_index_max": 6.8,
+  "weather_code": 51,
+  "observed_at": "2026-06-27T01:30"
+}

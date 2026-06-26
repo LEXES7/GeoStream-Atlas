@@ -5,12 +5,18 @@
   "city": "Nairobi",
   "latitude": -1.2921,
   "longitude": 36.8219,
-  "temperature_c": 16.8,
+  "temperature_c": 16.7,
   "temperature_max_c": 24.7,
   "temperature_min_c": 13.0,
-  "humidity_pct": 80,
+  "apparent_temperature_c": 16.8,
+  "humidity_pct": 79,
   "precipitation_mm": 0.6,
-  "wind_speed_kmh": 5.9,
-  "surface_pressure_hpa": 840.5,
-  "observed_at": "2026-06-26T22:45"
+  "cloud_cover_pct": 24,
+  "wind_speed_kmh": 6.4,
+  "wind_direction_deg": 16,
+  "surface_pressure_hpa": 840.9,
+  "pressure_msl_hpa": 1019.9,
+  "uv_index_max": 8.1,
+  "weather_code": 1,
+  "observed_at": "2026-06-26T23:00"
 }

@@ -1,0 +1,22 @@
+{
+  "date": "06262026",
+  "iso_date": "2026-06-26",
+  "country": "China",
+  "city": "Shanghai",
+  "latitude": 31.2304,
+  "longitude": 121.4737,
+  "temperature_c": 20.5,
+  "temperature_max_c": 28.6,
+  "temperature_min_c": 20.4,
+  "apparent_temperature_c": 24.4,
+  "humidity_pct": 100,
+  "precipitation_mm": 0.1,
+  "cloud_cover_pct": 99,
+  "wind_speed_kmh": 1.5,
+  "wind_direction_deg": 284,
+  "surface_pressure_hpa": 1005.9,
+  "pressure_msl_hpa": 1006.5,
+  "uv_index_max": 8.55,
+  "weather_code": 3,
+  "observed_at": "2026-06-27T04:00"
+}
