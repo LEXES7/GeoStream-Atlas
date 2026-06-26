@@ -58,7 +58,7 @@ class CityObservation:
         _check_range("humidity_pct", self.humidity_pct, 0.0, 100.0)
         _check_range("precipitation_mm", self.precipitation_mm, 0.0, 2000.0)
         _check_range("wind_speed_kmh", self.wind_speed_kmh, 0.0, 500.0)
-        _check_range("surface_pressure_hpa", self.surface_pressure_hpa, 800.0, 1100.0)
+        _check_range("surface_pressure_hpa", self.surface_pressure_hpa, 450.0, 1100.0)
 
     def to_dict(self) -> dict:
         return asdict(self)
