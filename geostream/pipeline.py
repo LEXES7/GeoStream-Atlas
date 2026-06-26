@@ -55,7 +55,7 @@ def run(settings: Settings | None = None) -> RunManifest:
     )
 
     storage.write_day(settings.data_dir, date, iso_date, slot, cities, nino, enso, manifest)
-    export.build(settings.data_dir, date, iso_date, cities, nino, enso)
+    export.build(settings.data_dir, date, iso_date, slot, cities, nino, enso)
     log.info("run finished", extra={"fields": {
         "slot": slot, "cities_ok": len(cities), "nino_ok": len(nino),
         "enso_phase": enso.phase, "nino34_anomaly_c": enso.nino34_anomaly_c,

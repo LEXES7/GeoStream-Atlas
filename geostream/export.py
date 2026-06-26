@@ -1,13 +1,14 @@
 """Builds the static JSON feed the dashboard reads.
 
 The dashboard is a static site, so instead of parsing the whole dataset in the
-browser we precompute a compact summary here and write it to web/data/. This
-keeps the page fast and the frontend simple.
+browser we precompute compact summaries here and write them to web/data/.
 """
 
 from __future__ import annotations
 
+import csv
 import json
+from datetime import UTC, datetime
 from pathlib import Path
 
 from . import forecast
@@ -15,12 +16,14 @@ from .analysis import EnsoSnapshot
 from .models import CityObservation, NinoObservation
 
 WEB_DATA = Path(__file__).resolve().parent.parent / "web" / "public" / "data"
+INTRADAY_SLOTS = 48
 
 
 def build(
     data_dir: Path,
     date: str,
     iso_date: str,
+    slot: str,
     cities: list[CityObservation],
     nino: list[NinoObservation],
     enso: EnsoSnapshot,
@@ -34,6 +37,8 @@ def build(
     latest = {
         "date": date,
         "iso_date": iso_date,
+        "slot": slot,
+        "generated_utc": datetime.now(UTC).isoformat(),
         "enso": enso.to_dict(),
         "forecast": {
             "current_oni": fc.current_oni,
@@ -69,6 +74,37 @@ def build(
     (web_data / "enso_timeseries.json").write_text(
         json.dumps(timeseries, indent=2), encoding="utf-8"
     )
+
+    (web_data / "intraday.json").write_text(
+        json.dumps(_intraday(data_dir), indent=2), encoding="utf-8"
+    )
+
+
+def _intraday(data_dir: Path) -> dict:
+    """Per-slot global average temperature and Nino 3.4 SST over recent slots."""
+    path = data_dir / "observations.csv"
+    temps: dict[str, list[float]] = {}
+    sst: dict[str, float] = {}
+    if path.exists():
+        with path.open(newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                slot = row.get("slot") or ""
+                if not slot:
+                    continue
+                if row.get("type") == "city" and row.get("temp_c"):
+                    temps.setdefault(slot, []).append(float(row["temp_c"]))
+                elif row.get("location") == "Nino_3_4" and row.get("sea_surface_temp_c"):
+                    sst[slot] = float(row["sea_surface_temp_c"])
+
+    slots = sorted(set(temps) | set(sst))[-INTRADAY_SLOTS:]
+    return {
+        "temp": [
+            {"slot": s, "value": round(sum(temps[s]) / len(temps[s]), 2)}
+            for s in slots
+            if s in temps
+        ],
+        "sst": [{"slot": s, "value": sst[s]} for s in slots if s in sst],
+    }
 
 
 def _stats(cities: list[CityObservation]) -> dict:

@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { loadLatest, loadTimeSeries, PHASE_LABEL } from "./api";
-import type { Latest, TimeSeries } from "./types";
+import { loadIntraday, loadLatest, loadTimeSeries, PHASE_LABEL, timeAgo } from "./api";
+import type { Intraday, Latest, TimeSeries } from "./types";
 import EnsoCard from "./components/EnsoCard";
 import StatGrid from "./components/Stats";
 import NinoRegions from "./components/NinoRegions";
+import IntradayCard from "./components/IntradayCard";
 import WorldMap from "./components/WorldMap";
 import EnsoChart from "./components/EnsoChart";
 import CityTable from "./components/CityTable";
 
 const REPO = "https://github.com/LEXES7/GeoStream-Atlas";
+const REFRESH_MS = 5 * 60 * 1000;
 
 function Section({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   return (
@@ -27,20 +29,35 @@ function Section({ children, delay = 0 }: { children: React.ReactNode; delay?: n
 export default function App() {
   const [latest, setLatest] = useState<Latest | null>(null);
   const [ts, setTs] = useState<TimeSeries | null>(null);
+  const [intraday, setIntraday] = useState<Intraday | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [now, setNow] = useState(Date.now());
 
   useEffect(() => {
-    Promise.all([loadLatest(), loadTimeSeries()])
-      .then(([l, t]) => {
-        setLatest(l);
-        setTs(t);
-      })
-      .catch((e: unknown) => setError(e instanceof Error ? e.message : "Failed to load data"));
+    const fetchAll = () =>
+      Promise.all([loadLatest(), loadTimeSeries(), loadIntraday()])
+        .then(([l, t, i]) => {
+          setLatest(l);
+          setTs(t);
+          setIntraday(i);
+          setError(null);
+        })
+        .catch((e: unknown) => setError(e instanceof Error ? e.message : "Failed to load data"));
+
+    fetchAll();
+    const refresh = setInterval(fetchAll, REFRESH_MS);
+    const tick = setInterval(() => setNow(Date.now()), 30000);
+    return () => {
+      clearInterval(refresh);
+      clearInterval(tick);
+    };
   }, []);
 
-  const updated =
-    latest?.iso_date &&
-    new Date(latest.iso_date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+  const updated = latest?.generated_utc
+    ? timeAgo(latest.generated_utc, now)
+    : latest?.iso_date
+      ? new Date(latest.iso_date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })
+      : "";
   const phase = latest?.forecast?.current_phase && latest.forecast.current_phase !== "unknown"
     ? latest.forecast.current_phase
     : latest?.enso.phase;
@@ -76,7 +93,15 @@ export default function App() {
             </span>
           )}
           <span className="updated">
-            {error ? "Failed to load data" : updated ? `Updated ${updated}` : "Loading…"}
+            {error ? (
+              "Failed to load data"
+            ) : updated ? (
+              <>
+                <span className="live-dot" /> Updated {updated}
+              </>
+            ) : (
+              "Loading…"
+            )}
           </span>
           <a className="ghbtn" href={REPO} target="_blank" rel="noopener noreferrer">
             Repo ↗
@@ -106,6 +131,12 @@ export default function App() {
         {latest && (
           <Section>
             <NinoRegions regions={latest.enso.regions} />
+          </Section>
+        )}
+
+        {intraday && (
+          <Section>
+            <IntradayCard intraday={intraday} />
           </Section>
         )}
 

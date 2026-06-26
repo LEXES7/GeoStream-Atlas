@@ -1,4 +1,4 @@
-import type { Latest, TimeSeries } from "./types";
+import type { Intraday, Latest, TimeSeries } from "./types";
 
 const base = import.meta.env.BASE_URL;
 
@@ -14,6 +14,21 @@ export function loadLatest(): Promise<Latest> {
 
 export function loadTimeSeries(): Promise<TimeSeries> {
   return loadJSON<TimeSeries>("enso_timeseries.json");
+}
+
+export function loadIntraday(): Promise<Intraday> {
+  return loadJSON<Intraday>("intraday.json");
+}
+
+export function timeAgo(iso: string | undefined, now: number): string {
+  if (!iso) return "";
+  const diff = Math.max(0, now - new Date(iso).getTime());
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins} min ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ${mins % 60}m ago`;
+  return `${Math.floor(hrs / 24)}d ago`;
 }
 
 export const PHASE_LABEL: Record<string, string> = {

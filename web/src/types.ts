@@ -57,6 +57,8 @@ export interface Stats {
 export interface Latest {
   date: string;
   iso_date: string;
+  slot?: string;
+  generated_utc?: string;
   enso: Enso;
   forecast: {
     current_oni: number | null;
@@ -79,4 +81,14 @@ export interface TimeSeries {
   rolling: SeriesPoint[];
   projection: SeriesPoint[];
   note: string;
+}
+
+export interface SlotPoint {
+  slot: string;
+  value: number;
+}
+
+export interface Intraday {
+  temp: SlotPoint[];
+  sst: SlotPoint[];
 }

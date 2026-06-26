@@ -51,11 +51,12 @@ def _export() -> int:
     settings = Settings.from_env()
     now = datetime.now(UTC)
     date, iso_date = now.strftime("%m%d%Y"), now.strftime("%Y-%m-%d")
+    slot = now.strftime("%Y-%m-%dT%H:00")
     cities_cfg, nino_cfg = load_locations()
     cities, _ = fetch_cities(cities_cfg, date, iso_date, settings)
     nino, _ = fetch_ninos(nino_cfg, date, iso_date, settings)
     enso = analysis.analyze(date, iso_date, nino)
-    export.build(settings.data_dir, date, iso_date, cities, nino, enso)
+    export.build(settings.data_dir, date, iso_date, slot, cities, nino, enso)
     print("dashboard data exported to web/public/data/.")
     return 0
 
