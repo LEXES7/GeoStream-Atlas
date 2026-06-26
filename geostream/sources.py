@@ -52,7 +52,10 @@ def _first(daily: dict, key: str):
 def fetch_city(loc: Location, date: str, iso_date: str, settings: Settings) -> CityObservation:
     data = _get_json(WEATHER_URL, {
         "latitude": loc.latitude, "longitude": loc.longitude,
-        "current": "temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m,surface_pressure",
+        "current": (
+            "temperature_2m,relative_humidity_2m,precipitation,"
+            "wind_speed_10m,surface_pressure"
+        ),
         "daily": "temperature_2m_max,temperature_2m_min,precipitation_sum",
         "timezone": "auto", "forecast_days": 1,
     }, settings)

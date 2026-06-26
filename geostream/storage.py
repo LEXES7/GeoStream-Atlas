@@ -50,7 +50,9 @@ def write_day(
             )
 
     (day_dir / "enso.json").write_text(json.dumps(enso.to_dict(), indent=2), encoding="utf-8")
-    (day_dir / "_manifest.json").write_text(json.dumps(manifest.to_dict(), indent=2), encoding="utf-8")
+    (day_dir / "_manifest.json").write_text(
+        json.dumps(manifest.to_dict(), indent=2), encoding="utf-8"
+    )
 
     rows = _build_rows(date, iso_date, cities, nino, anomaly_by_region, enso)
     _upsert_csv(data_dir / "observations.csv", date, rows)

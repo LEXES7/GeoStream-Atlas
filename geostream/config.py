@@ -22,7 +22,7 @@ class Settings:
     data_dir: Path = DATA_DIR
 
     @classmethod
-    def from_env(cls) -> "Settings":
+    def from_env(cls) -> Settings:
         return cls(
             max_workers=int(os.environ.get("GEOSTREAM_MAX_WORKERS", "8")),
             request_timeout_s=int(os.environ.get("GEOSTREAM_TIMEOUT", "30")),

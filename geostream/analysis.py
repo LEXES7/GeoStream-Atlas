@@ -10,7 +10,6 @@ approximate and meant to be replaced once enough committed history exists.
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
-from typing import Optional
 
 from .models import NinoObservation
 
@@ -25,7 +24,7 @@ EL_NINO_THRESHOLD = 0.5
 LA_NINA_THRESHOLD = -0.5
 
 
-def classify(anomaly: Optional[float]) -> str:
+def classify(anomaly: float | None) -> str:
     if anomaly is None:
         return "unknown"
     if anomaly >= EL_NINO_THRESHOLD:
@@ -38,9 +37,9 @@ def classify(anomaly: Optional[float]) -> str:
 @dataclass(frozen=True, slots=True)
 class RegionAnomaly:
     name: str
-    observed_sst_c: Optional[float]
-    climatology_c: Optional[float]
-    anomaly_c: Optional[float]
+    observed_sst_c: float | None
+    climatology_c: float | None
+    anomaly_c: float | None
     phase: str
 
 
@@ -49,7 +48,7 @@ class EnsoSnapshot:
     date: str
     iso_date: str
     regions: list[RegionAnomaly]
-    nino34_anomaly_c: Optional[float]
+    nino34_anomaly_c: float | None
     phase: str
     note: str
 
@@ -59,7 +58,7 @@ class EnsoSnapshot:
 
 def analyze(date: str, iso_date: str, nino: list[NinoObservation]) -> EnsoSnapshot:
     regions: list[RegionAnomaly] = []
-    nino34_anomaly: Optional[float] = None
+    nino34_anomaly: float | None = None
 
     for obs in nino:
         clim = CLIMATOLOGY_C.get(obs.name)

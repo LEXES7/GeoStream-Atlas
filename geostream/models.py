@@ -3,14 +3,13 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from typing import Optional
 
 
 class ValidationError(ValueError):
     pass
 
 
-def _check_range(name: str, value: Optional[float], low: float, high: float) -> None:
+def _check_range(name: str, value: float | None, low: float, high: float) -> None:
     if value is None:
         return
     if not isinstance(value, (int, float)):
@@ -42,14 +41,14 @@ class CityObservation:
     city: str
     latitude: float
     longitude: float
-    temperature_c: Optional[float] = None
-    temperature_max_c: Optional[float] = None
-    temperature_min_c: Optional[float] = None
-    humidity_pct: Optional[float] = None
-    precipitation_mm: Optional[float] = None
-    wind_speed_kmh: Optional[float] = None
-    surface_pressure_hpa: Optional[float] = None
-    observed_at: Optional[str] = None
+    temperature_c: float | None = None
+    temperature_max_c: float | None = None
+    temperature_min_c: float | None = None
+    humidity_pct: float | None = None
+    precipitation_mm: float | None = None
+    wind_speed_kmh: float | None = None
+    surface_pressure_hpa: float | None = None
+    observed_at: str | None = None
 
     def __post_init__(self) -> None:
         _check_range("temperature_c", self.temperature_c, -90.0, 60.0)
@@ -72,10 +71,10 @@ class NinoObservation:
     region: str
     latitude: float
     longitude: float
-    sea_surface_temperature_c: Optional[float] = None
-    sst_max_c: Optional[float] = None
-    sst_min_c: Optional[float] = None
-    observed_at: Optional[str] = None
+    sea_surface_temperature_c: float | None = None
+    sst_max_c: float | None = None
+    sst_min_c: float | None = None
+    observed_at: str | None = None
 
     def __post_init__(self) -> None:
         _check_range("sea_surface_temperature_c", self.sea_surface_temperature_c, -5.0, 40.0)
