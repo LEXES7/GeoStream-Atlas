@@ -16,3 +16,4 @@ htmlcov/
 .idea/
 .vscode/
 .qodo/
+commit_plan.tsv

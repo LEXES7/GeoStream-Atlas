@@ -57,6 +57,26 @@ def write_day(
     rows = _build_rows(date, iso_date, cities, nino, anomaly_by_region, enso)
     _upsert_csv(data_dir / "observations.csv", date, rows)
 
+    _write_commit_plan(data_dir, date, cities, nino)
+
+
+def _write_commit_plan(
+    data_dir: Path,
+    date: str,
+    cities: list[CityObservation],
+    nino: list[NinoObservation],
+) -> None:
+    prefix = data_dir.name
+    lines: list[str] = []
+    for c in cities:
+        path = f"{prefix}/{date}/{_safe(c.country or 'Unknown')}/{_safe(c.city)}.json"
+        lines.append(f"{path}\t{c.city}, {c.country} weather {date}")
+    for n in nino:
+        path = f"{prefix}/{date}/_nino_regions/{_safe(n.name)}.json"
+        lines.append(f"{path}\t{n.name} sea surface temperature {date}")
+
+    (data_dir.parent / "commit_plan.tsv").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
 
 def _build_rows(date, iso_date, cities, nino, anomaly_by_region, enso) -> list[dict]:
     rows: list[dict] = []
