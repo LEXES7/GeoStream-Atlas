@@ -4,10 +4,12 @@ from geostream.analysis import analyze
 from geostream.models import CityObservation, NinoObservation, RunManifest
 from geostream.storage import write_day
 
+SLOT = "2026-06-26T08:00"
 
-def _manifest(date="06262026"):
+
+def _manifest(slot=SLOT):
     return RunManifest(
-        date=date, iso_date="2026-06-26", started_utc="t", finished_utc="t",
+        date="06262026", iso_date="2026-06-26", slot=slot, started_utc="t", finished_utc="t",
         cities_requested=1, cities_ok=1, nino_requested=1, nino_ok=1,
         quality_passed=True,
     )
@@ -32,20 +34,23 @@ def _rowcount(path):
         return sum(1 for _ in csv.DictReader(fh))
 
 
-def test_write_day_is_idempotent(tmp_path):
-    date = "06262026"
-    enso = analyze(date, "2026-06-26", [_nino()])
+def test_write_day_is_idempotent_within_slot(tmp_path):
+    enso = analyze("06262026", "2026-06-26", [_nino()])
     for _ in range(3):
-        write_day(tmp_path, date, "2026-06-26", [_city()], [_nino()], enso, _manifest())
+        write_day(tmp_path, "06262026", "2026-06-26", SLOT, [_city()], [_nino()], enso, _manifest())
 
     csv_path = tmp_path / "observations.csv"
     assert _rowcount(csv_path) == 2  # 1 city + 1 nino, no duplicates
-    assert (tmp_path / date / "Sri_Lanka" / "Colombo.json").exists()
-    assert (tmp_path / date / "enso.json").exists()
+    assert (tmp_path / "06262026" / "Sri_Lanka" / "Colombo.json").exists()
+    assert (tmp_path / "06262026" / "enso.json").exists()
 
 
-def test_write_day_appends_distinct_dates(tmp_path):
-    for date in ("06262026", "06272026"):
-        enso = analyze(date, "2026-06-26", [_nino(date)])
-        write_day(tmp_path, date, "2026-06-26", [_city(date)], [_nino(date)], enso, _manifest(date))
-    assert _rowcount(tmp_path / "observations.csv") == 4
+def test_intraday_slots_accumulate(tmp_path):
+    enso = analyze("06262026", "2026-06-26", [_nino()])
+    for slot in ("2026-06-26T08:00", "2026-06-26T10:00", "2026-06-26T12:00"):
+        write_day(
+            tmp_path, "06262026", "2026-06-26", slot,
+            [_city()], [_nino()], enso, _manifest(slot),
+        )
+    # Same day, three slots -> three slots x 2 rows kept.
+    assert _rowcount(tmp_path / "observations.csv") == 6

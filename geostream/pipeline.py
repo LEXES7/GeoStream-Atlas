@@ -24,6 +24,7 @@ def run(settings: Settings | None = None) -> RunManifest:
     started = datetime.now(UTC)
     date = started.strftime("%m%d%Y")
     iso_date = started.strftime("%Y-%m-%d")
+    slot = started.strftime("%Y-%m-%dT%H:00")
 
     cities_cfg, nino_cfg = load_locations()
     log.info(
@@ -46,17 +47,17 @@ def run(settings: Settings | None = None) -> RunManifest:
 
     finished = datetime.now(UTC)
     manifest = RunManifest(
-        date=date, iso_date=iso_date,
+        date=date, iso_date=iso_date, slot=slot,
         started_utc=started.isoformat(), finished_utc=finished.isoformat(),
         cities_requested=len(cities_cfg), cities_ok=len(cities),
         nino_requested=len(nino_cfg), nino_ok=len(nino),
         quality_passed=report.passed, errors=errors,
     )
 
-    storage.write_day(settings.data_dir, date, iso_date, cities, nino, enso, manifest)
+    storage.write_day(settings.data_dir, date, iso_date, slot, cities, nino, enso, manifest)
     export.build(settings.data_dir, date, iso_date, cities, nino, enso)
     log.info("run finished", extra={"fields": {
-        "date": date, "cities_ok": len(cities), "nino_ok": len(nino),
+        "slot": slot, "cities_ok": len(cities), "nino_ok": len(nino),
         "enso_phase": enso.phase, "nino34_anomaly_c": enso.nino34_anomaly_c,
     }})
     return manifest
@@ -96,20 +97,21 @@ def backfill(
     all_dates = sorted(set(cities_by_date) | set(nino_by_date))
     for iso_date in all_dates:
         date = datetime.strptime(iso_date, "%Y-%m-%d").strftime("%m%d%Y")
+        slot = f"{iso_date}T00:00"
         cities = cities_by_date.get(iso_date, [])
         nino = nino_by_date.get(iso_date, [])
         enso = analysis.analyze(date, iso_date, nino)
         if csv_only:
-            storage.upsert_rows(settings.data_dir, date, iso_date, cities, nino, enso)
+            storage.upsert_rows(settings.data_dir, date, iso_date, slot, cities, nino, enso)
         else:
             manifest = RunManifest(
-                date=date, iso_date=iso_date,
+                date=date, iso_date=iso_date, slot=slot,
                 started_utc=iso_date, finished_utc=iso_date,
                 cities_requested=len(cities_cfg), cities_ok=len(cities),
                 nino_requested=len(nino_cfg), nino_ok=len(nino),
                 quality_passed=True, errors=[],
             )
-            storage.write_day(settings.data_dir, date, iso_date, cities, nino, enso, manifest)
+            storage.write_day(settings.data_dir, date, iso_date, slot, cities, nino, enso, manifest)
 
     log.info("backfill finished", extra={"fields": {"days": len(all_dates)}})
     return len(all_dates)

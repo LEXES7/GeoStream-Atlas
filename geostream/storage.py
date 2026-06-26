@@ -1,17 +1,22 @@
-"""Idempotent writers. Re-running a date replaces that date's rows, never dupes."""
+"""Idempotent writers.
+
+The master CSV is keyed on an hourly UTC `slot` (e.g. 2026-06-27T14:00), so
+intraday runs accumulate a time series while re-running the same slot just
+replaces that slot's rows. The per-day JSON folder always holds the latest
+snapshot for the day.
+"""
 
 from __future__ import annotations
 
 import csv
 import json
-from collections import OrderedDict
 from pathlib import Path
 
 from .analysis import EnsoSnapshot
 from .models import CityObservation, NinoObservation, RunManifest
 
 CSV_FIELDS = [
-    "date", "iso_date", "type", "country", "location", "latitude", "longitude",
+    "slot", "date", "iso_date", "type", "country", "location", "latitude", "longitude",
     "temp_c", "temp_max_c", "temp_min_c", "apparent_temp_c", "humidity_pct",
     "precip_mm", "cloud_pct", "wind_kmh", "wind_dir_deg", "pressure_hpa",
     "pressure_msl_hpa", "uv_index_max", "weather_code",
@@ -27,6 +32,7 @@ def write_day(
     data_dir: Path,
     date: str,
     iso_date: str,
+    slot: str,
     cities: list[CityObservation],
     nino: list[NinoObservation],
     enso: EnsoSnapshot,
@@ -55,51 +61,29 @@ def write_day(
         json.dumps(manifest.to_dict(), indent=2), encoding="utf-8"
     )
 
-    upsert_rows(data_dir, date, iso_date, cities, nino, enso)
-    _write_commit_plan(data_dir, date, cities, nino)
+    upsert_rows(data_dir, date, iso_date, slot, cities, nino, enso)
 
 
 def upsert_rows(
     data_dir: Path,
     date: str,
     iso_date: str,
+    slot: str,
     cities: list[CityObservation],
     nino: list[NinoObservation],
     enso: EnsoSnapshot,
 ) -> None:
-    """Update only the master CSV for a date (no per-day JSON partitions)."""
+    """Update only the master CSV for a slot (no per-day JSON partitions)."""
     anomaly_by_region = {r.name: r for r in enso.regions}
-    rows = _build_rows(date, iso_date, cities, nino, anomaly_by_region)
-    _upsert_csv(data_dir / "observations.csv", date, rows)
+    rows = _build_rows(slot, date, iso_date, cities, nino, anomaly_by_region)
+    _upsert_csv(data_dir / "observations.csv", slot, rows)
 
 
-def _write_commit_plan(
-    data_dir: Path,
-    date: str,
-    cities: list[CityObservation],
-    nino: list[NinoObservation],
-) -> None:
-    prefix = data_dir.name
-    by_country: OrderedDict[str, int] = OrderedDict()
-    for c in cities:
-        by_country[c.country or "Unknown"] = by_country.get(c.country or "Unknown", 0) + 1
-
-    lines: list[str] = []
-    for country, count in by_country.items():
-        path = f"{prefix}/{date}/{_safe(country)}"
-        label = f"{count} location{'s' if count != 1 else ''}"
-        lines.append(f"{path}\t{country} weather, {label} {date}")
-    if nino:
-        lines.append(f"{prefix}/{date}/_nino_regions\tPacific Nino regions SST {date}")
-
-    (data_dir.parent / "commit_plan.tsv").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def _build_rows(date, iso_date, cities, nino, anomaly_by_region) -> list[dict]:
+def _build_rows(slot, date, iso_date, cities, nino, anomaly_by_region) -> list[dict]:
     rows: list[dict] = []
     for c in cities:
         rows.append({
-            "date": date, "iso_date": iso_date, "type": "city",
+            "slot": slot, "date": date, "iso_date": iso_date, "type": "city",
             "country": c.country, "location": c.city,
             "latitude": c.latitude, "longitude": c.longitude,
             "temp_c": c.temperature_c, "temp_max_c": c.temperature_max_c,
@@ -114,7 +98,7 @@ def _build_rows(date, iso_date, cities, nino, anomaly_by_region) -> list[dict]:
     for n in nino:
         anom = anomaly_by_region.get(n.name)
         rows.append({
-            "date": date, "iso_date": iso_date, "type": "nino_region",
+            "slot": slot, "date": date, "iso_date": iso_date, "type": "nino_region",
             "country": "", "location": n.name,
             "latitude": n.latitude, "longitude": n.longitude,
             "temp_c": "", "temp_max_c": "", "temp_min_c": "", "apparent_temp_c": "",
@@ -129,11 +113,11 @@ def _build_rows(date, iso_date, cities, nino, anomaly_by_region) -> list[dict]:
     return rows
 
 
-def _upsert_csv(path: Path, date: str, rows: list[dict]) -> None:
+def _upsert_csv(path: Path, slot: str, rows: list[dict]) -> None:
     existing: list[dict] = []
     if path.exists():
         with path.open(newline="", encoding="utf-8") as fh:
-            existing = [r for r in csv.DictReader(fh) if r.get("date") != date]
+            existing = [r for r in csv.DictReader(fh) if r.get("slot") != slot]
 
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as fh:

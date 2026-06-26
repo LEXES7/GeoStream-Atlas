@@ -25,7 +25,10 @@ def _collect() -> int:
     except Exception as err:
         print(f"collection failed: {err}", file=sys.stderr)
         return 1
-    _emit_output(date=manifest.date, cities_ok=manifest.cities_ok, nino_ok=manifest.nino_ok)
+    stamp = manifest.slot.replace("T", " ") + " UTC"
+    _emit_output(
+        slot=manifest.slot, stamp=stamp, cities_ok=manifest.cities_ok, nino_ok=manifest.nino_ok
+    )
     return 0
 
 

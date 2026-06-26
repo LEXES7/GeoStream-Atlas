@@ -102,6 +102,7 @@ class NinoObservation:
 class RunManifest:
     date: str
     iso_date: str
+    slot: str
     started_utc: str
     finished_utc: str
     cities_requested: int
