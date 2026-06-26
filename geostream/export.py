@@ -14,6 +14,7 @@ from pathlib import Path
 from . import forecast
 from .analysis import EnsoSnapshot
 from .models import CityObservation, NinoObservation
+from .regions import continent_of
 
 WEB_DATA = Path(__file__).resolve().parent.parent / "web" / "public" / "data"
 INTRADAY_SLOTS = 48
@@ -49,7 +50,7 @@ def build(
         "stats": _stats(cities),
         "cities": [
             {
-                "city": c.city, "country": c.country,
+                "city": c.city, "country": c.country, "continent": continent_of(c.country),
                 "latitude": c.latitude, "longitude": c.longitude,
                 "temperature_c": c.temperature_c,
                 "apparent_temperature_c": c.apparent_temperature_c,

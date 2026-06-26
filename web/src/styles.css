@@ -109,6 +109,14 @@ main { max-width: 1280px; margin: 0 auto; padding: 8px clamp(16px, 4vw, 48px) 70
 .stat.hot .stat-num { color: var(--hot); }
 .stat.cold .stat-num { color: var(--cold); }
 
+/* Region filter */
+.region-filter { display: flex; flex-wrap: wrap; gap: 8px; }
+.region-chip { display: inline-flex; align-items: center; gap: 7px; background: var(--card); border: 1px solid var(--card-brd); color: var(--muted); font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s, background 0.15s; }
+.region-chip:hover { color: var(--txt); border-color: rgba(255, 255, 255, 0.18); }
+.region-chip.active { color: #06121f; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-color: transparent; }
+.region-count { font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: rgba(255, 255, 255, 0.1); }
+.region-chip.active .region-count { background: rgba(0, 0, 0, 0.18); }
+
 /* AI briefing */
 .briefing-card { padding: 22px 24px; position: relative; overflow: hidden; }
 .briefing-glow { position: absolute; left: -40px; top: -40px; width: 220px; height: 220px; background: radial-gradient(circle, rgba(124, 58, 237, 0.25), transparent 70%); pointer-events: none; }
@@ -195,7 +203,10 @@ td.muted-cell { color: var(--muted); }
 .row-click { cursor: pointer; }
 .modal-backdrop { position: fixed; inset: 0; z-index: 1000; background: rgba(5, 8, 14, 0.72); backdrop-filter: blur(6px); display: grid; place-items: center; padding: 20px; }
 .modal { width: min(560px, 100%); padding: 24px; position: relative; max-height: 90vh; overflow-y: auto; }
-.modal-close { position: absolute; top: 16px; right: 16px; width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--card-brd); background: rgba(255, 255, 255, 0.04); color: var(--muted); cursor: pointer; font-size: 13px; transition: color 0.15s, border-color 0.15s; }
+.modal-actions { position: absolute; top: 16px; right: 16px; display: flex; gap: 8px; align-items: center; }
+.modal-share { height: 30px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--card-brd); background: rgba(255, 255, 255, 0.04); color: var(--muted); cursor: pointer; font-size: 12px; font-weight: 600; font-family: inherit; transition: color 0.15s, border-color 0.15s; }
+.modal-share:hover { color: var(--txt); border-color: var(--accent); }
+.modal-close { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--card-brd); background: rgba(255, 255, 255, 0.04); color: var(--muted); cursor: pointer; font-size: 13px; transition: color 0.15s, border-color 0.15s; }
 .modal-close:hover { color: var(--txt); border-color: var(--accent); }
 .modal-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 .modal-head h3 { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }

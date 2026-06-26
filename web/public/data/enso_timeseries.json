@@ -773,5 +773,5 @@
       "value": 1.404
     }
   ],
-  "note": "Rolling 30-day Nino 3.4 anomaly with a linear-trend projection. Baseline indicator, not a dynamical forecast."
+  "note": "Rolling 30-day Nino 3.4 anomaly with a damped short-term trend. Indicative signal, not a dynamical forecast."
 }

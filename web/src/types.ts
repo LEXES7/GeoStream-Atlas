@@ -20,6 +20,7 @@ export interface Enso {
 export interface City {
   city: string;
   country: string;
+  continent?: string;
   latitude: number;
   longitude: number;
   temperature_c: number | null;

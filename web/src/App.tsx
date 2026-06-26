@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   loadBriefingSafe,
@@ -19,6 +19,7 @@ import WorldMap from "./components/WorldMap";
 import EnsoChart from "./components/EnsoChart";
 import CityTable from "./components/CityTable";
 import CityDetail from "./components/CityDetail";
+import RegionFilter from "./components/RegionFilter";
 
 const REPO = "https://github.com/LEXES7/GeoStream-Atlas";
 const REFRESH_MS = 5 * 60 * 1000;
@@ -43,8 +44,42 @@ export default function App() {
   const [history, setHistory] = useState<CityHistory>({});
   const [briefing, setBriefing] = useState<Briefing | null>(null);
   const [selected, setSelected] = useState<City | null>(null);
+  const [region, setRegion] = useState("All");
   const [error, setError] = useState<string | null>(null);
   const [now, setNow] = useState(Date.now());
+
+  const cities = useMemo(() => latest?.cities ?? [], [latest]);
+  const filteredCities = useMemo(
+    () => (region === "All" ? cities : cities.filter((c) => (c.continent ?? "Other") === region)),
+    [cities, region],
+  );
+
+  // Deep link: open a city from ?city=&country= once data is loaded.
+  useEffect(() => {
+    if (!latest) return;
+    const params = new URLSearchParams(window.location.search);
+    const city = params.get("city");
+    const country = params.get("country");
+    if (city) {
+      const match = latest.cities.find(
+        (c) => c.city === city && (!country || c.country === country),
+      );
+      if (match) setSelected(match);
+    }
+  }, [latest]);
+
+  // Reflect the open city in the URL so it can be shared.
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (selected) {
+      url.searchParams.set("city", selected.city);
+      url.searchParams.set("country", selected.country);
+    } else {
+      url.searchParams.delete("city");
+      url.searchParams.delete("country");
+    }
+    window.history.replaceState({}, "", url);
+  }, [selected]);
 
   useEffect(() => {
     const fetchAll = () =>
@@ -163,13 +198,19 @@ export default function App() {
 
         {latest && (
           <Section>
+            <RegionFilter cities={cities} active={region} onChange={setRegion} />
+          </Section>
+        )}
+
+        {latest && (
+          <Section>
             <section className="card map-card">
               <div className="card-head">
                 <h2>Live conditions</h2>
                 <span className="hint">◆ = Niño ocean buoy · click a marker for detail</span>
               </div>
               <div className="map-host">
-                <WorldMap cities={latest.cities} nino={latest.nino_regions} onSelect={setSelected} />
+                <WorldMap cities={filteredCities} nino={latest.nino_regions} onSelect={setSelected} />
               </div>
             </section>
           </Section>
@@ -191,7 +232,7 @@ export default function App() {
 
         {latest && (
           <Section>
-            <CityTable cities={latest.cities} onSelect={setSelected} />
+            <CityTable cities={filteredCities} onSelect={setSelected} />
           </Section>
         )}
       </main>

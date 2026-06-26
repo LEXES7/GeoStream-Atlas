@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Line } from "react-chartjs-2";
 import {
@@ -55,7 +56,15 @@ export default function CityDetail({
   history: SlotPoint[];
   onClose: () => void;
 }) {
+  const [copied, setCopied] = useState(false);
   const code = city.weather_code !== null ? WMO[city.weather_code] ?? "" : "";
+
+  const share = () => {
+    navigator.clipboard?.writeText(window.location.href).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    });
+  };
   const fill = (ctx: ScriptableContext<"line">) => {
     const { ctx: c, chartArea } = ctx.chart;
     if (!chartArea) return "transparent";
@@ -81,9 +90,14 @@ export default function CityDetail({
         transition={{ type: "spring", stiffness: 200, damping: 22 }}
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close" onClick={onClose} aria-label="Close">
-          ✕
-        </button>
+        <div className="modal-actions">
+          <button className="modal-share" onClick={share}>
+            {copied ? "Copied ✓" : "Copy link"}
+          </button>
+          <button className="modal-close" onClick={onClose} aria-label="Close">
+            ✕
+          </button>
+        </div>
         <div className="modal-head">
           <div>
             <h3>{city.city}</h3>
