@@ -1,0 +1,22 @@
+{
+  "date": "06272026",
+  "iso_date": "2026-06-27",
+  "country": "Netherlands",
+  "city": "Amsterdam",
+  "latitude": 52.3676,
+  "longitude": 4.9041,
+  "temperature_c": 26.5,
+  "temperature_max_c": 32.0,
+  "temperature_min_c": 23.7,
+  "apparent_temperature_c": 27.6,
+  "humidity_pct": 57,
+  "precipitation_mm": 5.2,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 10.1,
+  "wind_direction_deg": 250,
+  "surface_pressure_hpa": 1015.6,
+  "pressure_msl_hpa": 1016.2,
+  "uv_index_max": 6.25,
+  "weather_code": 0,
+  "observed_at": "2026-06-27T05:30"
+}

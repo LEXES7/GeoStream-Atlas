@@ -1,0 +1,22 @@
+{
+  "date": "06272026",
+  "iso_date": "2026-06-27",
+  "country": "Sri Lanka",
+  "city": "Colombo",
+  "latitude": 6.9271,
+  "longitude": 79.8612,
+  "temperature_c": 28.0,
+  "temperature_max_c": 29.4,
+  "temperature_min_c": 24.9,
+  "apparent_temperature_c": 32.6,
+  "humidity_pct": 81,
+  "precipitation_mm": 11.4,
+  "cloud_cover_pct": 83,
+  "wind_speed_kmh": 11.3,
+  "wind_direction_deg": 237,
+  "surface_pressure_hpa": 1009.6,
+  "pressure_msl_hpa": 1010.6,
+  "uv_index_max": 8.35,
+  "weather_code": 95,
+  "observed_at": "2026-06-27T09:00"
+}
