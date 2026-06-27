@@ -174,87 +174,65 @@ export default function App() {
         </div>
       </header>
 
-      <main>
-        {!latest && !error && (
-          <div className="hero">
-            <div className="card skeleton sk-tall" />
-            <div className="stat-grid">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <div key={i} className="card skeleton sk-stat" />
-              ))}
-            </div>
-          </div>
-        )}
+      <main className="layout">
+        <aside className="side-col">
+          {!latest && !error && (
+            <>
+              <div className="card skeleton sk-tall" />
+              <div className="card skeleton sk-stat" />
+              <div className="card skeleton sk-stat" />
+            </>
+          )}
+          {latest && <EnsoCard latest={latest} />}
+          {latest && <StatGrid stats={latest.stats} />}
+          {briefing && <BriefingCard briefing={briefing} />}
+          {latest && <NinoRegions regions={latest.enso.regions} />}
+          {intraday && <IntradayCard intraday={intraday} />}
+        </aside>
 
-        {latest && (
-          <section className="hero">
-            <EnsoCard latest={latest} />
-            <StatGrid stats={latest.stats} />
-          </section>
-        )}
+        <div className="main-col">
+          {latest && <RegionFilter cities={cities} active={region} onChange={setRegion} />}
+          {!latest && !error && <div className="card skeleton sk-map" />}
 
-        {briefing && (
-          <Section>
-            <BriefingCard briefing={briefing} />
-          </Section>
-        )}
+          {latest && (
+            <Section>
+              <section className="card map-card">
+                <div className="card-head">
+                  <h2>Live conditions</h2>
+                  <span className="hint">◆ = Niño ocean buoy · click a marker for detail</span>
+                </div>
+                <div className="map-host">
+                  <WorldMap
+                    cities={filteredCities}
+                    nino={latest.nino_regions}
+                    onSelect={setSelected}
+                    dark={theme === "dark"}
+                  />
+                </div>
+              </section>
+            </Section>
+          )}
 
-        {latest && (
-          <Section>
-            <NinoRegions regions={latest.enso.regions} />
-          </Section>
-        )}
+          {ts && (
+            <Section>
+              <section className="card chart-card">
+                <div className="card-head">
+                  <h2>El Niño signal — Niño 3.4 anomaly</h2>
+                  <span className="hint">Daily anomaly, 30-day index &amp; trend projection</span>
+                </div>
+                <div className="chart-host">
+                  <EnsoChart ts={ts} />
+                </div>
+              </section>
+            </Section>
+          )}
 
-        {intraday && (
-          <Section>
-            <IntradayCard intraday={intraday} />
-          </Section>
-        )}
-
-        {latest && (
-          <Section>
-            <RegionFilter cities={cities} active={region} onChange={setRegion} />
-          </Section>
-        )}
-
-        {latest && (
-          <Section>
-            <section className="card map-card">
-              <div className="card-head">
-                <h2>Live conditions</h2>
-                <span className="hint">◆ = Niño ocean buoy · click a marker for detail</span>
-              </div>
-              <div className="map-host">
-                <WorldMap
-                  cities={filteredCities}
-                  nino={latest.nino_regions}
-                  onSelect={setSelected}
-                  dark={theme === "dark"}
-                />
-              </div>
-            </section>
-          </Section>
-        )}
-
-        {ts && (
-          <Section>
-            <section className="card chart-card">
-              <div className="card-head">
-                <h2>El Niño signal — Niño 3.4 anomaly</h2>
-                <span className="hint">Daily anomaly, 30-day index &amp; trend projection</span>
-              </div>
-              <div className="chart-host">
-                <EnsoChart ts={ts} />
-              </div>
-            </section>
-          </Section>
-        )}
-
-        {latest && (
-          <Section>
-            <CityTable cities={filteredCities} onSelect={setSelected} />
-          </Section>
-        )}
+          {latest && (
+            <Section>
+              <CityTable cities={filteredCities} onSelect={setSelected} />
+            </Section>
+          )}
+        </div>
       </main>
 
       <AnimatePresence>
