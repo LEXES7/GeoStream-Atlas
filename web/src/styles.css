@@ -124,8 +124,11 @@ main { max-width: 1320px; margin: 0 auto; padding: 8px clamp(16px, 4vw, 48px) 70
 
 /* Stats */
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.stat { padding: 20px; display: flex; flex-direction: column; gap: 6px; justify-content: center; transition: transform 0.2s, border-color 0.2s; }
+.stat { padding: 18px; display: flex; flex-direction: column; gap: 5px; justify-content: center; transition: transform 0.2s, border-color 0.2s; position: relative; }
 .stat:hover { transform: translateY(-3px); border-color: rgba(255, 255, 255, 0.16); }
+.stat-icon { font-size: 17px; }
+.map-card, .chart-card, .table-card, .regions-card, .intraday-card, .briefing-card { transition: border-color 0.2s; }
+.map-card:hover, .chart-card:hover, .table-card:hover, .regions-card:hover, .intraday-card:hover, .briefing-card:hover { border-color: rgba(255, 255, 255, 0.16); }
 .stat-num { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .stat-lbl { font-size: 12px; color: var(--muted); }
 .stat.hot .stat-num { color: var(--hot); }
