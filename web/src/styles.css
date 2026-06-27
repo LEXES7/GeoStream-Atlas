@@ -58,7 +58,9 @@ body {
 main, .topbar, footer { position: relative; z-index: 1; }
 
 /* Topbar */
-.topbar { display: flex; align-items: center; justify-content: space-between; padding: 20px clamp(16px, 4vw, 48px); max-width: 1280px; margin: 0 auto; }
+.topbar { position: sticky; top: 0; z-index: 100; background: rgba(8, 11, 18, 0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--card-brd); }
+:root[data-theme="light"] .topbar { background: rgba(238, 242, 248, 0.8); }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px clamp(16px, 4vw, 48px); max-width: 1320px; margin: 0 auto; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 14px; }
 .logo { width: 46px; height: 46px; display: grid; place-items: center; font-size: 24px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-radius: 13px; box-shadow: 0 6px 24px rgba(79, 157, 255, 0.45); }
 .brand h1 { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }

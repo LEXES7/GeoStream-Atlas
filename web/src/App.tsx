@@ -130,6 +130,7 @@ export default function App() {
       <div className="bg-grid" aria-hidden />
 
       <header className="topbar">
+       <div className="topbar-inner">
         <div className="brand">
           <motion.div
             className="logo"
@@ -172,6 +173,7 @@ export default function App() {
             Repo ↗
           </a>
         </div>
+       </div>
       </header>
 
       <main className="layout">
@@ -251,7 +253,7 @@ export default function App() {
           <a href="https://open-meteo.com" target="_blank" rel="noopener noreferrer">
             Open-Meteo
           </a>{" "}
-          (CC BY 4.0) · Updated daily by GitHub Actions · MIT licensed
+          (CC BY 4.0) · Refreshed automatically by GitHub Actions · MIT licensed
         </p>
         <p className="muted">
           ENSO read-out is a daily indicator, not an official NOAA classification. See the repository for methodology.

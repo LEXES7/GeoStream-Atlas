@@ -70,10 +70,23 @@ const options: ChartOptions<"line"> = {
 };
 
 export default function EnsoChart({ ts }: { ts: TimeSeries }) {
+  const lastRolling = ts.rolling.length - 1;
   const data = {
     datasets: [
       { label: "Daily anomaly", data: toXY(ts.anomaly), borderColor: "rgba(79,157,255,0.3)", borderWidth: 1, pointRadius: 0, tension: 0.3 },
-      { label: "30-day index (ONI)", data: toXY(ts.rolling), borderColor: "#38e0c4", borderWidth: 2.5, pointRadius: 0, tension: 0.3, fill: "origin", backgroundColor: fill },
+      {
+        label: "30-day index (ONI)",
+        data: toXY(ts.rolling),
+        borderColor: "#38e0c4",
+        borderWidth: 2.5,
+        tension: 0.3,
+        fill: "origin",
+        backgroundColor: fill,
+        pointRadius: (c: ScriptableContext<"line">) => (c.dataIndex === lastRolling ? 5 : 0),
+        pointBackgroundColor: "#38e0c4",
+        pointBorderColor: "#0a0e17",
+        pointBorderWidth: 2,
+      },
       { label: "Projection", data: toXY(ts.projection), borderColor: "#ffb454", borderWidth: 2, borderDash: [6, 5], pointRadius: 0, tension: 0.3 },
     ],
   };
