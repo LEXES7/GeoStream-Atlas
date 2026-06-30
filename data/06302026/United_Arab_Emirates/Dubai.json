@@ -1,0 +1,22 @@
+{
+  "date": "06302026",
+  "iso_date": "2026-06-30",
+  "country": "United Arab Emirates",
+  "city": "Dubai",
+  "latitude": 25.2048,
+  "longitude": 55.2708,
+  "temperature_c": 31.4,
+  "temperature_max_c": 37.1,
+  "temperature_min_c": 29.1,
+  "apparent_temperature_c": 37.0,
+  "humidity_pct": 70,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 9.1,
+  "wind_direction_deg": 171,
+  "surface_pressure_hpa": 997.8,
+  "pressure_msl_hpa": 998.5,
+  "uv_index_max": 8.9,
+  "weather_code": 0,
+  "observed_at": "2026-06-30T07:30"
+}

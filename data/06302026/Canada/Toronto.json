@@ -1,0 +1,22 @@
+{
+  "date": "06302026",
+  "iso_date": "2026-06-30",
+  "country": "Canada",
+  "city": "Toronto",
+  "latitude": 43.6532,
+  "longitude": -79.3832,
+  "temperature_c": 18.7,
+  "temperature_max_c": 27.6,
+  "temperature_min_c": 16.3,
+  "apparent_temperature_c": 17.9,
+  "humidity_pct": 68,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 11.2,
+  "wind_direction_deg": 57,
+  "surface_pressure_hpa": 1004.9,
+  "pressure_msl_hpa": 1016.6,
+  "uv_index_max": 7.25,
+  "weather_code": 0,
+  "observed_at": "2026-06-29T23:30"
+}
