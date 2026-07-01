@@ -1,0 +1,22 @@
+{
+  "date": "07012026",
+  "iso_date": "2026-07-01",
+  "country": "Colombia",
+  "city": "Bogota",
+  "latitude": 4.711,
+  "longitude": -74.0721,
+  "temperature_c": 13.0,
+  "temperature_max_c": 17.7,
+  "temperature_min_c": 12.2,
+  "apparent_temperature_c": 13.1,
+  "humidity_pct": 96,
+  "precipitation_mm": 13.5,
+  "cloud_cover_pct": 99,
+  "wind_speed_kmh": 4.0,
+  "wind_direction_deg": 87,
+  "surface_pressure_hpa": 757.1,
+  "pressure_msl_hpa": 1018.7,
+  "uv_index_max": 7.25,
+  "weather_code": 3,
+  "observed_at": "2026-06-30T22:45"
+}
