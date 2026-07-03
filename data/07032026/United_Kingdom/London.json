@@ -1,0 +1,22 @@
+{
+  "date": "07032026",
+  "iso_date": "2026-07-03",
+  "country": "United Kingdom",
+  "city": "London",
+  "latitude": 51.5074,
+  "longitude": -0.1278,
+  "temperature_c": 15.4,
+  "temperature_max_c": 26.2,
+  "temperature_min_c": 15.1,
+  "apparent_temperature_c": 13.5,
+  "humidity_pct": 58,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 20,
+  "wind_speed_kmh": 8.3,
+  "wind_direction_deg": 330,
+  "surface_pressure_hpa": 1026.8,
+  "pressure_msl_hpa": 1028.7,
+  "uv_index_max": 5.25,
+  "weather_code": 1,
+  "observed_at": "2026-07-03T04:15"
+}

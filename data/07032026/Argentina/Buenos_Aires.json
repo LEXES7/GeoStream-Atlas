@@ -1,0 +1,22 @@
+{
+  "date": "07032026",
+  "iso_date": "2026-07-03",
+  "country": "Argentina",
+  "city": "Buenos Aires",
+  "latitude": -34.6037,
+  "longitude": -58.3816,
+  "temperature_c": 3.1,
+  "temperature_max_c": 8.3,
+  "temperature_min_c": 0.4,
+  "apparent_temperature_c": -0.6,
+  "humidity_pct": 75,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 9.3,
+  "wind_direction_deg": 217,
+  "surface_pressure_hpa": 1030.1,
+  "pressure_msl_hpa": 1032.4,
+  "uv_index_max": 3.35,
+  "weather_code": 0,
+  "observed_at": "2026-07-03T00:15"
+}
