@@ -1,0 +1,22 @@
+{
+  "date": "07042026",
+  "iso_date": "2026-07-04",
+  "country": "Senegal",
+  "city": "Dakar",
+  "latitude": 14.7167,
+  "longitude": -17.4677,
+  "temperature_c": 25.1,
+  "temperature_max_c": 29.0,
+  "temperature_min_c": 25.1,
+  "apparent_temperature_c": 28.0,
+  "humidity_pct": 88,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 87,
+  "wind_speed_kmh": 17.4,
+  "wind_direction_deg": 339,
+  "surface_pressure_hpa": 1008.9,
+  "pressure_msl_hpa": 1013.4,
+  "uv_index_max": 8.55,
+  "weather_code": 3,
+  "observed_at": "2026-07-04T06:45"
+}

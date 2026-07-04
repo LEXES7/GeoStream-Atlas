@@ -1,0 +1,22 @@
+{
+  "date": "07042026",
+  "iso_date": "2026-07-04",
+  "country": "United States",
+  "city": "Chicago",
+  "latitude": 41.8781,
+  "longitude": -87.6298,
+  "temperature_c": 21.3,
+  "temperature_max_c": 26.0,
+  "temperature_min_c": 19.9,
+  "apparent_temperature_c": 23.6,
+  "humidity_pct": 93,
+  "precipitation_mm": 10.88,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 10.9,
+  "wind_direction_deg": 214,
+  "surface_pressure_hpa": 986.9,
+  "pressure_msl_hpa": 1014.8,
+  "uv_index_max": 6.7,
+  "weather_code": 3,
+  "observed_at": "2026-07-04T01:45"
+}
