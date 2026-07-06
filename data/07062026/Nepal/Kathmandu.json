@@ -5,18 +5,18 @@
   "city": "Kathmandu",
   "latitude": 27.7172,
   "longitude": 85.324,
-  "temperature_c": 21.0,
+  "temperature_c": 20.8,
   "temperature_max_c": 27.2,
   "temperature_min_c": 20.8,
-  "apparent_temperature_c": 24.9,
+  "apparent_temperature_c": 24.6,
   "humidity_pct": 100,
   "precipitation_mm": 9.7,
   "cloud_cover_pct": 100,
-  "wind_speed_kmh": 3.5,
+  "wind_speed_kmh": 3.9,
   "wind_direction_deg": 156,
   "surface_pressure_hpa": 865.0,
-  "pressure_msl_hpa": 1003.9,
+  "pressure_msl_hpa": 1004.0,
   "uv_index_max": 8.0,
   "weather_code": 3,
-  "observed_at": "2026-07-07T03:15"
+  "observed_at": "2026-07-07T04:45"
 }
