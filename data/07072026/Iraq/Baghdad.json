@@ -1,0 +1,22 @@
+{
+  "date": "07072026",
+  "iso_date": "2026-07-07",
+  "country": "Iraq",
+  "city": "Baghdad",
+  "latitude": 33.3152,
+  "longitude": 44.3661,
+  "temperature_c": 31.7,
+  "temperature_max_c": 44.7,
+  "temperature_min_c": 31.6,
+  "apparent_temperature_c": 31.6,
+  "humidity_pct": 29,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 3.9,
+  "wind_direction_deg": 304,
+  "surface_pressure_hpa": 996.4,
+  "pressure_msl_hpa": 1000.3,
+  "uv_index_max": 7.85,
+  "weather_code": 0,
+  "observed_at": "2026-07-07T06:15"
+}

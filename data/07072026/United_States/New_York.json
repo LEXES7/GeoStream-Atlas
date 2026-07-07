@@ -1,0 +1,22 @@
+{
+  "date": "07072026",
+  "iso_date": "2026-07-07",
+  "country": "United States",
+  "city": "New York",
+  "latitude": 40.7128,
+  "longitude": -74.006,
+  "temperature_c": 18.8,
+  "temperature_max_c": 22.0,
+  "temperature_min_c": 18.6,
+  "apparent_temperature_c": 19.6,
+  "humidity_pct": 93,
+  "precipitation_mm": 46.6,
+  "cloud_cover_pct": 97,
+  "wind_speed_kmh": 13.5,
+  "wind_direction_deg": 56,
+  "surface_pressure_hpa": 1014.5,
+  "pressure_msl_hpa": 1018.3,
+  "uv_index_max": 0.9,
+  "weather_code": 3,
+  "observed_at": "2026-07-06T23:15"
+}
