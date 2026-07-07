@@ -1,8 +1,8 @@
 {
   "date": "07072026",
   "iso_date": "2026-07-07",
-  "slot": "2026-07-07T03:00",
-  "generated_utc": "2026-07-07T03:27:41.586057+00:00",
+  "slot": "2026-07-07T07:00",
+  "generated_utc": "2026-07-07T07:39:12.409624+00:00",
   "enso": {
     "date": "07072026",
     "iso_date": "2026-07-07",
@@ -16,16 +16,16 @@
       },
       {
         "name": "Nino_3",
-        "observed_sst_c": 29.4,
+        "observed_sst_c": 29.3,
         "climatology_c": 28.1,
-        "anomaly_c": 1.3,
+        "anomaly_c": 1.2,
         "phase": "el_nino"
       },
       {
         "name": "Nino_3_4",
-        "observed_sst_c": 31.0,
+        "observed_sst_c": 30.8,
         "climatology_c": 29.1,
-        "anomaly_c": 1.9,
+        "anomaly_c": 1.7,
         "phase": "el_nino"
       },
       {
@@ -36,29 +36,29 @@
         "phase": "la_nina"
       }
     ],
-    "nino34_anomaly_c": 1.9,
+    "nino34_anomaly_c": 1.7,
     "phase": "el_nino",
     "note": "Daily anomaly vs the source's period-mean SST, not the official smoothed ONI."
   },
   "forecast": {
-    "current_oni": 1.458,
+    "current_oni": 1.452,
     "current_phase": "el_nino",
-    "trend_per_month": 0.685,
+    "trend_per_month": 0.684,
     "note": "Rolling 30-day Nino 3.4 anomaly with a damped short-term trend. Indicative signal, not a dynamical forecast."
   },
   "stats": {
     "city_count": 74,
     "country_count": 57,
-    "avg_temp_c": 22.8,
+    "avg_temp_c": 24.1,
     "hottest": {
-      "city": "Taipei",
-      "country": "Taiwan",
-      "temp_c": 34.0
+      "city": "Baghdad",
+      "country": "Iraq",
+      "temp_c": 41.0
     },
     "coldest": {
       "city": "Buenos Aires",
       "country": "Argentina",
-      "temp_c": 5.3
+      "temp_c": 3.2
     }
   },
   "cities": [
@@ -68,13 +68,13 @@
       "continent": "Africa",
       "latitude": -8.839,
       "longitude": 13.2894,
-      "temperature_c": 18.4,
-      "apparent_temperature_c": 20.7,
-      "humidity_pct": 96,
+      "temperature_c": 21.1,
+      "apparent_temperature_c": 22.6,
+      "humidity_pct": 80,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 35,
-      "wind_speed_kmh": 3.0,
-      "weather_code": 1
+      "cloud_cover_pct": 100,
+      "wind_speed_kmh": 7.9,
+      "weather_code": 3
     },
     {
       "city": "Buenos Aires",
@@ -82,13 +82,13 @@
       "continent": "South America",
       "latitude": -34.6037,
       "longitude": -58.3816,
-      "temperature_c": 5.3,
-      "apparent_temperature_c": 2.0,
-      "humidity_pct": 79,
+      "temperature_c": 3.2,
+      "apparent_temperature_c": -0.1,
+      "humidity_pct": 81,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 0,
-      "wind_speed_kmh": 9.7,
-      "weather_code": 0
+      "cloud_cover_pct": 28,
+      "wind_speed_kmh": 8.5,
+      "weather_code": 1
     },
     {
       "city": "Darwin",
@@ -96,12 +96,12 @@
       "continent": "Oceania",
       "latitude": -12.4634,
       "longitude": 130.8456,
-      "temperature_c": 27.4,
-      "apparent_temperature_c": 27.6,
-      "humidity_pct": 46,
+      "temperature_c": 29.0,
+      "apparent_temperature_c": 28.9,
+      "humidity_pct": 41,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 0,
-      "wind_speed_kmh": 18.0,
+      "wind_speed_kmh": 10.8,
       "weather_code": 0
     },
     {
@@ -110,13 +110,13 @@
       "continent": "Oceania",
       "latitude": -37.8136,
       "longitude": 144.9631,
-      "temperature_c": 10.9,
-      "apparent_temperature_c": 9.9,
-      "humidity_pct": 78,
+      "temperature_c": 8.8,
+      "apparent_temperature_c": 7.2,
+      "humidity_pct": 88,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 34,
-      "wind_speed_kmh": 2.0,
-      "weather_code": 1
+      "cloud_cover_pct": 4,
+      "wind_speed_kmh": 5.7,
+      "weather_code": 0
     },
     {
       "city": "Sydney",
@@ -124,13 +124,13 @@
       "continent": "Oceania",
       "latitude": -33.8688,
       "longitude": 151.2093,
-      "temperature_c": 15.2,
-      "apparent_temperature_c": 11.8,
-      "humidity_pct": 74,
+      "temperature_c": 14.2,
+      "apparent_temperature_c": 12.1,
+      "humidity_pct": 81,
       "precipitation_mm": 4.1,
-      "cloud_cover_pct": 68,
-      "wind_speed_kmh": 23.9,
-      "weather_code": 53
+      "cloud_cover_pct": 49,
+      "wind_speed_kmh": 16.2,
+      "weather_code": 1
     },
     {
       "city": "Dhaka",
@@ -138,13 +138,13 @@
       "continent": "Asia",
       "latitude": 23.8103,
       "longitude": 90.4125,
-      "temperature_c": 27.3,
-      "apparent_temperature_c": 31.8,
-      "humidity_pct": 85,
+      "temperature_c": 29.8,
+      "apparent_temperature_c": 34.6,
+      "humidity_pct": 78,
       "precipitation_mm": 11.3,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 13.3,
-      "weather_code": 53
+      "cloud_cover_pct": 82,
+      "wind_speed_kmh": 16.0,
+      "weather_code": 51
     },
     {
       "city": "Rio de Janeiro",
@@ -152,13 +152,13 @@
       "continent": "South America",
       "latitude": -22.9068,
       "longitude": -43.1729,
-      "temperature_c": 18.9,
-      "apparent_temperature_c": 20.8,
-      "humidity_pct": 92,
+      "temperature_c": 18.2,
+      "apparent_temperature_c": 19.4,
+      "humidity_pct": 95,
       "precipitation_mm": 3.0,
-      "cloud_cover_pct": 4,
-      "wind_speed_kmh": 5.3,
-      "weather_code": 0
+      "cloud_cover_pct": 28,
+      "wind_speed_kmh": 10.0,
+      "weather_code": 1
     },
     {
       "city": "Sao Paulo",
@@ -166,11 +166,11 @@
       "continent": "South America",
       "latitude": -23.5505,
       "longitude": -46.6333,
-      "temperature_c": 15.8,
-      "apparent_temperature_c": 15.8,
-      "humidity_pct": 80,
+      "temperature_c": 13.9,
+      "apparent_temperature_c": 13.4,
+      "humidity_pct": 82,
       "precipitation_mm": 1.5,
-      "cloud_cover_pct": 0,
+      "cloud_cover_pct": 2,
       "wind_speed_kmh": 4.8,
       "weather_code": 0
     },
@@ -180,13 +180,13 @@
       "continent": "North America",
       "latitude": 43.6532,
       "longitude": -79.3832,
-      "temperature_c": 20.9,
-      "apparent_temperature_c": 22.2,
-      "humidity_pct": 92,
+      "temperature_c": 19.6,
+      "apparent_temperature_c": 20.7,
+      "humidity_pct": 95,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 99,
-      "wind_speed_kmh": 15.5,
-      "weather_code": 3
+      "cloud_cover_pct": 17,
+      "wind_speed_kmh": 14.3,
+      "weather_code": 0
     },
     {
       "city": "Vancouver",
@@ -194,12 +194,12 @@
       "continent": "North America",
       "latitude": 49.2827,
       "longitude": -123.1207,
-      "temperature_c": 21.8,
-      "apparent_temperature_c": 24.1,
-      "humidity_pct": 76,
+      "temperature_c": 15.9,
+      "apparent_temperature_c": 15.6,
+      "humidity_pct": 80,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 3,
-      "wind_speed_kmh": 2.3,
+      "wind_speed_kmh": 7.2,
       "weather_code": 0
     },
     {
@@ -208,12 +208,12 @@
       "continent": "South America",
       "latitude": -33.4489,
       "longitude": -70.6693,
-      "temperature_c": 10.5,
-      "apparent_temperature_c": 7.0,
-      "humidity_pct": 24,
+      "temperature_c": 10.2,
+      "apparent_temperature_c": 6.3,
+      "humidity_pct": 18,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 75,
-      "wind_speed_kmh": 2.2,
+      "cloud_cover_pct": 57,
+      "wind_speed_kmh": 2.8,
       "weather_code": 2
     },
     {
@@ -222,12 +222,12 @@
       "continent": "Asia",
       "latitude": 39.9042,
       "longitude": 116.4074,
-      "temperature_c": 32.3,
-      "apparent_temperature_c": 35.7,
-      "humidity_pct": 42,
+      "temperature_c": 28.3,
+      "apparent_temperature_c": 31.1,
+      "humidity_pct": 61,
       "precipitation_mm": 4.6,
-      "cloud_cover_pct": 73,
-      "wind_speed_kmh": 1.2,
+      "cloud_cover_pct": 85,
+      "wind_speed_kmh": 7.1,
       "weather_code": 51
     },
     {
@@ -236,12 +236,12 @@
       "continent": "Asia",
       "latitude": 22.3193,
       "longitude": 114.1694,
-      "temperature_c": 26.0,
-      "apparent_temperature_c": 31.0,
-      "humidity_pct": 94,
+      "temperature_c": 26.5,
+      "apparent_temperature_c": 31.3,
+      "humidity_pct": 90,
       "precipitation_mm": 18.0,
-      "cloud_cover_pct": 98,
-      "wind_speed_kmh": 11.7,
+      "cloud_cover_pct": 99,
+      "wind_speed_kmh": 12.3,
       "weather_code": 51
     },
     {
@@ -250,12 +250,12 @@
       "continent": "Asia",
       "latitude": 31.2304,
       "longitude": 121.4737,
-      "temperature_c": 32.6,
-      "apparent_temperature_c": 38.4,
+      "temperature_c": 33.8,
+      "apparent_temperature_c": 39.6,
       "humidity_pct": 66,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 12.1,
+      "cloud_cover_pct": 89,
+      "wind_speed_kmh": 15.2,
       "weather_code": 3
     },
     {
@@ -264,12 +264,12 @@
       "continent": "South America",
       "latitude": 4.711,
       "longitude": -74.0721,
-      "temperature_c": 12.8,
-      "apparent_temperature_c": 12.8,
-      "humidity_pct": 92,
-      "precipitation_mm": 2.2,
-      "cloud_cover_pct": 28,
-      "wind_speed_kmh": 3.1,
+      "temperature_c": 11.7,
+      "apparent_temperature_c": 11.5,
+      "humidity_pct": 96,
+      "precipitation_mm": 2.6,
+      "cloud_cover_pct": 36,
+      "wind_speed_kmh": 3.7,
       "weather_code": 1
     },
     {
@@ -278,13 +278,13 @@
       "continent": "South America",
       "latitude": -2.1894,
       "longitude": -79.8891,
-      "temperature_c": 25.4,
-      "apparent_temperature_c": 28.7,
-      "humidity_pct": 83,
+      "temperature_c": 24.4,
+      "apparent_temperature_c": 27.8,
+      "humidity_pct": 85,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 12,
-      "wind_speed_kmh": 11.9,
-      "weather_code": 0
+      "cloud_cover_pct": 20,
+      "wind_speed_kmh": 8.9,
+      "weather_code": 1
     },
     {
       "city": "Quito",
@@ -292,12 +292,12 @@
       "continent": "South America",
       "latitude": -0.1807,
       "longitude": -78.4678,
-      "temperature_c": 11.7,
-      "apparent_temperature_c": 10.0,
-      "humidity_pct": 69,
+      "temperature_c": 9.8,
+      "apparent_temperature_c": 8.4,
+      "humidity_pct": 78,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 36,
-      "wind_speed_kmh": 5.3,
+      "cloud_cover_pct": 25,
+      "wind_speed_kmh": 3.1,
       "weather_code": 1
     },
     {
@@ -306,13 +306,13 @@
       "continent": "Africa",
       "latitude": 30.0444,
       "longitude": 31.2357,
-      "temperature_c": 23.9,
-      "apparent_temperature_c": 27.3,
-      "humidity_pct": 81,
+      "temperature_c": 28.4,
+      "apparent_temperature_c": 32.0,
+      "humidity_pct": 57,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 54,
-      "wind_speed_kmh": 4.7,
-      "weather_code": 2
+      "cloud_cover_pct": 32,
+      "wind_speed_kmh": 7.2,
+      "weather_code": 1
     },
     {
       "city": "Addis Ababa",
@@ -320,12 +320,12 @@
       "continent": "Africa",
       "latitude": 9.03,
       "longitude": 38.74,
-      "temperature_c": 11.1,
-      "apparent_temperature_c": 10.5,
-      "humidity_pct": 98,
+      "temperature_c": 18.2,
+      "apparent_temperature_c": 17.7,
+      "humidity_pct": 65,
       "precipitation_mm": 5.9,
       "cloud_cover_pct": 100,
-      "wind_speed_kmh": 5.3,
+      "wind_speed_kmh": 6.6,
       "weather_code": 3
     },
     {
@@ -334,13 +334,13 @@
       "continent": "Oceania",
       "latitude": -18.1248,
       "longitude": 178.4501,
-      "temperature_c": 23.1,
-      "apparent_temperature_c": 24.2,
-      "humidity_pct": 71,
+      "temperature_c": 19.8,
+      "apparent_temperature_c": 21.9,
+      "humidity_pct": 84,
       "precipitation_mm": 0.3,
-      "cloud_cover_pct": 75,
-      "wind_speed_kmh": 10.3,
-      "weather_code": 2
+      "cloud_cover_pct": 38,
+      "wind_speed_kmh": 2.9,
+      "weather_code": 1
     },
     {
       "city": "Paris",
@@ -348,13 +348,13 @@
       "continent": "Europe",
       "latitude": 48.8566,
       "longitude": 2.3522,
-      "temperature_c": 23.4,
-      "apparent_temperature_c": 23.5,
-      "humidity_pct": 47,
+      "temperature_c": 26.1,
+      "apparent_temperature_c": 25.8,
+      "humidity_pct": 39,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 2.3,
-      "weather_code": 3
+      "cloud_cover_pct": 61,
+      "wind_speed_kmh": 4.7,
+      "weather_code": 2
     },
     {
       "city": "Papeete",
@@ -362,13 +362,13 @@
       "continent": "Oceania",
       "latitude": -17.5516,
       "longitude": -149.5585,
-      "temperature_c": 26.0,
-      "apparent_temperature_c": 28.9,
-      "humidity_pct": 74,
+      "temperature_c": 22.6,
+      "apparent_temperature_c": 26.0,
+      "humidity_pct": 90,
       "precipitation_mm": 16.6,
-      "cloud_cover_pct": 16,
-      "wind_speed_kmh": 9.7,
-      "weather_code": 0
+      "cloud_cover_pct": 37,
+      "wind_speed_kmh": 6.3,
+      "weather_code": 1
     },
     {
       "city": "Berlin",
@@ -376,12 +376,12 @@
       "continent": "Europe",
       "latitude": 52.52,
       "longitude": 13.405,
-      "temperature_c": 17.8,
-      "apparent_temperature_c": 17.8,
-      "humidity_pct": 85,
-      "precipitation_mm": 3.2,
+      "temperature_c": 19.1,
+      "apparent_temperature_c": 18.0,
+      "humidity_pct": 76,
+      "precipitation_mm": 3.4,
       "cloud_cover_pct": 100,
-      "wind_speed_kmh": 11.5,
+      "wind_speed_kmh": 17.7,
       "weather_code": 61
     },
     {
@@ -390,13 +390,13 @@
       "continent": "Africa",
       "latitude": 5.6037,
       "longitude": -0.187,
-      "temperature_c": 24.8,
-      "apparent_temperature_c": 28.8,
-      "humidity_pct": 90,
+      "temperature_c": 25.8,
+      "apparent_temperature_c": 30.0,
+      "humidity_pct": 86,
       "precipitation_mm": 1.6,
-      "cloud_cover_pct": 89,
-      "wind_speed_kmh": 10.1,
-      "weather_code": 3
+      "cloud_cover_pct": 66,
+      "wind_speed_kmh": 9.0,
+      "weather_code": 2
     },
     {
       "city": "Athens",
@@ -404,13 +404,13 @@
       "continent": "Europe",
       "latitude": 37.9838,
       "longitude": 23.7275,
-      "temperature_c": 22.1,
-      "apparent_temperature_c": 21.0,
-      "humidity_pct": 43,
+      "temperature_c": 30.4,
+      "apparent_temperature_c": 30.4,
+      "humidity_pct": 30,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 1,
-      "wind_speed_kmh": 5.9,
-      "weather_code": 0
+      "cloud_cover_pct": 8,
+      "wind_speed_kmh": 7.3,
+      "weather_code": 1
     },
     {
       "city": "Chennai",
@@ -418,12 +418,12 @@
       "continent": "Asia",
       "latitude": 13.0827,
       "longitude": 80.2707,
-      "temperature_c": 32.4,
-      "apparent_temperature_c": 33.8,
-      "humidity_pct": 49,
+      "temperature_c": 37.9,
+      "apparent_temperature_c": 39.1,
+      "humidity_pct": 35,
       "precipitation_mm": 1.3,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 17.4,
+      "cloud_cover_pct": 91,
+      "wind_speed_kmh": 22.2,
       "weather_code": 3
     },
     {
@@ -432,13 +432,13 @@
       "continent": "Asia",
       "latitude": 28.6139,
       "longitude": 77.209,
-      "temperature_c": 28.1,
-      "apparent_temperature_c": 34.3,
-      "humidity_pct": 89,
+      "temperature_c": 33.2,
+      "apparent_temperature_c": 41.5,
+      "humidity_pct": 65,
       "precipitation_mm": 5.2,
-      "cloud_cover_pct": 93,
-      "wind_speed_kmh": 8.7,
-      "weather_code": 53
+      "cloud_cover_pct": 81,
+      "wind_speed_kmh": 4.9,
+      "weather_code": 96
     },
     {
       "city": "Mumbai",
@@ -447,12 +447,12 @@
       "latitude": 19.076,
       "longitude": 72.8777,
       "temperature_c": 26.6,
-      "apparent_temperature_c": 30.4,
-      "humidity_pct": 93,
+      "apparent_temperature_c": 31.1,
+      "humidity_pct": 90,
       "precipitation_mm": 64.1,
       "cloud_cover_pct": 100,
-      "wind_speed_kmh": 21.3,
-      "weather_code": 96
+      "wind_speed_kmh": 14.6,
+      "weather_code": 80
     },
     {
       "city": "Jakarta",
@@ -460,13 +460,13 @@
       "continent": "Asia",
       "latitude": -6.2088,
       "longitude": 106.8456,
-      "temperature_c": 31.1,
-      "apparent_temperature_c": 36.5,
-      "humidity_pct": 58,
+      "temperature_c": 32.9,
+      "apparent_temperature_c": 36.1,
+      "humidity_pct": 50,
       "precipitation_mm": 1.4,
-      "cloud_cover_pct": 0,
-      "wind_speed_kmh": 2.0,
-      "weather_code": 0
+      "cloud_cover_pct": 52,
+      "wind_speed_kmh": 8.1,
+      "weather_code": 53
     },
     {
       "city": "Surabaya",
@@ -474,12 +474,12 @@
       "continent": "Asia",
       "latitude": -7.2575,
       "longitude": 112.7521,
-      "temperature_c": 30.3,
-      "apparent_temperature_c": 33.7,
-      "humidity_pct": 50,
+      "temperature_c": 31.2,
+      "apparent_temperature_c": 32.8,
+      "humidity_pct": 51,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 3,
-      "wind_speed_kmh": 8.0,
+      "cloud_cover_pct": 0,
+      "wind_speed_kmh": 15.3,
       "weather_code": 0
     },
     {
@@ -488,13 +488,13 @@
       "continent": "Asia",
       "latitude": 35.6892,
       "longitude": 51.389,
-      "temperature_c": 26.8,
-      "apparent_temperature_c": 25.2,
-      "humidity_pct": 24,
+      "temperature_c": 35.7,
+      "apparent_temperature_c": 35.5,
+      "humidity_pct": 18,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 43,
-      "wind_speed_kmh": 1.9,
-      "weather_code": 1
+      "cloud_cover_pct": 18,
+      "wind_speed_kmh": 11.1,
+      "weather_code": 0
     },
     {
       "city": "Baghdad",
@@ -502,12 +502,12 @@
       "continent": "Asia",
       "latitude": 33.3152,
       "longitude": 44.3661,
-      "temperature_c": 31.7,
-      "apparent_temperature_c": 31.6,
-      "humidity_pct": 29,
+      "temperature_c": 41.0,
+      "apparent_temperature_c": 41.9,
+      "humidity_pct": 16,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 0,
-      "wind_speed_kmh": 3.9,
+      "wind_speed_kmh": 7.7,
       "weather_code": 0
     },
     {
@@ -516,12 +516,12 @@
       "continent": "Europe",
       "latitude": 41.9028,
       "longitude": 12.4964,
-      "temperature_c": 21.7,
-      "apparent_temperature_c": 24.0,
-      "humidity_pct": 77,
+      "temperature_c": 27.3,
+      "apparent_temperature_c": 29.1,
+      "humidity_pct": 50,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 0,
-      "wind_speed_kmh": 2.5,
+      "wind_speed_kmh": 1.6,
       "weather_code": 0
     },
     {
@@ -530,12 +530,12 @@
       "continent": "Asia",
       "latitude": 34.6937,
       "longitude": 135.5023,
-      "temperature_c": 28.4,
-      "apparent_temperature_c": 32.2,
-      "humidity_pct": 65,
+      "temperature_c": 28.8,
+      "apparent_temperature_c": 33.4,
+      "humidity_pct": 68,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 41,
-      "wind_speed_kmh": 4.2,
+      "wind_speed_kmh": 3.1,
       "weather_code": 1
     },
     {
@@ -544,12 +544,12 @@
       "continent": "Asia",
       "latitude": 35.6762,
       "longitude": 139.6503,
-      "temperature_c": 24.4,
-      "apparent_temperature_c": 27.1,
-      "humidity_pct": 73,
+      "temperature_c": 24.6,
+      "apparent_temperature_c": 26.9,
+      "humidity_pct": 65,
       "precipitation_mm": 0.1,
-      "cloud_cover_pct": 71,
-      "wind_speed_kmh": 5.2,
+      "cloud_cover_pct": 72,
+      "wind_speed_kmh": 3.3,
       "weather_code": 2
     },
     {
@@ -558,12 +558,12 @@
       "continent": "Africa",
       "latitude": -1.2921,
       "longitude": 36.8219,
-      "temperature_c": 13.8,
-      "apparent_temperature_c": 14.5,
-      "humidity_pct": 93,
+      "temperature_c": 20.1,
+      "apparent_temperature_c": 18.7,
+      "humidity_pct": 58,
       "precipitation_mm": 0.1,
-      "cloud_cover_pct": 88,
-      "wind_speed_kmh": 1.1,
+      "cloud_cover_pct": 100,
+      "wind_speed_kmh": 12.7,
       "weather_code": 3
     },
     {
@@ -572,13 +572,13 @@
       "continent": "Asia",
       "latitude": 3.139,
       "longitude": 101.6869,
-      "temperature_c": 29.7,
-      "apparent_temperature_c": 36.3,
-      "humidity_pct": 75,
+      "temperature_c": 30.2,
+      "apparent_temperature_c": 36.2,
+      "humidity_pct": 71,
       "precipitation_mm": 8.5,
-      "cloud_cover_pct": 36,
-      "wind_speed_kmh": 3.3,
-      "weather_code": 1
+      "cloud_cover_pct": 85,
+      "wind_speed_kmh": 2.0,
+      "weather_code": 51
     },
     {
       "city": "Mexico City",
@@ -586,12 +586,12 @@
       "continent": "North America",
       "latitude": 19.4326,
       "longitude": -99.1332,
-      "temperature_c": 16.3,
-      "apparent_temperature_c": 16.4,
-      "humidity_pct": 83,
-      "precipitation_mm": 8.2,
-      "cloud_cover_pct": 71,
-      "wind_speed_kmh": 5.9,
+      "temperature_c": 15.0,
+      "apparent_temperature_c": 15.6,
+      "humidity_pct": 87,
+      "precipitation_mm": 1.3,
+      "cloud_cover_pct": 77,
+      "wind_speed_kmh": 1.7,
       "weather_code": 2
     },
     {
@@ -600,13 +600,13 @@
       "continent": "Africa",
       "latitude": 33.5731,
       "longitude": -7.5898,
-      "temperature_c": 23.1,
-      "apparent_temperature_c": 27.6,
-      "humidity_pct": 92,
+      "temperature_c": 24.3,
+      "apparent_temperature_c": 29.5,
+      "humidity_pct": 91,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 3,
-      "wind_speed_kmh": 1.6,
-      "weather_code": 0
+      "cloud_cover_pct": 39,
+      "wind_speed_kmh": 1.5,
+      "weather_code": 1
     },
     {
       "city": "Kathmandu",
@@ -614,13 +614,13 @@
       "continent": "Asia",
       "latitude": 27.7172,
       "longitude": 85.324,
-      "temperature_c": 26.2,
-      "apparent_temperature_c": 30.1,
-      "humidity_pct": 73,
+      "temperature_c": 26.9,
+      "apparent_temperature_c": 33.1,
+      "humidity_pct": 77,
       "precipitation_mm": 24.9,
-      "cloud_cover_pct": 49,
-      "wind_speed_kmh": 3.6,
-      "weather_code": 1
+      "cloud_cover_pct": 83,
+      "wind_speed_kmh": 3.3,
+      "weather_code": 95
     },
     {
       "city": "Amsterdam",
@@ -628,12 +628,12 @@
       "continent": "Europe",
       "latitude": 52.3676,
       "longitude": 4.9041,
-      "temperature_c": 20.8,
-      "apparent_temperature_c": 20.5,
-      "humidity_pct": 67,
+      "temperature_c": 23.2,
+      "apparent_temperature_c": 21.8,
+      "humidity_pct": 54,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 100,
-      "wind_speed_kmh": 11.9,
+      "wind_speed_kmh": 16.6,
       "weather_code": 3
     },
     {
@@ -642,13 +642,13 @@
       "continent": "Oceania",
       "latitude": -36.8485,
       "longitude": 174.7633,
-      "temperature_c": 14.0,
-      "apparent_temperature_c": 11.5,
-      "humidity_pct": 76,
+      "temperature_c": 12.3,
+      "apparent_temperature_c": 10.1,
+      "humidity_pct": 86,
       "precipitation_mm": 3.0,
-      "cloud_cover_pct": 97,
-      "wind_speed_kmh": 17.1,
-      "weather_code": 51
+      "cloud_cover_pct": 99,
+      "wind_speed_kmh": 15.1,
+      "weather_code": 3
     },
     {
       "city": "Lagos",
@@ -656,13 +656,13 @@
       "continent": "Africa",
       "latitude": 6.5244,
       "longitude": 3.3792,
-      "temperature_c": 25.5,
-      "apparent_temperature_c": 30.4,
-      "humidity_pct": 92,
+      "temperature_c": 25.7,
+      "apparent_temperature_c": 31.1,
+      "humidity_pct": 90,
       "precipitation_mm": 4.9,
-      "cloud_cover_pct": 98,
-      "wind_speed_kmh": 8.4,
-      "weather_code": 51
+      "cloud_cover_pct": 93,
+      "wind_speed_kmh": 4.1,
+      "weather_code": 53
     },
     {
       "city": "Oslo",
@@ -670,13 +670,13 @@
       "continent": "Europe",
       "latitude": 59.9139,
       "longitude": 10.7522,
-      "temperature_c": 12.6,
-      "apparent_temperature_c": 11.5,
-      "humidity_pct": 66,
-      "precipitation_mm": 0.1,
-      "cloud_cover_pct": 3,
-      "wind_speed_kmh": 1.4,
-      "weather_code": 0
+      "temperature_c": 16.6,
+      "apparent_temperature_c": 13.7,
+      "humidity_pct": 42,
+      "precipitation_mm": 0.0,
+      "cloud_cover_pct": 36,
+      "wind_speed_kmh": 9.7,
+      "weather_code": 1
     },
     {
       "city": "Karachi",
@@ -684,13 +684,13 @@
       "continent": "Asia",
       "latitude": 24.8607,
       "longitude": 67.0011,
-      "temperature_c": 30.4,
-      "apparent_temperature_c": 36.5,
-      "humidity_pct": 78,
+      "temperature_c": 33.3,
+      "apparent_temperature_c": 40.6,
+      "humidity_pct": 65,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 33,
-      "wind_speed_kmh": 8.9,
-      "weather_code": 1
+      "cloud_cover_pct": 3,
+      "wind_speed_kmh": 12.6,
+      "weather_code": 0
     },
     {
       "city": "Port Moresby",
@@ -698,12 +698,12 @@
       "continent": "Oceania",
       "latitude": -9.4438,
       "longitude": 147.1803,
-      "temperature_c": 28.5,
-      "apparent_temperature_c": 28.8,
-      "humidity_pct": 60,
+      "temperature_c": 26.9,
+      "apparent_temperature_c": 28.0,
+      "humidity_pct": 69,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 98,
-      "wind_speed_kmh": 24.2,
+      "cloud_cover_pct": 99,
+      "wind_speed_kmh": 20.5,
       "weather_code": 3
     },
     {
@@ -712,12 +712,12 @@
       "continent": "South America",
       "latitude": -12.0464,
       "longitude": -77.0428,
-      "temperature_c": 19.0,
-      "apparent_temperature_c": 19.3,
-      "humidity_pct": 82,
+      "temperature_c": 18.7,
+      "apparent_temperature_c": 19.1,
+      "humidity_pct": 81,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 70,
-      "wind_speed_kmh": 11.0,
+      "cloud_cover_pct": 71,
+      "wind_speed_kmh": 9.6,
       "weather_code": 2
     },
     {
@@ -726,13 +726,13 @@
       "continent": "Asia",
       "latitude": 14.5995,
       "longitude": 120.9842,
-      "temperature_c": 32.5,
-      "apparent_temperature_c": 38.9,
+      "temperature_c": 32.6,
+      "apparent_temperature_c": 36.2,
       "humidity_pct": 59,
       "precipitation_mm": 5.9,
-      "cloud_cover_pct": 37,
-      "wind_speed_kmh": 10.1,
-      "weather_code": 1
+      "cloud_cover_pct": 24,
+      "wind_speed_kmh": 14.9,
+      "weather_code": 51
     },
     {
       "city": "Lisbon",
@@ -740,13 +740,13 @@
       "continent": "Europe",
       "latitude": 38.7223,
       "longitude": -9.1393,
-      "temperature_c": 20.5,
-      "apparent_temperature_c": 22.2,
+      "temperature_c": 20.2,
+      "apparent_temperature_c": 21.8,
       "humidity_pct": 80,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 10,
+      "cloud_cover_pct": 32,
       "wind_speed_kmh": 5.4,
-      "weather_code": 0
+      "weather_code": 1
     },
     {
       "city": "Moscow",
@@ -754,13 +754,13 @@
       "continent": "Europe",
       "latitude": 55.7558,
       "longitude": 37.6173,
-      "temperature_c": 14.2,
-      "apparent_temperature_c": 13.9,
-      "humidity_pct": 89,
-      "precipitation_mm": 4.2,
+      "temperature_c": 17.4,
+      "apparent_temperature_c": 16.7,
+      "humidity_pct": 73,
+      "precipitation_mm": 2.9,
       "cloud_cover_pct": 96,
-      "wind_speed_kmh": 7.4,
-      "weather_code": 80
+      "wind_speed_kmh": 10.3,
+      "weather_code": 3
     },
     {
       "city": "Apia",
@@ -768,13 +768,13 @@
       "continent": "Oceania",
       "latitude": -13.8333,
       "longitude": -171.7667,
-      "temperature_c": 24.6,
-      "apparent_temperature_c": 26.6,
-      "humidity_pct": 78,
+      "temperature_c": 23.0,
+      "apparent_temperature_c": 25.3,
+      "humidity_pct": 83,
       "precipitation_mm": 0.4,
-      "cloud_cover_pct": 89,
-      "wind_speed_kmh": 15.2,
-      "weather_code": 3
+      "cloud_cover_pct": 71,
+      "wind_speed_kmh": 10.3,
+      "weather_code": 2
     },
     {
       "city": "Riyadh",
@@ -782,12 +782,12 @@
       "continent": "Asia",
       "latitude": 24.7136,
       "longitude": 46.6753,
-      "temperature_c": 31.7,
-      "apparent_temperature_c": 28.5,
-      "humidity_pct": 14,
+      "temperature_c": 39.7,
+      "apparent_temperature_c": 37.6,
+      "humidity_pct": 9,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 0,
-      "wind_speed_kmh": 8.2,
+      "wind_speed_kmh": 13.8,
       "weather_code": 0
     },
     {
@@ -796,12 +796,12 @@
       "continent": "Africa",
       "latitude": 14.7167,
       "longitude": -17.4677,
-      "temperature_c": 25.5,
-      "apparent_temperature_c": 27.7,
-      "humidity_pct": 81,
+      "temperature_c": 25.6,
+      "apparent_temperature_c": 29.1,
+      "humidity_pct": 82,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 18.9,
+      "cloud_cover_pct": 82,
+      "wind_speed_kmh": 10.5,
       "weather_code": 3
     },
     {
@@ -810,13 +810,13 @@
       "continent": "Asia",
       "latitude": 1.3521,
       "longitude": 103.8198,
-      "temperature_c": 29.4,
-      "apparent_temperature_c": 34.0,
-      "humidity_pct": 70,
+      "temperature_c": 28.5,
+      "apparent_temperature_c": 33.3,
+      "humidity_pct": 79,
       "precipitation_mm": 5.9,
-      "cloud_cover_pct": 91,
-      "wind_speed_kmh": 11.2,
-      "weather_code": 3
+      "cloud_cover_pct": 96,
+      "wind_speed_kmh": 11.0,
+      "weather_code": 81
     },
     {
       "city": "Cape Town",
@@ -824,12 +824,12 @@
       "continent": "Africa",
       "latitude": -33.9249,
       "longitude": 18.4241,
-      "temperature_c": 12.0,
-      "apparent_temperature_c": 11.5,
-      "humidity_pct": 99,
+      "temperature_c": 13.5,
+      "apparent_temperature_c": 13.6,
+      "humidity_pct": 98,
       "precipitation_mm": 0.1,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 7.1,
+      "cloud_cover_pct": 85,
+      "wind_speed_kmh": 5.8,
       "weather_code": 3
     },
     {
@@ -838,12 +838,12 @@
       "continent": "Africa",
       "latitude": -26.2041,
       "longitude": 28.0473,
-      "temperature_c": 8.1,
-      "apparent_temperature_c": 5.3,
-      "humidity_pct": 61,
+      "temperature_c": 13.6,
+      "apparent_temperature_c": 10.9,
+      "humidity_pct": 42,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 0,
-      "wind_speed_kmh": 5.5,
+      "wind_speed_kmh": 4.4,
       "weather_code": 0
     },
     {
@@ -852,13 +852,13 @@
       "continent": "Asia",
       "latitude": 37.5665,
       "longitude": 126.978,
-      "temperature_c": 25.7,
-      "apparent_temperature_c": 31.8,
-      "humidity_pct": 93,
-      "precipitation_mm": 6.2,
-      "cloud_cover_pct": 45,
-      "wind_speed_kmh": 2.3,
-      "weather_code": 55
+      "temperature_c": 28.7,
+      "apparent_temperature_c": 34.4,
+      "humidity_pct": 76,
+      "precipitation_mm": 2.5,
+      "cloud_cover_pct": 92,
+      "wind_speed_kmh": 2.6,
+      "weather_code": 3
     },
     {
       "city": "Madrid",
@@ -866,13 +866,13 @@
       "continent": "Europe",
       "latitude": 40.4168,
       "longitude": -3.7038,
-      "temperature_c": 24.5,
-      "apparent_temperature_c": 23.9,
-      "humidity_pct": 39,
+      "temperature_c": 27.7,
+      "apparent_temperature_c": 26.7,
+      "humidity_pct": 31,
       "precipitation_mm": 0.1,
-      "cloud_cover_pct": 56,
-      "wind_speed_kmh": 3.3,
-      "weather_code": 2
+      "cloud_cover_pct": 52,
+      "wind_speed_kmh": 4.6,
+      "weather_code": 1
     },
     {
       "city": "Colombo",
@@ -880,13 +880,13 @@
       "continent": "Asia",
       "latitude": 6.9271,
       "longitude": 79.8612,
-      "temperature_c": 28.8,
-      "apparent_temperature_c": 32.7,
-      "humidity_pct": 74,
+      "temperature_c": 29.8,
+      "apparent_temperature_c": 36.3,
+      "humidity_pct": 72,
       "precipitation_mm": 1.8,
-      "cloud_cover_pct": 27,
-      "wind_speed_kmh": 13.5,
-      "weather_code": 51
+      "cloud_cover_pct": 62,
+      "wind_speed_kmh": 11.2,
+      "weather_code": 2
     },
     {
       "city": "Stockholm",
@@ -894,12 +894,12 @@
       "continent": "Europe",
       "latitude": 59.3293,
       "longitude": 18.0686,
-      "temperature_c": 13.1,
-      "apparent_temperature_c": 10.8,
-      "humidity_pct": 64,
+      "temperature_c": 16.9,
+      "apparent_temperature_c": 14.4,
+      "humidity_pct": 40,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 0,
-      "wind_speed_kmh": 9.0,
+      "cloud_cover_pct": 13,
+      "wind_speed_kmh": 8.6,
       "weather_code": 0
     },
     {
@@ -908,13 +908,13 @@
       "continent": "Asia",
       "latitude": 25.033,
       "longitude": 121.5654,
-      "temperature_c": 34.0,
-      "apparent_temperature_c": 40.5,
-      "humidity_pct": 52,
+      "temperature_c": 32.7,
+      "apparent_temperature_c": 37.7,
+      "humidity_pct": 58,
       "precipitation_mm": 2.3,
-      "cloud_cover_pct": 15,
-      "wind_speed_kmh": 5.5,
-      "weather_code": 0
+      "cloud_cover_pct": 64,
+      "wind_speed_kmh": 5.1,
+      "weather_code": 51
     },
     {
       "city": "Dar es Salaam",
@@ -922,13 +922,13 @@
       "continent": "Africa",
       "latitude": -6.7924,
       "longitude": 39.2083,
-      "temperature_c": 23.4,
-      "apparent_temperature_c": 25.9,
-      "humidity_pct": 85,
+      "temperature_c": 27.1,
+      "apparent_temperature_c": 28.6,
+      "humidity_pct": 67,
       "precipitation_mm": 3.8,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 12.2,
-      "weather_code": 3
+      "cloud_cover_pct": 85,
+      "wind_speed_kmh": 17.7,
+      "weather_code": 51
     },
     {
       "city": "Bangkok",
@@ -936,12 +936,12 @@
       "continent": "Asia",
       "latitude": 13.7563,
       "longitude": 100.5018,
-      "temperature_c": 31.0,
-      "apparent_temperature_c": 35.8,
-      "humidity_pct": 67,
+      "temperature_c": 31.4,
+      "apparent_temperature_c": 36.9,
+      "humidity_pct": 68,
       "precipitation_mm": 2.7,
-      "cloud_cover_pct": 96,
-      "wind_speed_kmh": 9.1,
+      "cloud_cover_pct": 87,
+      "wind_speed_kmh": 9.9,
       "weather_code": 3
     },
     {
@@ -950,13 +950,13 @@
       "continent": "Europe",
       "latitude": 41.0082,
       "longitude": 28.9784,
-      "temperature_c": 19.4,
-      "apparent_temperature_c": 20.6,
-      "humidity_pct": 79,
+      "temperature_c": 25.7,
+      "apparent_temperature_c": 26.9,
+      "humidity_pct": 57,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 0,
-      "wind_speed_kmh": 4.8,
-      "weather_code": 0
+      "cloud_cover_pct": 34,
+      "wind_speed_kmh": 13.0,
+      "weather_code": 1
     },
     {
       "city": "Dubai",
@@ -964,12 +964,12 @@
       "continent": "Asia",
       "latitude": 25.2048,
       "longitude": 55.2708,
-      "temperature_c": 31.9,
-      "apparent_temperature_c": 32.0,
-      "humidity_pct": 37,
+      "temperature_c": 38.5,
+      "apparent_temperature_c": 43.3,
+      "humidity_pct": 38,
       "precipitation_mm": 0.0,
       "cloud_cover_pct": 0,
-      "wind_speed_kmh": 11.5,
+      "wind_speed_kmh": 13.1,
       "weather_code": 0
     },
     {
@@ -979,12 +979,12 @@
       "latitude": 51.5074,
       "longitude": -0.1278,
       "temperature_c": 21.3,
-      "apparent_temperature_c": 19.6,
-      "humidity_pct": 49,
+      "apparent_temperature_c": 20.7,
+      "humidity_pct": 58,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 0,
-      "wind_speed_kmh": 12.6,
-      "weather_code": 0
+      "cloud_cover_pct": 53,
+      "wind_speed_kmh": 10.1,
+      "weather_code": 2
     },
     {
       "city": "Chicago",
@@ -992,12 +992,12 @@
       "continent": "North America",
       "latitude": 41.8781,
       "longitude": -87.6298,
-      "temperature_c": 18.3,
-      "apparent_temperature_c": 19.2,
-      "humidity_pct": 83,
+      "temperature_c": 17.2,
+      "apparent_temperature_c": 17.8,
+      "humidity_pct": 90,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 1,
-      "wind_speed_kmh": 6.8,
+      "cloud_cover_pct": 6,
+      "wind_speed_kmh": 8.7,
       "weather_code": 0
     },
     {
@@ -1006,13 +1006,13 @@
       "continent": "North America",
       "latitude": 21.3069,
       "longitude": -157.8583,
-      "temperature_c": 27.1,
-      "apparent_temperature_c": 25.4,
-      "humidity_pct": 50,
+      "temperature_c": 23.8,
+      "apparent_temperature_c": 24.1,
+      "humidity_pct": 74,
       "precipitation_mm": 2.2,
-      "cloud_cover_pct": 62,
-      "wind_speed_kmh": 24.8,
-      "weather_code": 2
+      "cloud_cover_pct": 31,
+      "wind_speed_kmh": 20.3,
+      "weather_code": 1
     },
     {
       "city": "Los Angeles",
@@ -1020,12 +1020,12 @@
       "continent": "North America",
       "latitude": 34.0522,
       "longitude": -118.2437,
-      "temperature_c": 20.2,
-      "apparent_temperature_c": 20.2,
-      "humidity_pct": 67,
+      "temperature_c": 17.0,
+      "apparent_temperature_c": 18.3,
+      "humidity_pct": 90,
       "precipitation_mm": 0.0,
-      "cloud_cover_pct": 2,
-      "wind_speed_kmh": 8.6,
+      "cloud_cover_pct": 17,
+      "wind_speed_kmh": 3.8,
       "weather_code": 0
     },
     {
@@ -1034,13 +1034,13 @@
       "continent": "North America",
       "latitude": 25.7617,
       "longitude": -80.1918,
-      "temperature_c": 25.4,
-      "apparent_temperature_c": 30.3,
-      "humidity_pct": 87,
-      "precipitation_mm": 18.3,
-      "cloud_cover_pct": 96,
-      "wind_speed_kmh": 4.5,
-      "weather_code": 3
+      "temperature_c": 26.0,
+      "apparent_temperature_c": 29.5,
+      "humidity_pct": 78,
+      "precipitation_mm": 0.0,
+      "cloud_cover_pct": 0,
+      "wind_speed_kmh": 9.5,
+      "weather_code": 0
     },
     {
       "city": "New York",
@@ -1048,12 +1048,12 @@
       "continent": "North America",
       "latitude": 40.7128,
       "longitude": -74.006,
-      "temperature_c": 18.8,
-      "apparent_temperature_c": 19.6,
-      "humidity_pct": 93,
-      "precipitation_mm": 46.6,
-      "cloud_cover_pct": 97,
-      "wind_speed_kmh": 13.5,
+      "temperature_c": 18.6,
+      "apparent_temperature_c": 19.5,
+      "humidity_pct": 95,
+      "precipitation_mm": 0.2,
+      "cloud_cover_pct": 100,
+      "wind_speed_kmh": 13.2,
       "weather_code": 3
     },
     {
@@ -1062,13 +1062,13 @@
       "continent": "South America",
       "latitude": 10.4806,
       "longitude": -66.9036,
-      "temperature_c": 22.0,
-      "apparent_temperature_c": 25.2,
+      "temperature_c": 21.3,
+      "apparent_temperature_c": 24.0,
       "humidity_pct": 93,
-      "precipitation_mm": 8.0,
-      "cloud_cover_pct": 100,
-      "wind_speed_kmh": 8.2,
-      "weather_code": 3
+      "precipitation_mm": 3.2,
+      "cloud_cover_pct": 71,
+      "wind_speed_kmh": 8.1,
+      "weather_code": 2
     },
     {
       "city": "Hanoi",
@@ -1076,13 +1076,13 @@
       "continent": "Asia",
       "latitude": 21.0278,
       "longitude": 105.8342,
-      "temperature_c": 31.4,
-      "apparent_temperature_c": 38.6,
-      "humidity_pct": 72,
+      "temperature_c": 31.3,
+      "apparent_temperature_c": 38.0,
+      "humidity_pct": 76,
       "precipitation_mm": 2.3,
-      "cloud_cover_pct": 67,
-      "wind_speed_kmh": 6.2,
-      "weather_code": 2
+      "cloud_cover_pct": 95,
+      "wind_speed_kmh": 6.8,
+      "weather_code": 3
     },
     {
       "city": "Ho Chi Minh City",
@@ -1090,13 +1090,13 @@
       "continent": "Asia",
       "latitude": 10.8231,
       "longitude": 106.6297,
-      "temperature_c": 28.9,
-      "apparent_temperature_c": 34.5,
-      "humidity_pct": 79,
+      "temperature_c": 31.4,
+      "apparent_temperature_c": 37.0,
+      "humidity_pct": 69,
       "precipitation_mm": 8.1,
-      "cloud_cover_pct": 99,
-      "wind_speed_kmh": 7.0,
-      "weather_code": 3
+      "cloud_cover_pct": 90,
+      "wind_speed_kmh": 8.5,
+      "weather_code": 95
     }
   ],
   "nino_regions": [
@@ -1109,9 +1109,9 @@
       "longitude": -90.0,
       "sea_surface_temperature_c": 26.3,
       "sst_max_c": 26.3,
-      "sst_min_c": 26.3,
-      "wave_height_m": 2.64,
-      "observed_at": "2026-07-06T21:15"
+      "sst_min_c": 26.2,
+      "wave_height_m": 2.56,
+      "observed_at": "2026-07-07T01:30"
     },
     {
       "date": "07072026",
@@ -1120,11 +1120,11 @@
       "region": "Pacific Ocean",
       "latitude": 0.0,
       "longitude": -150.0,
-      "sea_surface_temperature_c": 29.4,
+      "sea_surface_temperature_c": 29.3,
       "sst_max_c": 29.5,
       "sst_min_c": 29.1,
-      "wave_height_m": 2.0,
-      "observed_at": "2026-07-06T17:15"
+      "wave_height_m": 1.94,
+      "observed_at": "2026-07-06T21:30"
     },
     {
       "date": "07072026",
@@ -1133,11 +1133,11 @@
       "region": "Pacific Ocean",
       "latitude": 0.0,
       "longitude": -170.0,
-      "sea_surface_temperature_c": 31.0,
+      "sea_surface_temperature_c": 30.8,
       "sst_max_c": 31.0,
       "sst_min_c": 30.3,
-      "wave_height_m": 2.0,
-      "observed_at": "2026-07-06T16:15"
+      "wave_height_m": 1.96,
+      "observed_at": "2026-07-06T20:30"
     },
     {
       "date": "07072026",
@@ -1149,8 +1149,8 @@
       "sea_surface_temperature_c": 29.6,
       "sst_max_c": 29.6,
       "sst_min_c": 29.4,
-      "wave_height_m": 2.22,
-      "observed_at": "2026-07-07T14:15"
+      "wave_height_m": 2.14,
+      "observed_at": "2026-07-07T18:30"
     }
   ]
 }
