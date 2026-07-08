@@ -1,0 +1,13 @@
+{
+  "date": "07082026",
+  "iso_date": "2026-07-08",
+  "name": "Nino_3",
+  "region": "Pacific Ocean",
+  "latitude": 0.0,
+  "longitude": -150.0,
+  "sea_surface_temperature_c": 29.6,
+  "sst_max_c": 29.7,
+  "sst_min_c": 29.1,
+  "wave_height_m": 1.74,
+  "observed_at": "2026-07-07T16:30"
+}

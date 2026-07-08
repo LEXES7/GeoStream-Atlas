@@ -1,0 +1,22 @@
+{
+  "date": "07082026",
+  "iso_date": "2026-07-08",
+  "country": "Australia",
+  "city": "Sydney",
+  "latitude": -33.8688,
+  "longitude": 151.2093,
+  "temperature_c": 16.0,
+  "temperature_max_c": 16.0,
+  "temperature_min_c": 10.7,
+  "apparent_temperature_c": 13.5,
+  "humidity_pct": 69,
+  "precipitation_mm": 2.5,
+  "cloud_cover_pct": 33,
+  "wind_speed_kmh": 17.8,
+  "wind_direction_deg": 182,
+  "surface_pressure_hpa": 1020.8,
+  "pressure_msl_hpa": 1031.2,
+  "uv_index_max": 3.1,
+  "weather_code": 1,
+  "observed_at": "2026-07-08T12:30"
+}
