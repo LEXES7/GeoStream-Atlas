@@ -1,0 +1,22 @@
+{
+  "date": "07092026",
+  "iso_date": "2026-07-09",
+  "country": "Fiji",
+  "city": "Suva",
+  "latitude": -18.1248,
+  "longitude": 178.4501,
+  "temperature_c": 23.1,
+  "temperature_max_c": 23.9,
+  "temperature_min_c": 17.8,
+  "apparent_temperature_c": 21.6,
+  "humidity_pct": 55,
+  "precipitation_mm": 0.1,
+  "cloud_cover_pct": 12,
+  "wind_speed_kmh": 18.5,
+  "wind_direction_deg": 221,
+  "surface_pressure_hpa": 1006.9,
+  "pressure_msl_hpa": 1010.7,
+  "uv_index_max": 6.0,
+  "weather_code": 0,
+  "observed_at": "2026-07-09T15:15"
+}

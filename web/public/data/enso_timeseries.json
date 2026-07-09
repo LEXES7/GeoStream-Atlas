@@ -423,6 +423,10 @@
     {
       "date": "2026-07-08",
       "value": 1.4
+    },
+    {
+      "date": "2026-07-09",
+      "value": 1.4
     }
   ],
   "rolling": [
@@ -849,24 +853,28 @@
     {
       "date": "2026-07-08",
       "value": 1.463
+    },
+    {
+      "date": "2026-07-09",
+      "value": 1.483
     }
   ],
   "projection": [
     {
-      "date": "2026-07-15",
-      "value": 1.584
+      "date": "2026-07-16",
+      "value": 1.602
     },
     {
-      "date": "2026-07-22",
-      "value": 1.651
+      "date": "2026-07-23",
+      "value": 1.667
     },
     {
-      "date": "2026-07-29",
-      "value": 1.681
+      "date": "2026-07-30",
+      "value": 1.697
     },
     {
-      "date": "2026-08-05",
-      "value": 1.688
+      "date": "2026-08-06",
+      "value": 1.704
     }
   ],
   "note": "Rolling 30-day Nino 3.4 anomaly with a damped short-term trend. Indicative signal, not a dynamical forecast."
