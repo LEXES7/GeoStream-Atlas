@@ -11,16 +11,16 @@
     },
     {
       "name": "Nino_3",
-      "observed_sst_c": 29.4,
+      "observed_sst_c": 29.3,
       "climatology_c": 28.1,
-      "anomaly_c": 1.3,
+      "anomaly_c": 1.2,
       "phase": "el_nino"
     },
     {
       "name": "Nino_3_4",
-      "observed_sst_c": 30.4,
+      "observed_sst_c": 30.3,
       "climatology_c": 29.1,
-      "anomaly_c": 1.3,
+      "anomaly_c": 1.2,
       "phase": "el_nino"
     },
     {
@@ -31,7 +31,7 @@
       "phase": "la_nina"
     }
   ],
-  "nino34_anomaly_c": 1.3,
+  "nino34_anomaly_c": 1.2,
   "phase": "el_nino",
   "note": "Daily anomaly vs the source's period-mean SST, not the official smoothed ONI."
 }
