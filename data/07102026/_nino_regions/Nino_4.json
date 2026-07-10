@@ -7,7 +7,7 @@
   "longitude": 160.0,
   "sea_surface_temperature_c": 29.4,
   "sst_max_c": 29.4,
-  "sst_min_c": 29.4,
-  "wave_height_m": 1.88,
-  "observed_at": "2026-07-10T21:45"
+  "sst_min_c": 29.3,
+  "wave_height_m": 1.96,
+  "observed_at": "2026-07-11T01:15"
 }
