@@ -1,0 +1,22 @@
+{
+  "date": "07102026",
+  "iso_date": "2026-07-10",
+  "country": "Vietnam",
+  "city": "Ho Chi Minh City",
+  "latitude": 10.8231,
+  "longitude": 106.6297,
+  "temperature_c": 31.7,
+  "temperature_max_c": 33.0,
+  "temperature_min_c": 26.0,
+  "apparent_temperature_c": 37.3,
+  "humidity_pct": 66,
+  "precipitation_mm": 2.1,
+  "cloud_cover_pct": 85,
+  "wind_speed_kmh": 15.2,
+  "wind_direction_deg": 251,
+  "surface_pressure_hpa": 1008.9,
+  "pressure_msl_hpa": 1009.6,
+  "uv_index_max": 8.75,
+  "weather_code": 3,
+  "observed_at": "2026-07-10T10:15"
+}
