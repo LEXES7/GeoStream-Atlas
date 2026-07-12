@@ -1,0 +1,22 @@
+{
+  "date": "07122026",
+  "iso_date": "2026-07-12",
+  "country": "Peru",
+  "city": "Lima",
+  "latitude": -12.0464,
+  "longitude": -77.0428,
+  "temperature_c": 20.1,
+  "temperature_max_c": 22.7,
+  "temperature_min_c": 18.2,
+  "apparent_temperature_c": 20.5,
+  "humidity_pct": 78,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 22,
+  "wind_speed_kmh": 11.5,
+  "wind_direction_deg": 145,
+  "surface_pressure_hpa": 997.5,
+  "pressure_msl_hpa": 1013.8,
+  "uv_index_max": 7.3,
+  "weather_code": 1,
+  "observed_at": "2026-07-11T21:45"
+}

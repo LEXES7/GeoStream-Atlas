@@ -1,0 +1,22 @@
+{
+  "date": "07122026",
+  "iso_date": "2026-07-12",
+  "country": "Brazil",
+  "city": "Sao Paulo",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "temperature_c": 19.1,
+  "temperature_max_c": 27.1,
+  "temperature_min_c": 11.9,
+  "apparent_temperature_c": 18.6,
+  "humidity_pct": 64,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 25,
+  "wind_speed_kmh": 8.0,
+  "wind_direction_deg": 304,
+  "surface_pressure_hpa": 928.5,
+  "pressure_msl_hpa": 1013.8,
+  "uv_index_max": 5.4,
+  "weather_code": 1,
+  "observed_at": "2026-07-11T23:45"
+}
