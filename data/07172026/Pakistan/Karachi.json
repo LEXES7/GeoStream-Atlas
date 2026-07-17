@@ -1,0 +1,22 @@
+{
+  "date": "07172026",
+  "iso_date": "2026-07-17",
+  "country": "Pakistan",
+  "city": "Karachi",
+  "latitude": 24.8607,
+  "longitude": 67.0011,
+  "temperature_c": 28.3,
+  "temperature_max_c": 30.8,
+  "temperature_min_c": 27.3,
+  "apparent_temperature_c": 32.7,
+  "humidity_pct": 80,
+  "precipitation_mm": 2.2,
+  "cloud_cover_pct": 52,
+  "wind_speed_kmh": 13.4,
+  "wind_direction_deg": 266,
+  "surface_pressure_hpa": 1003.3,
+  "pressure_msl_hpa": 1004.1,
+  "uv_index_max": 7.75,
+  "weather_code": 2,
+  "observed_at": "2026-07-17T07:30"
+}
