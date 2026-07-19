@@ -11,9 +11,9 @@
     },
     {
       "name": "Nino_3",
-      "observed_sst_c": 30.1,
+      "observed_sst_c": 30.0,
       "climatology_c": 28.1,
-      "anomaly_c": 2.0,
+      "anomaly_c": 1.9,
       "phase": "el_nino"
     },
     {
