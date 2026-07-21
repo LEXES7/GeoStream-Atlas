@@ -1,0 +1,22 @@
+{
+  "date": "07212026",
+  "iso_date": "2026-07-21",
+  "country": "Russia",
+  "city": "Moscow",
+  "latitude": 55.7558,
+  "longitude": 37.6173,
+  "temperature_c": 19.4,
+  "temperature_max_c": 25.8,
+  "temperature_min_c": 19.2,
+  "apparent_temperature_c": 20.1,
+  "humidity_pct": 70,
+  "precipitation_mm": 2.7,
+  "cloud_cover_pct": 99,
+  "wind_speed_kmh": 4.2,
+  "wind_direction_deg": 160,
+  "surface_pressure_hpa": 995.1,
+  "pressure_msl_hpa": 1011.5,
+  "uv_index_max": 4.1,
+  "weather_code": 3,
+  "observed_at": "2026-07-21T05:30"
+}
