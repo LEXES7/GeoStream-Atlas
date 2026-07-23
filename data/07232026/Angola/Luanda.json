@@ -1,0 +1,22 @@
+{
+  "date": "07232026",
+  "iso_date": "2026-07-23",
+  "country": "Angola",
+  "city": "Luanda",
+  "latitude": -8.839,
+  "longitude": 13.2894,
+  "temperature_c": 20.5,
+  "temperature_max_c": 23.6,
+  "temperature_min_c": 19.7,
+  "apparent_temperature_c": 21.7,
+  "humidity_pct": 79,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 8.0,
+  "wind_direction_deg": 194,
+  "surface_pressure_hpa": 1006.4,
+  "pressure_msl_hpa": 1015.6,
+  "uv_index_max": 7.4,
+  "weather_code": 3,
+  "observed_at": "2026-07-23T03:45"
+}
