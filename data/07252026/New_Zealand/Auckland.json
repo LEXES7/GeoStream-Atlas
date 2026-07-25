@@ -1,0 +1,22 @@
+{
+  "date": "07252026",
+  "iso_date": "2026-07-25",
+  "country": "New Zealand",
+  "city": "Auckland",
+  "latitude": -36.8485,
+  "longitude": 174.7633,
+  "temperature_c": 12.7,
+  "temperature_max_c": 13.1,
+  "temperature_min_c": 9.8,
+  "apparent_temperature_c": 6.7,
+  "humidity_pct": 62,
+  "precipitation_mm": 6.9,
+  "cloud_cover_pct": 34,
+  "wind_speed_kmh": 33.7,
+  "wind_direction_deg": 236,
+  "surface_pressure_hpa": 996.5,
+  "pressure_msl_hpa": 1000.8,
+  "uv_index_max": 3.2,
+  "weather_code": 51,
+  "observed_at": "2026-07-25T14:30"
+}
