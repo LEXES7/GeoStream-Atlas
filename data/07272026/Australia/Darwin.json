@@ -1,0 +1,22 @@
+{
+  "date": "07272026",
+  "iso_date": "2026-07-27",
+  "country": "Australia",
+  "city": "Darwin",
+  "latitude": -12.4634,
+  "longitude": 130.8456,
+  "temperature_c": 25.9,
+  "temperature_max_c": 28.4,
+  "temperature_min_c": 20.1,
+  "apparent_temperature_c": 24.7,
+  "humidity_pct": 32,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 14.6,
+  "wind_direction_deg": 116,
+  "surface_pressure_hpa": 1013.3,
+  "pressure_msl_hpa": 1017.0,
+  "uv_index_max": 7.2,
+  "weather_code": 0,
+  "observed_at": "2026-07-27T12:15"
+}
