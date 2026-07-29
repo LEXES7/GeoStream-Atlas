@@ -4,34 +4,34 @@
   "regions": [
     {
       "name": "Nino_1_2",
-      "observed_sst_c": 26.5,
+      "observed_sst_c": 26.4,
       "climatology_c": 27.9,
-      "anomaly_c": -1.4,
+      "anomaly_c": -1.5,
       "phase": "la_nina"
     },
     {
       "name": "Nino_3",
-      "observed_sst_c": 30.0,
+      "observed_sst_c": 29.9,
       "climatology_c": 28.1,
-      "anomaly_c": 1.9,
+      "anomaly_c": 1.8,
       "phase": "el_nino"
     },
     {
       "name": "Nino_3_4",
-      "observed_sst_c": 30.1,
+      "observed_sst_c": 29.9,
       "climatology_c": 29.1,
-      "anomaly_c": 1.0,
+      "anomaly_c": 0.8,
       "phase": "el_nino"
     },
     {
       "name": "Nino_4",
-      "observed_sst_c": 29.8,
+      "observed_sst_c": 29.6,
       "climatology_c": 30.6,
-      "anomaly_c": -0.8,
+      "anomaly_c": -1.0,
       "phase": "la_nina"
     }
   ],
-  "nino34_anomaly_c": 1.0,
+  "nino34_anomaly_c": 0.8,
   "phase": "el_nino",
   "note": "Daily anomaly vs the source's period-mean SST, not the official smoothed ONI."
 }
