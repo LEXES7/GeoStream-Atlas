@@ -1,0 +1,22 @@
+{
+  "date": "07302026",
+  "iso_date": "2026-07-30",
+  "country": "Saudi Arabia",
+  "city": "Riyadh",
+  "latitude": 24.7136,
+  "longitude": 46.6753,
+  "temperature_c": 30.7,
+  "temperature_max_c": 43.2,
+  "temperature_min_c": 30.8,
+  "apparent_temperature_c": 27.4,
+  "humidity_pct": 13,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 29,
+  "wind_speed_kmh": 6.8,
+  "wind_direction_deg": 305,
+  "surface_pressure_hpa": 932.6,
+  "pressure_msl_hpa": 1001.0,
+  "uv_index_max": 8.8,
+  "weather_code": 1,
+  "observed_at": "2026-07-30T05:15"
+}
