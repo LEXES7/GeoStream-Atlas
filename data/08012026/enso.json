@@ -4,16 +4,16 @@
   "regions": [
     {
       "name": "Nino_1_2",
-      "observed_sst_c": 26.6,
+      "observed_sst_c": 26.5,
       "climatology_c": 27.9,
-      "anomaly_c": -1.3,
+      "anomaly_c": -1.4,
       "phase": "la_nina"
     },
     {
       "name": "Nino_3",
-      "observed_sst_c": 30.5,
+      "observed_sst_c": 30.4,
       "climatology_c": 28.1,
-      "anomaly_c": 2.4,
+      "anomaly_c": 2.3,
       "phase": "el_nino"
     },
     {
@@ -25,9 +25,9 @@
     },
     {
       "name": "Nino_4",
-      "observed_sst_c": 29.7,
+      "observed_sst_c": 29.8,
       "climatology_c": 30.6,
-      "anomaly_c": -0.9,
+      "anomaly_c": -0.8,
       "phase": "la_nina"
     }
   ],
