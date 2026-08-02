@@ -5,18 +5,18 @@
   "city": "Sydney",
   "latitude": -33.8688,
   "longitude": 151.2093,
-  "temperature_c": 13.9,
+  "temperature_c": 13.2,
   "temperature_max_c": 17.6,
   "temperature_min_c": 8.4,
-  "apparent_temperature_c": 12.3,
+  "apparent_temperature_c": 11.4,
   "humidity_pct": 83,
   "precipitation_mm": 0.0,
   "cloud_cover_pct": 0,
-  "wind_speed_kmh": 13.5,
-  "wind_direction_deg": 19,
+  "wind_speed_kmh": 12.8,
+  "wind_direction_deg": 11,
   "surface_pressure_hpa": 1017.6,
   "pressure_msl_hpa": 1028.1,
   "uv_index_max": 4.3,
   "weather_code": 0,
-  "observed_at": "2026-08-02T19:45"
+  "observed_at": "2026-08-02T21:15"
 }
