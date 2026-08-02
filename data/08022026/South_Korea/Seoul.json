@@ -1,0 +1,22 @@
+{
+  "date": "08022026",
+  "iso_date": "2026-08-02",
+  "country": "South Korea",
+  "city": "Seoul",
+  "latitude": 37.5665,
+  "longitude": 126.978,
+  "temperature_c": 32.3,
+  "temperature_max_c": 33.1,
+  "temperature_min_c": 25.1,
+  "apparent_temperature_c": 39.9,
+  "humidity_pct": 65,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 12,
+  "wind_speed_kmh": 4.3,
+  "wind_direction_deg": 275,
+  "surface_pressure_hpa": 1005.4,
+  "pressure_msl_hpa": 1009.2,
+  "uv_index_max": 7.75,
+  "weather_code": 0,
+  "observed_at": "2026-08-02T11:45"
+}
