@@ -1,0 +1,22 @@
+{
+  "date": "08032026",
+  "iso_date": "2026-08-03",
+  "country": "United States",
+  "city": "Honolulu",
+  "latitude": 21.3069,
+  "longitude": -157.8583,
+  "temperature_c": 27.9,
+  "temperature_max_c": 29.7,
+  "temperature_min_c": 22.8,
+  "apparent_temperature_c": 27.7,
+  "humidity_pct": 55,
+  "precipitation_mm": 0.9,
+  "cloud_cover_pct": 73,
+  "wind_speed_kmh": 21.1,
+  "wind_direction_deg": 63,
+  "surface_pressure_hpa": 1014.9,
+  "pressure_msl_hpa": 1015.4,
+  "uv_index_max": 8.9,
+  "weather_code": 2,
+  "observed_at": "2026-08-02T16:45"
+}
