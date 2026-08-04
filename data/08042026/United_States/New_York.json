@@ -6,17 +6,17 @@
   "latitude": 40.7128,
   "longitude": -74.006,
   "temperature_c": 26.6,
-  "temperature_max_c": 27.0,
+  "temperature_max_c": 27.6,
   "temperature_min_c": 18.0,
-  "apparent_temperature_c": 30.3,
+  "apparent_temperature_c": 29.5,
   "humidity_pct": 63,
   "precipitation_mm": 0.0,
-  "cloud_cover_pct": 14,
-  "wind_speed_kmh": 11.9,
-  "wind_direction_deg": 119,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 12.0,
+  "wind_direction_deg": 159,
   "surface_pressure_hpa": 1015.1,
   "pressure_msl_hpa": 1018.8,
   "uv_index_max": 7.2,
   "weather_code": 0,
-  "observed_at": "2026-08-04T13:45"
+  "observed_at": "2026-08-04T15:30"
 }
