@@ -1,0 +1,22 @@
+{
+  "date": "08052026",
+  "iso_date": "2026-08-05",
+  "country": "Malaysia",
+  "city": "Kuala Lumpur",
+  "latitude": 3.139,
+  "longitude": 101.6869,
+  "temperature_c": 31.1,
+  "temperature_max_c": 34.6,
+  "temperature_min_c": 25.5,
+  "apparent_temperature_c": 35.3,
+  "humidity_pct": 61,
+  "precipitation_mm": 0.2,
+  "cloud_cover_pct": 76,
+  "wind_speed_kmh": 8.9,
+  "wind_direction_deg": 142,
+  "surface_pressure_hpa": 1004.8,
+  "pressure_msl_hpa": 1011.0,
+  "uv_index_max": 7.55,
+  "weather_code": 2,
+  "observed_at": "2026-08-05T10:30"
+}
