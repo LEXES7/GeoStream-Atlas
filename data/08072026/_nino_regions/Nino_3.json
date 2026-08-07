@@ -6,8 +6,8 @@
   "latitude": 0.0,
   "longitude": -150.0,
   "sea_surface_temperature_c": 30.4,
-  "sst_max_c": 31.1,
+  "sst_max_c": 31.0,
   "sst_min_c": 30.3,
-  "wave_height_m": 2.08,
-  "observed_at": "2026-08-07T00:45"
+  "wave_height_m": 2.1,
+  "observed_at": "2026-08-07T03:00"
 }
