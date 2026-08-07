@@ -1,0 +1,22 @@
+{
+  "date": "08072026",
+  "iso_date": "2026-08-07",
+  "country": "Spain",
+  "city": "Madrid",
+  "latitude": 40.4168,
+  "longitude": -3.7038,
+  "temperature_c": 25.4,
+  "temperature_max_c": 37.9,
+  "temperature_min_c": 23.3,
+  "apparent_temperature_c": 25.2,
+  "humidity_pct": 47,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 7.9,
+  "wind_direction_deg": 30,
+  "surface_pressure_hpa": 943.4,
+  "pressure_msl_hpa": 1017.6,
+  "uv_index_max": 7.65,
+  "weather_code": 0,
+  "observed_at": "2026-08-07T05:00"
+}
