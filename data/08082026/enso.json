@@ -1,0 +1,37 @@
+{
+  "date": "08082026",
+  "iso_date": "2026-08-08",
+  "regions": [
+    {
+      "name": "Nino_1_2",
+      "observed_sst_c": 26.4,
+      "climatology_c": 27.9,
+      "anomaly_c": -1.5,
+      "phase": "la_nina"
+    },
+    {
+      "name": "Nino_3",
+      "observed_sst_c": 30.9,
+      "climatology_c": 28.1,
+      "anomaly_c": 2.8,
+      "phase": "el_nino"
+    },
+    {
+      "name": "Nino_3_4",
+      "observed_sst_c": 30.5,
+      "climatology_c": 29.1,
+      "anomaly_c": 1.4,
+      "phase": "el_nino"
+    },
+    {
+      "name": "Nino_4",
+      "observed_sst_c": 30.3,
+      "climatology_c": 30.6,
+      "anomaly_c": -0.3,
+      "phase": "neutral"
+    }
+  ],
+  "nino34_anomaly_c": 1.4,
+  "phase": "el_nino",
+  "note": "Daily anomaly vs the source's period-mean SST, not the official smoothed ONI."
+}
