@@ -13,10 +13,10 @@
   "precipitation_mm": 0.2,
   "cloud_cover_pct": 100,
   "wind_speed_kmh": 10.7,
-  "wind_direction_deg": 243,
-  "surface_pressure_hpa": 1012.9,
-  "pressure_msl_hpa": 1013.8,
+  "wind_direction_deg": 247,
+  "surface_pressure_hpa": 1013.2,
+  "pressure_msl_hpa": 1014.1,
   "uv_index_max": 1.5,
   "weather_code": 3,
-  "observed_at": "2026-08-09T04:30"
+  "observed_at": "2026-08-09T06:00"
 }
