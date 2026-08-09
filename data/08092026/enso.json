@@ -18,9 +18,9 @@
     },
     {
       "name": "Nino_3_4",
-      "observed_sst_c": 29.9,
+      "observed_sst_c": 29.8,
       "climatology_c": 29.1,
-      "anomaly_c": 0.8,
+      "anomaly_c": 0.7,
       "phase": "el_nino"
     },
     {
@@ -31,7 +31,7 @@
       "phase": "la_nina"
     }
   ],
-  "nino34_anomaly_c": 0.8,
+  "nino34_anomaly_c": 0.7,
   "phase": "el_nino",
   "note": "Daily anomaly vs the source's period-mean SST, not the official smoothed ONI."
 }
