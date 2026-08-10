@@ -1,0 +1,22 @@
+{
+  "date": "08102026",
+  "iso_date": "2026-08-10",
+  "country": "Chile",
+  "city": "Santiago",
+  "latitude": -33.4489,
+  "longitude": -70.6693,
+  "temperature_c": 6.0,
+  "temperature_max_c": 11.7,
+  "temperature_min_c": 1.9,
+  "apparent_temperature_c": 4.1,
+  "humidity_pct": 78,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 54,
+  "wind_speed_kmh": 1.5,
+  "wind_direction_deg": 60,
+  "surface_pressure_hpa": 953.2,
+  "pressure_msl_hpa": 1017.7,
+  "uv_index_max": 4.75,
+  "weather_code": 2,
+  "observed_at": "2026-08-09T21:45"
+}
