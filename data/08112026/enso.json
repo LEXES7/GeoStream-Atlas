@@ -4,9 +4,9 @@
   "regions": [
     {
       "name": "Nino_1_2",
-      "observed_sst_c": 26.0,
+      "observed_sst_c": 26.1,
       "climatology_c": 27.9,
-      "anomaly_c": -1.9,
+      "anomaly_c": -1.8,
       "phase": "la_nina"
     },
     {
