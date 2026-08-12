@@ -5,11 +5,11 @@
   "city": "Athens",
   "latitude": 37.9838,
   "longitude": 23.7275,
-  "temperature_c": 28.5,
+  "temperature_c": 27.6,
   "temperature_max_c": 34.8,
   "temperature_min_c": 24.3,
-  "apparent_temperature_c": 26.7,
-  "humidity_pct": 24,
+  "apparent_temperature_c": 25.8,
+  "humidity_pct": 26,
   "precipitation_mm": 0.0,
   "cloud_cover_pct": 0,
   "wind_speed_kmh": 5.9,
@@ -18,5 +18,5 @@
   "pressure_msl_hpa": 1014.1,
   "uv_index_max": 8.05,
   "weather_code": 0,
-  "observed_at": "2026-08-12T22:00"
+  "observed_at": "2026-08-12T23:30"
 }
