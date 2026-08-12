@@ -1,0 +1,22 @@
+{
+  "date": "08122026",
+  "iso_date": "2026-08-12",
+  "country": "Iran",
+  "city": "Tehran",
+  "latitude": 35.6892,
+  "longitude": 51.389,
+  "temperature_c": 25.1,
+  "temperature_max_c": 36.6,
+  "temperature_min_c": 25.1,
+  "apparent_temperature_c": 24.6,
+  "humidity_pct": 38,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 66,
+  "wind_speed_kmh": 3.3,
+  "wind_direction_deg": 6,
+  "surface_pressure_hpa": 884.8,
+  "pressure_msl_hpa": 1010.3,
+  "uv_index_max": 8.0,
+  "weather_code": 2,
+  "observed_at": "2026-08-12T05:15"
+}
