@@ -1,0 +1,22 @@
+{
+  "date": "08132026",
+  "iso_date": "2026-08-13",
+  "country": "France",
+  "city": "Paris",
+  "latitude": 48.8566,
+  "longitude": 2.3522,
+  "temperature_c": 24.7,
+  "temperature_max_c": 37.5,
+  "temperature_min_c": 22.4,
+  "apparent_temperature_c": 24.5,
+  "humidity_pct": 41,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 2.3,
+  "wind_direction_deg": 342,
+  "surface_pressure_hpa": 1016.4,
+  "pressure_msl_hpa": 1020.6,
+  "uv_index_max": 6.5,
+  "weather_code": 0,
+  "observed_at": "2026-08-13T03:45"
+}
