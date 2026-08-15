@@ -1,0 +1,22 @@
+{
+  "date": "08152026",
+  "iso_date": "2026-08-15",
+  "country": "Ghana",
+  "city": "Accra",
+  "latitude": 5.6037,
+  "longitude": -0.187,
+  "temperature_c": 24.4,
+  "temperature_max_c": 28.3,
+  "temperature_min_c": 24.4,
+  "apparent_temperature_c": 28.1,
+  "humidity_pct": 86,
+  "precipitation_mm": 0.3,
+  "cloud_cover_pct": 97,
+  "wind_speed_kmh": 8.0,
+  "wind_direction_deg": 226,
+  "surface_pressure_hpa": 1009.2,
+  "pressure_msl_hpa": 1015.7,
+  "uv_index_max": 6.15,
+  "weather_code": 3,
+  "observed_at": "2026-08-15T01:00"
+}
