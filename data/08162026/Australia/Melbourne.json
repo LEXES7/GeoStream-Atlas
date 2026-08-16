@@ -1,0 +1,22 @@
+{
+  "date": "08162026",
+  "iso_date": "2026-08-16",
+  "country": "Australia",
+  "city": "Melbourne",
+  "latitude": -37.8136,
+  "longitude": 144.9631,
+  "temperature_c": 10.3,
+  "temperature_max_c": 13.1,
+  "temperature_min_c": 6.3,
+  "apparent_temperature_c": 9.3,
+  "humidity_pct": 84,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 89,
+  "wind_speed_kmh": 2.5,
+  "wind_direction_deg": 249,
+  "surface_pressure_hpa": 1033.8,
+  "pressure_msl_hpa": 1036.2,
+  "uv_index_max": 4.3,
+  "weather_code": 3,
+  "observed_at": "2026-08-16T11:15"
+}

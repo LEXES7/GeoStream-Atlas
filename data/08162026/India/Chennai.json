@@ -1,0 +1,22 @@
+{
+  "date": "08162026",
+  "iso_date": "2026-08-16",
+  "country": "India",
+  "city": "Chennai",
+  "latitude": 13.0827,
+  "longitude": 80.2707,
+  "temperature_c": 28.1,
+  "temperature_max_c": 35.9,
+  "temperature_min_c": 27.8,
+  "apparent_temperature_c": 31.8,
+  "humidity_pct": 70,
+  "precipitation_mm": 1.4,
+  "cloud_cover_pct": 64,
+  "wind_speed_kmh": 9.2,
+  "wind_direction_deg": 258,
+  "surface_pressure_hpa": 1006.0,
+  "pressure_msl_hpa": 1007.4,
+  "uv_index_max": 8.45,
+  "weather_code": 2,
+  "observed_at": "2026-08-16T06:45"
+}

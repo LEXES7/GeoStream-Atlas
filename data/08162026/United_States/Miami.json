@@ -1,0 +1,22 @@
+{
+  "date": "08162026",
+  "iso_date": "2026-08-16",
+  "country": "United States",
+  "city": "Miami",
+  "latitude": 25.7617,
+  "longitude": -80.1918,
+  "temperature_c": 28.7,
+  "temperature_max_c": 33.0,
+  "temperature_min_c": 26.8,
+  "apparent_temperature_c": 35.1,
+  "humidity_pct": 84,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 6.2,
+  "wind_direction_deg": 111,
+  "surface_pressure_hpa": 1019.4,
+  "pressure_msl_hpa": 1020.0,
+  "uv_index_max": 8.75,
+  "weather_code": 0,
+  "observed_at": "2026-08-15T21:15"
+}
