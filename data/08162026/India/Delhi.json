@@ -8,15 +8,15 @@
   "temperature_c": 27.0,
   "temperature_max_c": 33.3,
   "temperature_min_c": 26.2,
-  "apparent_temperature_c": 33.5,
-  "humidity_pct": 93,
+  "apparent_temperature_c": 33.7,
+  "humidity_pct": 92,
   "precipitation_mm": 4.7,
-  "cloud_cover_pct": 97,
-  "wind_speed_kmh": 5.8,
-  "wind_direction_deg": 173,
-  "surface_pressure_hpa": 978.4,
-  "pressure_msl_hpa": 1002.5,
+  "cloud_cover_pct": 96,
+  "wind_speed_kmh": 3.0,
+  "wind_direction_deg": 142,
+  "surface_pressure_hpa": 978.2,
+  "pressure_msl_hpa": 1002.3,
   "uv_index_max": 5.4,
   "weather_code": 3,
-  "observed_at": "2026-08-16T21:45"
+  "observed_at": "2026-08-16T23:45"
 }
