@@ -1,0 +1,22 @@
+{
+  "date": "08172026",
+  "iso_date": "2026-08-17",
+  "country": "Brazil",
+  "city": "Rio de Janeiro",
+  "latitude": -22.9068,
+  "longitude": -43.1729,
+  "temperature_c": 21.0,
+  "temperature_max_c": 25.6,
+  "temperature_min_c": 19.7,
+  "apparent_temperature_c": 21.6,
+  "humidity_pct": 80,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 10,
+  "wind_speed_kmh": 14.3,
+  "wind_direction_deg": 66,
+  "surface_pressure_hpa": 1020.1,
+  "pressure_msl_hpa": 1021.5,
+  "uv_index_max": 6.4,
+  "weather_code": 0,
+  "observed_at": "2026-08-16T22:15"
+}
