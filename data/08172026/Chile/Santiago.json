@@ -11,12 +11,12 @@
   "apparent_temperature_c": 12.3,
   "humidity_pct": 67,
   "precipitation_mm": 11.3,
-  "cloud_cover_pct": 59,
-  "wind_speed_kmh": 5.8,
-  "wind_direction_deg": 268,
-  "surface_pressure_hpa": 953.0,
-  "pressure_msl_hpa": 1015.7,
+  "cloud_cover_pct": 60,
+  "wind_speed_kmh": 5.1,
+  "wind_direction_deg": 262,
+  "surface_pressure_hpa": 953.2,
+  "pressure_msl_hpa": 1015.9,
   "uv_index_max": 4.3,
   "weather_code": 2,
-  "observed_at": "2026-08-17T14:30"
+  "observed_at": "2026-08-17T16:15"
 }
