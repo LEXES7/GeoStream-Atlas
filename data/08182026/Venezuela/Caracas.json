@@ -1,0 +1,22 @@
+{
+  "date": "08182026",
+  "iso_date": "2026-08-18",
+  "country": "Venezuela",
+  "city": "Caracas",
+  "latitude": 10.4806,
+  "longitude": -66.9036,
+  "temperature_c": 21.9,
+  "temperature_max_c": 28.0,
+  "temperature_min_c": 19.0,
+  "apparent_temperature_c": 26.0,
+  "humidity_pct": 97,
+  "precipitation_mm": 6.1,
+  "cloud_cover_pct": 53,
+  "wind_speed_kmh": 3.6,
+  "wind_direction_deg": 186,
+  "surface_pressure_hpa": 918.2,
+  "pressure_msl_hpa": 1015.9,
+  "uv_index_max": 9.2,
+  "weather_code": 2,
+  "observed_at": "2026-08-17T21:00"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "08182026",
+  "iso_date": "2026-08-18",
+  "country": "China",
+  "city": "Hong Kong",
+  "latitude": 22.3193,
+  "longitude": 114.1694,
+  "temperature_c": 25.8,
+  "temperature_max_c": 29.7,
+  "temperature_min_c": 25.4,
+  "apparent_temperature_c": 31.0,
+  "humidity_pct": 96,
+  "precipitation_mm": 13.6,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 11.2,
+  "wind_direction_deg": 52,
+  "surface_pressure_hpa": 1002.8,
+  "pressure_msl_hpa": 1005.2,
+  "uv_index_max": 8.45,
+  "weather_code": 95,
+  "observed_at": "2026-08-18T09:00"
+}
