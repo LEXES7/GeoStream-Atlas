@@ -1,0 +1,22 @@
+{
+  "date": "08192026",
+  "iso_date": "2026-08-19",
+  "country": "Papua New Guinea",
+  "city": "Port Moresby",
+  "latitude": -9.4438,
+  "longitude": 147.1803,
+  "temperature_c": 27.6,
+  "temperature_max_c": 27.6,
+  "temperature_min_c": 20.6,
+  "apparent_temperature_c": 29.3,
+  "humidity_pct": 57,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 19.6,
+  "wind_direction_deg": 178,
+  "surface_pressure_hpa": 1007.6,
+  "pressure_msl_hpa": 1016.3,
+  "uv_index_max": 8.25,
+  "weather_code": 0,
+  "observed_at": "2026-08-19T11:00"
+}
