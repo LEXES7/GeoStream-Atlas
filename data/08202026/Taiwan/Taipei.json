@@ -1,0 +1,22 @@
+{
+  "date": "08202026",
+  "iso_date": "2026-08-20",
+  "country": "Taiwan",
+  "city": "Taipei",
+  "latitude": 25.033,
+  "longitude": 121.5654,
+  "temperature_c": 29.2,
+  "temperature_max_c": 31.2,
+  "temperature_min_c": 25.5,
+  "apparent_temperature_c": 36.0,
+  "humidity_pct": 80,
+  "precipitation_mm": 6.1,
+  "cloud_cover_pct": 17,
+  "wind_speed_kmh": 2.7,
+  "wind_direction_deg": 228,
+  "surface_pressure_hpa": 1004.2,
+  "pressure_msl_hpa": 1005.6,
+  "uv_index_max": 7.45,
+  "weather_code": 0,
+  "observed_at": "2026-08-20T09:00"
+}
