@@ -1,0 +1,22 @@
+{
+  "date": "08212026",
+  "iso_date": "2026-08-21",
+  "country": "Morocco",
+  "city": "Casablanca",
+  "latitude": 33.5731,
+  "longitude": -7.5898,
+  "temperature_c": 22.9,
+  "temperature_max_c": 27.0,
+  "temperature_min_c": 21.8,
+  "apparent_temperature_c": 26.9,
+  "humidity_pct": 88,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 48,
+  "wind_speed_kmh": 1.9,
+  "wind_direction_deg": 338,
+  "surface_pressure_hpa": 1012.5,
+  "pressure_msl_hpa": 1017.7,
+  "uv_index_max": 7.15,
+  "weather_code": 1,
+  "observed_at": "2026-08-21T02:15"
+}
