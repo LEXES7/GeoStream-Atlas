@@ -1,0 +1,22 @@
+{
+  "date": "08222026",
+  "iso_date": "2026-08-22",
+  "country": "Nepal",
+  "city": "Kathmandu",
+  "latitude": 27.7172,
+  "longitude": 85.324,
+  "temperature_c": 21.5,
+  "temperature_max_c": 24.5,
+  "temperature_min_c": 21.0,
+  "apparent_temperature_c": 25.1,
+  "humidity_pct": 97,
+  "precipitation_mm": 34.4,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 5.4,
+  "wind_direction_deg": 110,
+  "surface_pressure_hpa": 868.9,
+  "pressure_msl_hpa": 1008.2,
+  "uv_index_max": 8.3,
+  "weather_code": 51,
+  "observed_at": "2026-08-22T06:45"
+}
