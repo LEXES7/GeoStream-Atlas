@@ -12,11 +12,11 @@
   "humidity_pct": 90,
   "precipitation_mm": 0.7,
   "cloud_cover_pct": 100,
-  "wind_speed_kmh": 7.3,
-  "wind_direction_deg": 70,
-  "surface_pressure_hpa": 1018.5,
-  "pressure_msl_hpa": 1019.9,
+  "wind_speed_kmh": 8.0,
+  "wind_direction_deg": 74,
+  "surface_pressure_hpa": 1018.9,
+  "pressure_msl_hpa": 1020.3,
   "uv_index_max": 4.2,
   "weather_code": 3,
-  "observed_at": "2026-08-25T03:45"
+  "observed_at": "2026-08-25T05:30"
 }
