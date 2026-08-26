@@ -25,9 +25,9 @@
     },
     {
       "name": "Nino_4",
-      "observed_sst_c": 30.3,
+      "observed_sst_c": 30.4,
       "climatology_c": 30.6,
-      "anomaly_c": -0.3,
+      "anomaly_c": -0.2,
       "phase": "neutral"
     }
   ],
