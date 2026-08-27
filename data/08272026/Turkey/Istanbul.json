@@ -1,0 +1,22 @@
+{
+  "date": "08272026",
+  "iso_date": "2026-08-27",
+  "country": "Turkey",
+  "city": "Istanbul",
+  "latitude": 41.0082,
+  "longitude": 28.9784,
+  "temperature_c": 27.0,
+  "temperature_max_c": 29.4,
+  "temperature_min_c": 22.8,
+  "apparent_temperature_c": 29.6,
+  "humidity_pct": 65,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 50,
+  "wind_speed_kmh": 8.9,
+  "wind_direction_deg": 14,
+  "surface_pressure_hpa": 1012.2,
+  "pressure_msl_hpa": 1016.4,
+  "uv_index_max": 6.7,
+  "weather_code": 2,
+  "observed_at": "2026-08-27T10:45"
+}
