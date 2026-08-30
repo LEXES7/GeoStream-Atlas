@@ -1,0 +1,22 @@
+{
+  "date": "08302026",
+  "iso_date": "2026-08-30",
+  "country": "Egypt",
+  "city": "Cairo",
+  "latitude": 30.0444,
+  "longitude": 31.2357,
+  "temperature_c": 23.5,
+  "temperature_max_c": 36.1,
+  "temperature_min_c": 23.5,
+  "apparent_temperature_c": 26.4,
+  "humidity_pct": 74,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 54,
+  "wind_speed_kmh": 2.2,
+  "wind_direction_deg": 360,
+  "surface_pressure_hpa": 1007.4,
+  "pressure_msl_hpa": 1010.0,
+  "uv_index_max": 7.05,
+  "weather_code": 2,
+  "observed_at": "2026-08-30T07:00"
+}
