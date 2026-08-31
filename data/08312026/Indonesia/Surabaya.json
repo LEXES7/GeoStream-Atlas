@@ -1,0 +1,22 @@
+{
+  "date": "08312026",
+  "iso_date": "2026-08-31",
+  "country": "Indonesia",
+  "city": "Surabaya",
+  "latitude": -7.2575,
+  "longitude": 112.7521,
+  "temperature_c": 27.8,
+  "temperature_max_c": 31.0,
+  "temperature_min_c": 26.8,
+  "apparent_temperature_c": 30.5,
+  "humidity_pct": 70,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 71,
+  "wind_speed_kmh": 14.5,
+  "wind_direction_deg": 113,
+  "surface_pressure_hpa": 1014.4,
+  "pressure_msl_hpa": 1015.3,
+  "uv_index_max": 8.75,
+  "weather_code": 2,
+  "observed_at": "2026-08-31T07:00"
+}
