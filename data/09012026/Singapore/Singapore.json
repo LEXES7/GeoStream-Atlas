@@ -1,0 +1,22 @@
+{
+  "date": "09012026",
+  "iso_date": "2026-09-01",
+  "country": "Singapore",
+  "city": "Singapore",
+  "latitude": 1.3521,
+  "longitude": 103.8198,
+  "temperature_c": 29.6,
+  "temperature_max_c": 31.0,
+  "temperature_min_c": 25.5,
+  "apparent_temperature_c": 35.1,
+  "humidity_pct": 73,
+  "precipitation_mm": 3.8,
+  "cloud_cover_pct": 37,
+  "wind_speed_kmh": 12.1,
+  "wind_direction_deg": 150,
+  "surface_pressure_hpa": 1008.6,
+  "pressure_msl_hpa": 1013.8,
+  "uv_index_max": 8.95,
+  "weather_code": 1,
+  "observed_at": "2026-09-01T11:45"
+}
