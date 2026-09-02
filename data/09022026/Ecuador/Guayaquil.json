@@ -1,0 +1,22 @@
+{
+  "date": "09022026",
+  "iso_date": "2026-09-02",
+  "country": "Ecuador",
+  "city": "Guayaquil",
+  "latitude": -2.1894,
+  "longitude": -79.8891,
+  "temperature_c": 25.3,
+  "temperature_max_c": 31.1,
+  "temperature_min_c": 24.9,
+  "apparent_temperature_c": 28.6,
+  "humidity_pct": 80,
+  "precipitation_mm": 0.1,
+  "cloud_cover_pct": 58,
+  "wind_speed_kmh": 9.2,
+  "wind_direction_deg": 223,
+  "surface_pressure_hpa": 1012.2,
+  "pressure_msl_hpa": 1013.4,
+  "uv_index_max": 7.3,
+  "weather_code": 2,
+  "observed_at": "2026-09-01T22:00"
+}

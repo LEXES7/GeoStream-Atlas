@@ -1,0 +1,22 @@
+{
+  "date": "09022026",
+  "iso_date": "2026-09-02",
+  "country": "Canada",
+  "city": "Vancouver",
+  "latitude": 49.2827,
+  "longitude": -123.1207,
+  "temperature_c": 17.0,
+  "temperature_max_c": 21.8,
+  "temperature_min_c": 12.8,
+  "apparent_temperature_c": 16.3,
+  "humidity_pct": 77,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 10.6,
+  "wind_direction_deg": 118,
+  "surface_pressure_hpa": 1002.6,
+  "pressure_msl_hpa": 1007.3,
+  "uv_index_max": 5.6,
+  "weather_code": 3,
+  "observed_at": "2026-09-01T20:00"
+}
