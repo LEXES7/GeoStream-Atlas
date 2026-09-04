@@ -1,0 +1,22 @@
+{
+  "date": "09042026",
+  "iso_date": "2026-09-04",
+  "country": "United States",
+  "city": "Los Angeles",
+  "latitude": 34.0522,
+  "longitude": -118.2437,
+  "temperature_c": 20.1,
+  "temperature_max_c": 28.1,
+  "temperature_min_c": 17.4,
+  "apparent_temperature_c": 21.0,
+  "humidity_pct": 74,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 6.5,
+  "wind_direction_deg": 270,
+  "surface_pressure_hpa": 1000.0,
+  "pressure_msl_hpa": 1010.6,
+  "uv_index_max": 7.6,
+  "weather_code": 0,
+  "observed_at": "2026-09-03T20:15"
+}
