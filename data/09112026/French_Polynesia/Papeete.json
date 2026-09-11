@@ -1,0 +1,22 @@
+{
+  "date": "09112026",
+  "iso_date": "2026-09-11",
+  "country": "French Polynesia",
+  "city": "Papeete",
+  "latitude": -17.5516,
+  "longitude": -149.5585,
+  "temperature_c": 23.2,
+  "temperature_max_c": 27.6,
+  "temperature_min_c": 19.5,
+  "apparent_temperature_c": 26.4,
+  "humidity_pct": 85,
+  "precipitation_mm": 5.9,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 6.2,
+  "wind_direction_deg": 69,
+  "surface_pressure_hpa": 1000.3,
+  "pressure_msl_hpa": 1013.0,
+  "uv_index_max": 8.3,
+  "weather_code": 3,
+  "observed_at": "2026-09-10T17:15"
+}
