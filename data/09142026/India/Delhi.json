@@ -1,0 +1,22 @@
+{
+  "date": "09142026",
+  "iso_date": "2026-09-14",
+  "country": "India",
+  "city": "Delhi",
+  "latitude": 28.6139,
+  "longitude": 77.209,
+  "temperature_c": 28.4,
+  "temperature_max_c": 31.6,
+  "temperature_min_c": 24.4,
+  "apparent_temperature_c": 33.5,
+  "humidity_pct": 82,
+  "precipitation_mm": 4.1,
+  "cloud_cover_pct": 22,
+  "wind_speed_kmh": 10.7,
+  "wind_direction_deg": 107,
+  "surface_pressure_hpa": 987.9,
+  "pressure_msl_hpa": 1012.1,
+  "uv_index_max": 6.45,
+  "weather_code": 1,
+  "observed_at": "2026-09-14T09:00"
+}

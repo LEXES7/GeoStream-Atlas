@@ -1,0 +1,22 @@
+{
+  "date": "09142026",
+  "iso_date": "2026-09-14",
+  "country": "Mexico",
+  "city": "Mexico City",
+  "latitude": 19.4326,
+  "longitude": -99.1332,
+  "temperature_c": 14.9,
+  "temperature_max_c": 22.9,
+  "temperature_min_c": 13.2,
+  "apparent_temperature_c": 15.3,
+  "humidity_pct": 93,
+  "precipitation_mm": 3.5,
+  "cloud_cover_pct": 33,
+  "wind_speed_kmh": 5.9,
+  "wind_direction_deg": 342,
+  "surface_pressure_hpa": 788.2,
+  "pressure_msl_hpa": 1020.3,
+  "uv_index_max": 9.35,
+  "weather_code": 1,
+  "observed_at": "2026-09-13T21:30"
+}

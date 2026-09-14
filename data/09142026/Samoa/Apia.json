@@ -1,0 +1,22 @@
+{
+  "date": "09142026",
+  "iso_date": "2026-09-14",
+  "country": "Samoa",
+  "city": "Apia",
+  "latitude": -13.8333,
+  "longitude": -171.7667,
+  "temperature_c": 25.4,
+  "temperature_max_c": 28.7,
+  "temperature_min_c": 23.7,
+  "apparent_temperature_c": 30.6,
+  "humidity_pct": 94,
+  "precipitation_mm": 42.3,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 7.9,
+  "wind_direction_deg": 131,
+  "surface_pressure_hpa": 1011.0,
+  "pressure_msl_hpa": 1011.3,
+  "uv_index_max": 8.85,
+  "weather_code": 95,
+  "observed_at": "2026-09-14T16:30"
+}

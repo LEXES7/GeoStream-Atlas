@@ -1,0 +1,22 @@
+{
+  "date": "09142026",
+  "iso_date": "2026-09-14",
+  "country": "Ethiopia",
+  "city": "Addis Ababa",
+  "latitude": 9.03,
+  "longitude": 38.74,
+  "temperature_c": 8.8,
+  "temperature_max_c": 20.2,
+  "temperature_min_c": 8.5,
+  "apparent_temperature_c": 7.4,
+  "humidity_pct": 93,
+  "precipitation_mm": 0.6,
+  "cloud_cover_pct": 60,
+  "wind_speed_kmh": 4.9,
+  "wind_direction_deg": 343,
+  "surface_pressure_hpa": 764.4,
+  "pressure_msl_hpa": 1019.6,
+  "uv_index_max": 6.45,
+  "weather_code": 2,
+  "observed_at": "2026-09-14T06:30"
+}
