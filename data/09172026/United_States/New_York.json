@@ -1,0 +1,22 @@
+{
+  "date": "09172026",
+  "iso_date": "2026-09-17",
+  "country": "United States",
+  "city": "New York",
+  "latitude": 40.7128,
+  "longitude": -74.006,
+  "temperature_c": 22.0,
+  "temperature_max_c": 26.1,
+  "temperature_min_c": 15.8,
+  "apparent_temperature_c": 24.0,
+  "humidity_pct": 82,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 8.7,
+  "wind_direction_deg": 150,
+  "surface_pressure_hpa": 1021.4,
+  "pressure_msl_hpa": 1025.2,
+  "uv_index_max": 6.15,
+  "weather_code": 0,
+  "observed_at": "2026-09-16T20:00"
+}
