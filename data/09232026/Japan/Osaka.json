@@ -1,0 +1,22 @@
+{
+  "date": "09232026",
+  "iso_date": "2026-09-23",
+  "country": "Japan",
+  "city": "Osaka",
+  "latitude": 34.6937,
+  "longitude": 135.5023,
+  "temperature_c": 22.8,
+  "temperature_max_c": 29.2,
+  "temperature_min_c": 19.8,
+  "apparent_temperature_c": 25.0,
+  "humidity_pct": 75,
+  "precipitation_mm": 0.1,
+  "cloud_cover_pct": 41,
+  "wind_speed_kmh": 4.6,
+  "wind_direction_deg": 39,
+  "surface_pressure_hpa": 1017.0,
+  "pressure_msl_hpa": 1017.4,
+  "uv_index_max": 6.4,
+  "weather_code": 1,
+  "observed_at": "2026-09-23T09:00"
+}
