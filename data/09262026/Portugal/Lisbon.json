@@ -1,0 +1,22 @@
+{
+  "date": "09262026",
+  "iso_date": "2026-09-26",
+  "country": "Portugal",
+  "city": "Lisbon",
+  "latitude": 38.7223,
+  "longitude": -9.1393,
+  "temperature_c": 21.7,
+  "temperature_max_c": 32.0,
+  "temperature_min_c": 20.2,
+  "apparent_temperature_c": 20.9,
+  "humidity_pct": 51,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 7.9,
+  "wind_direction_deg": 3,
+  "surface_pressure_hpa": 1011.0,
+  "pressure_msl_hpa": 1018.8,
+  "uv_index_max": 5.35,
+  "weather_code": 3,
+  "observed_at": "2026-09-26T04:45"
+}
