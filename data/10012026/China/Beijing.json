@@ -1,0 +1,22 @@
+{
+  "date": "10012026",
+  "iso_date": "2026-10-01",
+  "country": "China",
+  "city": "Beijing",
+  "latitude": 39.9042,
+  "longitude": 116.4074,
+  "temperature_c": 20.8,
+  "temperature_max_c": 22.1,
+  "temperature_min_c": 11.1,
+  "apparent_temperature_c": 17.5,
+  "humidity_pct": 13,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 7.6,
+  "wind_direction_deg": 324,
+  "surface_pressure_hpa": 1016.8,
+  "pressure_msl_hpa": 1022.4,
+  "uv_index_max": 5.15,
+  "weather_code": 0,
+  "observed_at": "2026-10-01T12:30"
+}
