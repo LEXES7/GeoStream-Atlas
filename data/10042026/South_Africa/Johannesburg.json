@@ -1,0 +1,22 @@
+{
+  "date": "10042026",
+  "iso_date": "2026-10-04",
+  "country": "South Africa",
+  "city": "Johannesburg",
+  "latitude": -26.2041,
+  "longitude": 28.0473,
+  "temperature_c": 12.2,
+  "temperature_max_c": 18.7,
+  "temperature_min_c": 9.9,
+  "apparent_temperature_c": 11.0,
+  "humidity_pct": 67,
+  "precipitation_mm": 0.4,
+  "cloud_cover_pct": 31,
+  "wind_speed_kmh": 2.2,
+  "wind_direction_deg": 55,
+  "surface_pressure_hpa": 829.4,
+  "pressure_msl_hpa": 1018.5,
+  "uv_index_max": 7.9,
+  "weather_code": 1,
+  "observed_at": "2026-10-04T02:15"
+}
