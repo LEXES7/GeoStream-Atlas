@@ -1,0 +1,22 @@
+{
+  "date": "10072026",
+  "iso_date": "2026-10-07",
+  "country": "Greece",
+  "city": "Athens",
+  "latitude": 37.9838,
+  "longitude": 23.7275,
+  "temperature_c": 11.4,
+  "temperature_max_c": 26.4,
+  "temperature_min_c": 11.5,
+  "apparent_temperature_c": 8.7,
+  "humidity_pct": 52,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 5.7,
+  "wind_direction_deg": 35,
+  "surface_pressure_hpa": 1009.3,
+  "pressure_msl_hpa": 1020.5,
+  "uv_index_max": 5.65,
+  "weather_code": 0,
+  "observed_at": "2026-10-07T07:30"
+}
