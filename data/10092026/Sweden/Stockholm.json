@@ -1,0 +1,22 @@
+{
+  "date": "10092026",
+  "iso_date": "2026-10-09",
+  "country": "Sweden",
+  "city": "Stockholm",
+  "latitude": 59.3293,
+  "longitude": 18.0686,
+  "temperature_c": 11.3,
+  "temperature_max_c": 13.1,
+  "temperature_min_c": 7.0,
+  "apparent_temperature_c": 10.5,
+  "humidity_pct": 93,
+  "precipitation_mm": 24.5,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 6.1,
+  "wind_direction_deg": 291,
+  "surface_pressure_hpa": 982.1,
+  "pressure_msl_hpa": 984.9,
+  "uv_index_max": 0.2,
+  "weather_code": 63,
+  "observed_at": "2026-10-09T06:45"
+}

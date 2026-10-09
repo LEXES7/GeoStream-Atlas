@@ -1,0 +1,22 @@
+{
+  "date": "10092026",
+  "iso_date": "2026-10-09",
+  "country": "Indonesia",
+  "city": "Jakarta",
+  "latitude": -6.2088,
+  "longitude": 106.8456,
+  "temperature_c": 33.9,
+  "temperature_max_c": 33.9,
+  "temperature_min_c": 26.2,
+  "apparent_temperature_c": 38.1,
+  "humidity_pct": 43,
+  "precipitation_mm": 1.6,
+  "cloud_cover_pct": 44,
+  "wind_speed_kmh": 8.3,
+  "wind_direction_deg": 11,
+  "surface_pressure_hpa": 1009.3,
+  "pressure_msl_hpa": 1010.6,
+  "uv_index_max": 8.75,
+  "weather_code": 51,
+  "observed_at": "2026-10-09T11:45"
+}
