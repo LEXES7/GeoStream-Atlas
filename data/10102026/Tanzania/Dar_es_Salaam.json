@@ -1,0 +1,22 @@
+{
+  "date": "10102026",
+  "iso_date": "2026-10-10",
+  "country": "Tanzania",
+  "city": "Dar es Salaam",
+  "latitude": -6.7924,
+  "longitude": 39.2083,
+  "temperature_c": 25.8,
+  "temperature_max_c": 31.6,
+  "temperature_min_c": 23.8,
+  "apparent_temperature_c": 29.5,
+  "humidity_pct": 79,
+  "precipitation_mm": 1.4,
+  "cloud_cover_pct": 10,
+  "wind_speed_kmh": 7.8,
+  "wind_direction_deg": 209,
+  "surface_pressure_hpa": 1009.3,
+  "pressure_msl_hpa": 1016.5,
+  "uv_index_max": 9.1,
+  "weather_code": 0,
+  "observed_at": "2026-10-10T07:30"
+}
