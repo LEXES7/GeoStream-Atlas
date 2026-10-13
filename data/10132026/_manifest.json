@@ -1,0 +1,13 @@
+{
+  "date": "10132026",
+  "iso_date": "2026-10-13",
+  "slot": "2026-10-13T05:00",
+  "started_utc": "2026-10-13T05:46:20.533134+00:00",
+  "finished_utc": "2026-10-13T05:46:21.613557+00:00",
+  "cities_requested": 74,
+  "cities_ok": 74,
+  "nino_requested": 4,
+  "nino_ok": 4,
+  "quality_passed": true,
+  "errors": []
+}
