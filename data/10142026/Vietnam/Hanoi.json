@@ -1,0 +1,22 @@
+{
+  "date": "10142026",
+  "iso_date": "2026-10-14",
+  "country": "Vietnam",
+  "city": "Hanoi",
+  "latitude": 21.0278,
+  "longitude": 105.8342,
+  "temperature_c": 26.5,
+  "temperature_max_c": 31.6,
+  "temperature_min_c": 24.4,
+  "apparent_temperature_c": 32.5,
+  "humidity_pct": 87,
+  "precipitation_mm": 0.5,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 1.5,
+  "wind_direction_deg": 339,
+  "surface_pressure_hpa": 1015.3,
+  "pressure_msl_hpa": 1017.4,
+  "uv_index_max": 7.5,
+  "weather_code": 0,
+  "observed_at": "2026-10-14T07:45"
+}
