@@ -1,0 +1,22 @@
+{
+  "date": "10152026",
+  "iso_date": "2026-10-15",
+  "country": "Norway",
+  "city": "Oslo",
+  "latitude": 59.9139,
+  "longitude": 10.7522,
+  "temperature_c": 9.4,
+  "temperature_max_c": 14.4,
+  "temperature_min_c": 9.1,
+  "apparent_temperature_c": 8.0,
+  "humidity_pct": 95,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 7.2,
+  "wind_direction_deg": 212,
+  "surface_pressure_hpa": 1012.3,
+  "pressure_msl_hpa": 1014.9,
+  "uv_index_max": 1.05,
+  "weather_code": 3,
+  "observed_at": "2026-10-15T05:30"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "10152026",
+  "iso_date": "2026-10-15",
+  "country": "Philippines",
+  "city": "Manila",
+  "latitude": 14.5995,
+  "longitude": 120.9842,
+  "temperature_c": 33.7,
+  "temperature_max_c": 33.8,
+  "temperature_min_c": 26.7,
+  "apparent_temperature_c": 39.4,
+  "humidity_pct": 45,
+  "precipitation_mm": 1.7,
+  "cloud_cover_pct": 33,
+  "wind_speed_kmh": 2.2,
+  "wind_direction_deg": 355,
+  "surface_pressure_hpa": 1010.9,
+  "pressure_msl_hpa": 1011.9,
+  "uv_index_max": 8.25,
+  "weather_code": 1,
+  "observed_at": "2026-10-15T11:30"
+}
