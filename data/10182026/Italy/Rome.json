@@ -1,0 +1,22 @@
+{
+  "date": "10182026",
+  "iso_date": "2026-10-18",
+  "country": "Italy",
+  "city": "Rome",
+  "latitude": 41.9028,
+  "longitude": 12.4964,
+  "temperature_c": 14.6,
+  "temperature_max_c": 23.8,
+  "temperature_min_c": 14.3,
+  "apparent_temperature_c": 14.9,
+  "humidity_pct": 90,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 47,
+  "wind_speed_kmh": 3.9,
+  "wind_direction_deg": 34,
+  "surface_pressure_hpa": 1010.4,
+  "pressure_msl_hpa": 1017.4,
+  "uv_index_max": 4.0,
+  "weather_code": 2,
+  "observed_at": "2026-10-18T05:15"
+}

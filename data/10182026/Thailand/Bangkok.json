@@ -1,0 +1,22 @@
+{
+  "date": "10182026",
+  "iso_date": "2026-10-18",
+  "country": "Thailand",
+  "city": "Bangkok",
+  "latitude": 13.7563,
+  "longitude": 100.5018,
+  "temperature_c": 29.9,
+  "temperature_max_c": 31.2,
+  "temperature_min_c": 24.7,
+  "apparent_temperature_c": 36.7,
+  "humidity_pct": 75,
+  "precipitation_mm": 15.1,
+  "cloud_cover_pct": 95,
+  "wind_speed_kmh": 5.4,
+  "wind_direction_deg": 69,
+  "surface_pressure_hpa": 1013.3,
+  "pressure_msl_hpa": 1013.8,
+  "uv_index_max": 8.05,
+  "weather_code": 3,
+  "observed_at": "2026-10-18T10:15"
+}
