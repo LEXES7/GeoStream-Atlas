@@ -1,0 +1,22 @@
+{
+  "date": "10212026",
+  "iso_date": "2026-10-21",
+  "country": "South Africa",
+  "city": "Cape Town",
+  "latitude": -33.9249,
+  "longitude": 18.4241,
+  "temperature_c": 14.4,
+  "temperature_max_c": 17.9,
+  "temperature_min_c": 12.9,
+  "apparent_temperature_c": 12.1,
+  "humidity_pct": 98,
+  "precipitation_mm": 23.3,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 24.4,
+  "wind_direction_deg": 337,
+  "surface_pressure_hpa": 1009.6,
+  "pressure_msl_hpa": 1011.6,
+  "uv_index_max": 8.2,
+  "weather_code": 61,
+  "observed_at": "2026-10-21T05:30"
+}
