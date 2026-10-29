@@ -1,0 +1,22 @@
+{
+  "date": "10292026",
+  "iso_date": "2026-10-29",
+  "country": "Nigeria",
+  "city": "Lagos",
+  "latitude": 6.5244,
+  "longitude": 3.3792,
+  "temperature_c": 27.2,
+  "temperature_max_c": 30.3,
+  "temperature_min_c": 25.3,
+  "apparent_temperature_c": 33.0,
+  "humidity_pct": 90,
+  "precipitation_mm": 10.7,
+  "cloud_cover_pct": 28,
+  "wind_speed_kmh": 7.7,
+  "wind_direction_deg": 246,
+  "surface_pressure_hpa": 1010.8,
+  "pressure_msl_hpa": 1011.7,
+  "uv_index_max": 8.2,
+  "weather_code": 1,
+  "observed_at": "2026-10-29T02:30"
+}
