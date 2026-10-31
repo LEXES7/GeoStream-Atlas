@@ -5,9 +5,9 @@
   "region": "Pacific Ocean",
   "latitude": -5.0,
   "longitude": -90.0,
-  "sea_surface_temperature_c": 27.0,
+  "sea_surface_temperature_c": 27.1,
   "sst_max_c": 27.1,
-  "sst_min_c": 26.9,
-  "wave_height_m": 2.44,
-  "observed_at": "2026-10-31T05:45"
+  "sst_min_c": 27.0,
+  "wave_height_m": 2.36,
+  "observed_at": "2026-10-31T10:45"
 }
