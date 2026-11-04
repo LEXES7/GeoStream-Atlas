@@ -1,0 +1,22 @@
+{
+  "date": "11042026",
+  "iso_date": "2026-11-04",
+  "country": "Australia",
+  "city": "Sydney",
+  "latitude": -33.8688,
+  "longitude": 151.2093,
+  "temperature_c": 21.6,
+  "temperature_max_c": 22.1,
+  "temperature_min_c": 17.1,
+  "apparent_temperature_c": 24.3,
+  "humidity_pct": 68,
+  "precipitation_mm": 2.4,
+  "cloud_cover_pct": 45,
+  "wind_speed_kmh": 4.7,
+  "wind_direction_deg": 182,
+  "surface_pressure_hpa": 1001.6,
+  "pressure_msl_hpa": 1011.6,
+  "uv_index_max": 8.35,
+  "weather_code": 51,
+  "observed_at": "2026-11-04T11:15"
+}
