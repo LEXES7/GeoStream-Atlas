@@ -898,7 +898,7 @@
     },
     {
       "date": "2026-11-04",
-      "value": 1.1
+      "value": 1.2
     }
   ],
   "rolling": [
@@ -1800,25 +1800,25 @@
     },
     {
       "date": "2026-11-04",
-      "value": 1.037
+      "value": 1.04
     }
   ],
   "projection": [
     {
       "date": "2026-11-11",
-      "value": 1.018
+      "value": 1.021
     },
     {
       "date": "2026-11-18",
-      "value": 1.008
+      "value": 1.011
     },
     {
       "date": "2026-11-25",
-      "value": 1.003
+      "value": 1.006
     },
     {
       "date": "2026-12-02",
-      "value": 1.002
+      "value": 1.005
     }
   ],
   "note": "Rolling 30-day Nino 3.4 anomaly with a damped short-term trend. Indicative signal, not a dynamical forecast."
