@@ -1,0 +1,22 @@
+{
+  "date": "11272026",
+  "iso_date": "2026-11-27",
+  "country": "Germany",
+  "city": "Berlin",
+  "latitude": 52.52,
+  "longitude": 13.405,
+  "temperature_c": -0.6,
+  "temperature_max_c": 0.2,
+  "temperature_min_c": -1.8,
+  "apparent_temperature_c": -5.2,
+  "humidity_pct": 69,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 100,
+  "wind_speed_kmh": 11.5,
+  "wind_direction_deg": 86,
+  "surface_pressure_hpa": 1026.3,
+  "pressure_msl_hpa": 1031.1,
+  "uv_index_max": 1.2,
+  "weather_code": 3,
+  "observed_at": "2026-11-27T18:45"
+}

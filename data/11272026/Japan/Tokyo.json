@@ -1,0 +1,22 @@
+{
+  "date": "11272026",
+  "iso_date": "2026-11-27",
+  "country": "Japan",
+  "city": "Tokyo",
+  "latitude": 35.6762,
+  "longitude": 139.6503,
+  "temperature_c": 9.1,
+  "temperature_max_c": 19.9,
+  "temperature_min_c": 8.3,
+  "apparent_temperature_c": 8.1,
+  "humidity_pct": 94,
+  "precipitation_mm": 17.5,
+  "cloud_cover_pct": 73,
+  "wind_speed_kmh": 3.7,
+  "wind_direction_deg": 331,
+  "surface_pressure_hpa": 1009.6,
+  "pressure_msl_hpa": 1014.1,
+  "uv_index_max": 1.2,
+  "weather_code": 61,
+  "observed_at": "2026-11-28T02:45"
+}
