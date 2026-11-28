@@ -1,0 +1,22 @@
+{
+  "date": "11282026",
+  "iso_date": "2026-11-28",
+  "country": "Bangladesh",
+  "city": "Dhaka",
+  "latitude": 23.8103,
+  "longitude": 90.4125,
+  "temperature_c": 18.8,
+  "temperature_max_c": 28.0,
+  "temperature_min_c": 18.6,
+  "apparent_temperature_c": 20.2,
+  "humidity_pct": 90,
+  "precipitation_mm": 0.0,
+  "cloud_cover_pct": 0,
+  "wind_speed_kmh": 7.9,
+  "wind_direction_deg": 347,
+  "surface_pressure_hpa": 1016.8,
+  "pressure_msl_hpa": 1019.1,
+  "uv_index_max": 5.5,
+  "weather_code": 0,
+  "observed_at": "2026-11-28T07:00"
+}
